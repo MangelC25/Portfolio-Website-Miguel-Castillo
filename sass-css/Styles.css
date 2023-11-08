@@ -206,6 +206,7 @@ body .About .heading {
 }
 body .About .heading span {
   font-family: "Kenia", sans-serif;
+  color: #00b7ff;
 }
 body .About .about-content #carouselExample .carousel-item {
   transition: opacity 1s ease-in-out;
@@ -226,13 +227,32 @@ body .About .about-content .card {
 body .About .about-content .card h1 {
   font-size: 24pt;
 }
-body .About .about-content .card img {
+body .About .about-content .card .image-container {
+  position: relative;
+  width: 26rem;
+  height: 26rem;
+}
+body .About .about-content .card .image-container img {
   box-shadow: 0 0 10px 5px #00b7ff;
   border-radius: 50%;
   width: 225px;
   height: 225px;
   transition: 0.5s;
   margin: 2rem 0;
+}
+body .About .about-content .card .image-container .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.2rem solid #295c88;
+  border-bottom: 0.2rem solid #295c88;
+  border-right: 0.2rem solid #00b7ff;
+  border-left: 0.2rem solid #00b7ff;
+  animation: RotationAbout 8s linear infinite;
 }
 body .About .about-content .card hr {
   border: none;
@@ -278,5 +298,10 @@ body .SKills {
   }
   75%, 81% {
     opacity: 0;
+  }
+}
+@keyframes RotationAbout {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }/*# sourceMappingURL=Styles.css.map */
