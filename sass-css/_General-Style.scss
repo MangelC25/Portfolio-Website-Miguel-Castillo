@@ -102,8 +102,8 @@ body {
       top: 27%;
       left: 60%;
       margin: 0;
-      width: 455px;
-      height: 455px;
+      width: 40rem;
+      height: 40rem;
       border-radius: 50%;
       box-shadow: 0 0 30px $main-color;
       background: radial-gradient(
@@ -113,13 +113,43 @@ body {
         rgb(0, 108, 184)
       );
 
-      .Foto-perfil {
-        width: 430px;
-        height: 430px;
+      img {
+        box-shadow: 0 0 10px 5px $main-color;
         border-radius: 50%;
-        box-shadow: 0 0 30px $main-color;
-        background-image: url(../img/1288491.jpg);
-        background-size: cover;
+        width: 360px;
+        height: 360px;
+        transition: 0.5s;
+        margin: 2rem 0;
+      }
+
+      .circle-spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border-top: 0.3rem solid $bg-secundary;
+        border-bottom: 0.3rem solid $bg-secundary;
+        border-right: 0.3rem solid $main-color;
+        border-left: 0.3rem solid $main-color;
+        animation: RotationAbout 8s linear infinite;
+      }
+
+      .circle-spin2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 110%;
+        height: 110%;
+        border-radius: 50%;
+        border-top: 0.3rem solid $bg-secundary;
+        border-bottom: 0.3rem solid $bg-secundary;
+        border-right: 0.3rem solid $main-color;
+        border-left: 0.3rem solid $main-color;
+        animation: RotationAbout2 8s linear infinite;
       }
     }
 
@@ -310,6 +340,21 @@ font-size: 24pt;
         border-left: 0.3rem solid $main-color;
         animation: RotationAbout 8s linear infinite;
       }
+
+      .circle-spin2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 110%;
+        height: 110%;
+        border-radius: 50%;
+        border-top: 0.3rem solid $bg-secundary;
+        border-bottom: 0.3rem solid $bg-secundary;
+        border-right: 0.3rem solid $main-color;
+        border-left: 0.3rem solid $main-color;
+        animation: RotationAbout2 8s linear infinite;
+      }
 }
 
 
@@ -382,5 +427,11 @@ font-size: 24pt;
 @keyframes RotationAbout{
   100%{
     transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+@keyframes RotationAbout2{
+  100%{
+    transform: translate(-50%,-50%) rotate(-360deg);
   }
 }

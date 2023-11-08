@@ -80,19 +80,47 @@ body .Home .Foto {
   top: 27%;
   left: 60%;
   margin: 0;
-  width: 455px;
-  height: 455px;
+  width: 40rem;
+  height: 40rem;
   border-radius: 50%;
   box-shadow: 0 0 30px #00b7ff;
   background: radial-gradient(at center, white, rgb(0, 149, 255), rgb(0, 108, 184));
 }
-body .Home .Foto .Foto-perfil {
-  width: 430px;
-  height: 430px;
+body .Home .Foto img {
+  box-shadow: 0 0 10px 5px #00b7ff;
   border-radius: 50%;
-  box-shadow: 0 0 30px #00b7ff;
-  background-image: url(../img/1288491.jpg);
-  background-size: cover;
+  width: 360px;
+  height: 360px;
+  transition: 0.5s;
+  margin: 2rem 0;
+}
+body .Home .Foto .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-top: 0.3rem solid #295c88;
+  border-bottom: 0.3rem solid #295c88;
+  border-right: 0.3rem solid #00b7ff;
+  border-left: 0.3rem solid #00b7ff;
+  animation: RotationAbout 8s linear infinite;
+}
+body .Home .Foto .circle-spin2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  border-top: 0.3rem solid #295c88;
+  border-bottom: 0.3rem solid #295c88;
+  border-right: 0.3rem solid #00b7ff;
+  border-left: 0.3rem solid #00b7ff;
+  animation: RotationAbout2 8s linear infinite;
 }
 body .Home .home-content {
   max-width: 70rem;
@@ -254,6 +282,20 @@ body .About .about-content .card .image-container .circle-spin {
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
 }
+body .About .about-content .card .image-container .circle-spin2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  border-top: 0.3rem solid #295c88;
+  border-bottom: 0.3rem solid #295c88;
+  border-right: 0.3rem solid #00b7ff;
+  border-left: 0.3rem solid #00b7ff;
+  animation: RotationAbout2 8s linear infinite;
+}
 body .About .about-content .card hr {
   border: none;
   border-bottom: solid 2px #00b7ff;
@@ -303,5 +345,10 @@ body .SKills {
 @keyframes RotationAbout {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes RotationAbout2 {
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
 }/*# sourceMappingURL=Styles.css.map */
