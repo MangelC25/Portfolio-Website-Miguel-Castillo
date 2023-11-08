@@ -248,10 +248,10 @@ body .About .about-content .card .image-container .circle-spin {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-top: 0.2rem solid #295c88;
-  border-bottom: 0.2rem solid #295c88;
-  border-right: 0.2rem solid #00b7ff;
-  border-left: 0.2rem solid #00b7ff;
+  border-top: 0.3rem solid #295c88;
+  border-bottom: 0.3rem solid #295c88;
+  border-right: 0.3rem solid #00b7ff;
+  border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
 }
 body .About .about-content .card hr {

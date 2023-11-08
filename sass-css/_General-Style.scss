@@ -304,10 +304,10 @@ font-size: 24pt;
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border-top: 0.2rem solid $bg-secundary;
-        border-bottom: 0.2rem solid $bg-secundary;
-        border-right: 0.2rem solid $main-color;
-        border-left: 0.2rem solid $main-color;
+        border-top: 0.3rem solid $bg-secundary;
+        border-bottom: 0.3rem solid $bg-secundary;
+        border-right: 0.3rem solid $main-color;
+        border-left: 0.3rem solid $main-color;
         animation: RotationAbout 8s linear infinite;
       }
 }
