@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kenia&family=Oswald:wght@200;400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/*Variables*/
+$bg-navbar: #0c1621;
+$bg-primary: #0e2336;
+$bg-secundary: #295c88;
+$text-color: white;
+$main-color: #00b7ff;
+$bg-degradado: linear-gradient(to top, $bg-primary, black);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins",  sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $bg-primary !important;
+  color: $text-color !important;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: $bg-navbar;
+
+    .logo {
+      img {
+        width: 20rem;
+      }
+    }
+
+    #menu-icon {
+      font-size: 3.6rem;
+      color: $text-color;
+      cursor: pointer;
+      display: none;
+
+      &:hover {
+        color: $main-color;
+        text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+          0 0 30px $main-color;
+      }
+    }
+
+    .navbar {
+      a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $text-color;
+        font-weight: 500;
+        margin-left: 3.5rem;
+        transition: 0.3s;
+        transition: text-shadow 0.3s ease;
+
+        &:hover {
+          color: $main-color;
+          text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+            0 0 30px $main-color;
+        }
+      }
+
+      .active {
+        color: $main-color;
+        text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+          0 0 30px $main-color;
+      }
+    }
+  }
+
+  .Home {
+    min-height: 100vh;
+    background: $bg-degradado;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+
+    .Foto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 27%;
+      left: 60%;
+      margin: 0;
+      width: 455px;
+      height: 455px;
+      border-radius: 50%;
+      box-shadow: 0 0 30px $main-color;
+      background: radial-gradient(
+        at center,
+        white,
+        rgb(0, 149, 255),
+        rgb(0, 108, 184)
+      );
+
+      .Foto-perfil {
+        width: 430px;
+        height: 430px;
+        border-radius: 50%;
+        box-shadow: 0 0 30px $main-color;
+        background-image: url(../img/1288491.jpg);
+        background-size: cover;
+      }
+    }
+
+    .home-content {
+      max-width: 70rem;
+
+      h1 {
+        font-size: 5.6rem;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+
+      .text-animate {
+        position: relative;
+        width: 45rem;
+
+        h3 {
+          font-size: 4rem;
+          font-weight: 700;
+          color: transparent;
+          -webkit-text-stroke: $main-color 0.7px;
+          background-image: linear-gradient($main-color, $bg-secundary);
+          background-repeat: no-repeat;
+          -webkit-background-clip: text;
+          background-position: 0 0;
+          text-shadow: 0 0 15px $main-color;
+          animation: homeBgtext 5s linear infinite;
+          animation-delay: 2s;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-right: solid 2px $main-color;
+            z-index: -1;
+            animation: homecursortext 5s linear infinite;
+            animation-delay: 2s;
+          }
+        }
+      }
+
+      p {
+        font-size: 2rem;
+        margin: 2rem 0 4rem;
+      }
+    }
+
+    .btn-box {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 35rem;
+      height: 5rem;
+
+      .btn {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        height: 100%;
+        border: solid 0.2rem $main-color;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        color: $main-color;
+        transition: 0.3s;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 0 5rem $main-color;
+          color: $text-color;
+          background: linear-gradient(to bottom, $main-color, #009cd9);
+        }
+      }
+    }
+
+    .home-rds {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 4rem;
+      width: 20rem;
+
+      a {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: solid 0.2rem $main-color;
+        border-radius: 50%;
+        transition: 0.5s;
+        transition: box-shadow 0.3s ease;
+
+        i {
+          font-size: 2.5rem;
+        }
+
+        &:hover {
+          box-shadow: 0 0 5rem $main-color;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .About {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, $bg-secundary, $bg-primary);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .heading {
+      font-family: "Kenia", sans-serif;
+      font-size: 5rem;
+
+
+      span {
+        font-family: "Kenia", sans-serif;
+      }
+    }
+
+    .about-content {
+
+      #carouselExample{
+
+        .carousel-item {
+          transition: opacity 1s ease-in-out ;
+          opacity: 0;
+      }
+
+      .carousel-item.active{
+        opacity: 1;
+      }
+
+        .carousel-control-prev{
+          left: -13rem;
+        }
+        .carousel-control-next{
+          left: 99rem;
+        }
+      }
+      
+      .card{
+        width: 100rem;
+
+        h1{
+font-size: 24pt;
+        }
+
+      img {
+        box-shadow: 0 0 10px 5px $main-color;
+        border-radius: 50%;
+        width: 225px;
+        height: 225px;
+        transition: 0.5s;
+        margin: 2rem 0;
+      }
+
+      hr {
+        border: none;
+        border-bottom: solid 2px $main-color;
+        border-radius: 15px;
+      }
+
+    }
+    }
+
+
+
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-right: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-top: 100px solid transparent;
+    }
+  }
+
+  .SKills{
+  position: absolute;
+  top:100; 
+  padding: 0 10%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(to top, rgb(113, 113, 113), black);
+  z-index: 0;
+  }
+}
+
+@keyframes homeBgtext {
+  0%,
+  10%,
+  100% {
+    background-position: -50rem 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes homecursortext {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  65%,
+  78%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%,
+  81% {
+    opacity: 0;
+  }
+}
