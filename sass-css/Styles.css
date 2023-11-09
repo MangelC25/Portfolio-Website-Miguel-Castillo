@@ -27,12 +27,15 @@ body .header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 10%;
+  padding: 1rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   background-color: #0c1621;
+}
+body .header .logo {
+  animation: Dtop 1.5s ease-in-out;
 }
 body .header .logo img {
   width: 20rem;
@@ -46,6 +49,9 @@ body .header #menu-icon {
 body .header #menu-icon:hover {
   color: #00b7ff;
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
+}
+body .header .navbar {
+  animation: Dtop 1.5s ease-in-out;
 }
 body .header .navbar a {
   text-decoration: none;
@@ -225,7 +231,7 @@ body .About {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to top, #295c88, #0e2336);
-  padding-top: 10rem;
+  padding-top: 14rem;
   padding-bottom: 10rem;
 }
 body .About .heading {
@@ -235,6 +241,9 @@ body .About .heading {
 body .About .heading span {
   font-family: "Kenia", sans-serif;
   color: #00b7ff;
+}
+body .About .about-content {
+  padding: 2rem;
 }
 body .About .about-content #carouselExample .carousel-item {
   transition: opacity 1s ease-in-out;
@@ -322,6 +331,14 @@ body .SKills {
   z-index: 0;
 }
 
+@keyframes Dtop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes homeBgtext {
   0%, 10%, 100% {
     background-position: -50rem 0;

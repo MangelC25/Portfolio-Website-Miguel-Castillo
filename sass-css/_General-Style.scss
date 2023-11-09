@@ -9,6 +9,7 @@ $bg-secundary: #295c88;
 $text-color: white;
 $main-color: #00b7ff;
 $bg-degradado: linear-gradient(to top, $bg-primary, black);
+$Animation1: Dtop 1.5s ease-in-out;
 
 * {
   margin: 0;
@@ -30,12 +31,13 @@ body {
   background-color: $bg-primary !important;
   color: $text-color !important;
 
+
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5rem 10%;
+    padding: 1rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +45,7 @@ body {
     background-color: $bg-navbar;
 
     .logo {
+      animation: $Animation1;
       img {
         width: 20rem;
       }
@@ -59,9 +62,11 @@ body {
         text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
           0 0 30px $main-color;
       }
+      
     }
 
     .navbar {
+      animation: $Animation1;
       a {
         text-decoration: none;
         font-size: 2rem;
@@ -270,7 +275,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to top, $bg-secundary, $bg-primary);
-    padding-top: 10rem;
+    padding-top: 14rem;
     padding-bottom: 10rem;
 
     .heading {
@@ -285,6 +290,7 @@ body {
     }
 
     .about-content {
+      padding: 2rem;
 
       #carouselExample{
 
@@ -392,6 +398,18 @@ font-size: 24pt;
   z-index: 0;
   }
 }
+
+
+@keyframes Dtop{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
 
 @keyframes homeBgtext {
   0%,
