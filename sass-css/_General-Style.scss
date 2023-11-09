@@ -27,10 +27,13 @@ html {
   overflow-x: hidden;
 }
 
+section{
+  width: 100%;
+}
+
 body {
   background-color: $bg-primary !important;
   color: $text-color !important;
-
 
   .header {
     position: fixed;
@@ -389,13 +392,62 @@ font-size: 24pt;
   }
 
   .SKills{
-  position: absolute;
-  top:100; 
   padding: 0 10%;
-  padding-top: 10rem;
+  padding-top: 13rem;
   padding-bottom: 10rem;
   background: linear-gradient(to top, rgb(113, 113, 113), black);
-  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    text-align: center;
+    font-family: "Kenia", sans-serif;
+    font-size: 5rem;
+
+
+    span {
+      font-family: "Kenia", sans-serif;
+      color: $main-color;
+    }
+  }
+
+  .skill-container{
+    margin-top: 3rem;
+    width: 120rem;
+    height: 50rem;
+    border: solid $main-color 2px;
+    filter: blur(10%);
+    box-shadow: 0 0 5rem $main-color;
+    display: flex;
+    justify-content: space-around;
+
+    .skill-box{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 50%;
+      border: solid rgb(0, 255, 13) 2px;
+
+      .imageS{
+        position: absolute;
+        img{
+          width: 10rem;
+          border: solid red 2px;
+        }
+      }
+
+      .SkillT{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border: solid red 2px;
+      }
+    }
+  }
   }
 }
 

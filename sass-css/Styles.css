@@ -18,6 +18,10 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  width: 100%;
+}
+
 body {
   background-color: #0e2336 !important;
   color: white !important;
@@ -322,13 +326,55 @@ body .About::before {
   border-top: 100px solid transparent;
 }
 body .SKills {
-  position: absolute;
-  top: 100;
   padding: 0 10%;
-  padding-top: 10rem;
+  padding-top: 13rem;
   padding-bottom: 10rem;
   background: linear-gradient(to top, rgb(113, 113, 113), black);
-  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .SKills h1 {
+  text-align: center;
+  font-family: "Kenia", sans-serif;
+  font-size: 5rem;
+}
+body .SKills h1 span {
+  font-family: "Kenia", sans-serif;
+  color: #00b7ff;
+}
+body .SKills .skill-container {
+  margin-top: 3rem;
+  width: 120rem;
+  height: 50rem;
+  border: solid #00b7ff 2px;
+  filter: blur(10%);
+  box-shadow: 0 0 5rem #00b7ff;
+  display: flex;
+  justify-content: space-around;
+}
+body .SKills .skill-container .skill-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  border: solid rgb(0, 255, 13) 2px;
+}
+body .SKills .skill-container .skill-box .imageS {
+  position: absolute;
+}
+body .SKills .skill-container .skill-box .imageS img {
+  width: 10rem;
+  border: solid red 2px;
+}
+body .SKills .skill-container .skill-box .SkillT {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid red 2px;
 }
 
 @keyframes Dtop {
