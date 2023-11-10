@@ -33,6 +33,7 @@ body .header {
   width: 100%;
   padding: 1rem 10%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
@@ -78,12 +79,14 @@ body .Home {
   min-height: 100vh;
   background: linear-gradient(to top, #0e2336, black);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0 10%;
   position: relative;
 }
 body .Home .Foto {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -176,6 +179,7 @@ body .Home .home-content p {
 body .Home .btn-box {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 35rem;
   height: 5rem;
@@ -183,6 +187,7 @@ body .Home .btn-box {
 body .Home .btn-box .btn {
   position: relative;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 15rem;
@@ -203,6 +208,7 @@ body .Home .btn-box .btn:hover {
 }
 body .Home .home-rds {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
   bottom: 4rem;
@@ -211,6 +217,7 @@ body .Home .home-rds {
 body .Home .home-rds a {
   position: relative;
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 40px;
@@ -232,6 +239,7 @@ body .About {
   position: relative;
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(to top, #295c88, #0e2336);
@@ -263,7 +271,7 @@ body .About .about-content #carouselExample .carousel-control-next {
   left: 99rem;
 }
 body .About .about-content .card {
-  width: 100rem;
+  max-width: 100rem;
 }
 body .About .about-content .card h1 {
   font-size: 24pt;
@@ -276,7 +284,7 @@ body .About .about-content .card .image-container {
 body .About .about-content .card .image-container img {
   box-shadow: 0 0 10px 5px #00b7ff;
   border-radius: 50%;
-  width: 225px;
+  max-width: 225px;
   height: 225px;
   transition: 0.5s;
   margin: 2rem 0;
@@ -286,8 +294,8 @@ body .About .about-content .card .image-container .circle-spin {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 50%;
   border-top: 0.3rem solid #295c88;
   border-bottom: 0.3rem solid #295c88;
@@ -300,8 +308,8 @@ body .About .about-content .card .image-container .circle-spin2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  width: 110%;
-  height: 110%;
+  max-width: 110%;
+  max-height: 110%;
   border-radius: 50%;
   border-top: 0.3rem solid #295c88;
   border-bottom: 0.3rem solid #295c88;
@@ -331,50 +339,117 @@ body .SKills {
   padding-bottom: 10rem;
   background: linear-gradient(to top, rgb(113, 113, 113), black);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-body .SKills h1 {
+body .SKills #MY {
   text-align: center;
   font-family: "Kenia", sans-serif;
   font-size: 5rem;
 }
-body .SKills h1 span {
+body .SKills #MY span {
   font-family: "Kenia", sans-serif;
   color: #00b7ff;
 }
 body .SKills .skill-container {
-  margin-top: 3rem;
-  width: 120rem;
-  height: 50rem;
+  margin-top: 6rem;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  max-width: 118rem;
   border: solid #00b7ff 2px;
   filter: blur(10%);
   box-shadow: 0 0 5rem #00b7ff;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
 }
-body .SKills .skill-container .skill-box {
+body .SKills .skill-container #lng {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .SKills .skill-container #lng span {
+  font-size: 24pt;
+  font-weight: 700;
+  padding: 1rem 2rem;
   position: relative;
+  text-align: center;
+}
+body .SKills .skill-container .card {
+  cursor: pointer;
+  text-align: center;
+  width: 15rem;
+  margin: 2rem;
+  border-radius: 50%;
+  border: none;
+  transition: all 300mx;
+}
+body .SKills .skill-container .card .imageS {
+  max-width: 100%;
+  height: 15rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18rem;
-  height: 18rem;
+  position: relative;
   border-radius: 50%;
-  border: solid rgb(0, 255, 13) 2px;
+  z-index: 1;
 }
-body .SKills .skill-container .skill-box .imageS {
-  position: absolute;
+body .SKills .skill-container .card .imageS i {
+  font-size: 125px;
+  color: white 1rem;
 }
-body .SKills .skill-container .skill-box .imageS img {
-  width: 10rem;
-  border: solid red 2px;
-}
-body .SKills .skill-container .skill-box .SkillT {
+body .SKills .skill-container .card .skillbox .card-body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border: solid red 2px;
+  color: white;
+  opacity: 0;
+  margin-top: -50%;
+}
+body .SKills .skill-container .card:hover .card-body {
+  color: white;
+  opacity: 1;
+  margin-top: 0;
+  transition: all 400ms ease-in-out;
+}
+body .SKills #HTML .imageS i {
+  color: #dd4b24;
+}
+body .SKills #HTML .imageS:hover {
+  box-shadow: 0 0 4rem #fd5f34;
+  background-color: #dd4b24 !important;
+  transition: 0.5s;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body .SKills #HTML .imageS:hover i {
+  color: white;
+}
+body .SKills #CSS .imageS i {
+  color: #29a8e0;
+}
+body .SKills #CSS .imageS:hover {
+  box-shadow: 0 0 4rem #2fc0ff;
+  background-color: #29a8e0 !important;
+  transition: 0.5s;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body .SKills #CSS .imageS:hover i {
+  color: white;
+}
+body .SKills #javascript .imageS i {
+  color: #ebba20;
+}
+body .SKills #javascript:hover {
+  box-shadow: 0 0 4rem #ffcf31;
+  background-color: #ebba20 !important;
+  transition: 0.5s;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body .SKills #javascript:hover .imageS i {
+  color: white;
 }
 
 @keyframes Dtop {

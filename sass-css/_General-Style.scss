@@ -27,7 +27,7 @@ html {
   overflow-x: hidden;
 }
 
-section{
+section {
   width: 100%;
 }
 
@@ -42,6 +42,7 @@ body {
     width: 100%;
     padding: 1rem 10%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -65,7 +66,6 @@ body {
         text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
           0 0 30px $main-color;
       }
-      
     }
 
     .navbar {
@@ -98,12 +98,14 @@ body {
     min-height: 100vh;
     background: $bg-degradado;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 10%;
     position: relative;
 
     .Foto {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       position: absolute;
@@ -130,7 +132,7 @@ body {
         margin: 2rem 0;
       }
 
-      .circle-spin{
+      .circle-spin {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -145,7 +147,7 @@ body {
         animation: RotationAbout 8s linear infinite;
       }
 
-      .circle-spin2{
+      .circle-spin2 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -211,6 +213,7 @@ body {
     .btn-box {
       position: relative;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       width: 35rem;
       height: 5rem;
@@ -218,6 +221,7 @@ body {
       .btn {
         position: relative;
         display: inline-flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 15rem;
@@ -241,6 +245,7 @@ body {
 
     .home-rds {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       position: absolute;
       bottom: 4rem;
@@ -249,6 +254,7 @@ body {
       a {
         position: relative;
         display: inline-flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         width: 40px;
@@ -275,6 +281,7 @@ body {
     position: relative;
     z-index: 1;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to top, $bg-secundary, $bg-primary);
@@ -285,7 +292,6 @@ body {
       font-family: "Kenia", sans-serif;
       font-size: 5rem;
 
-
       span {
         font-family: "Kenia", sans-serif;
         color: $main-color;
@@ -295,91 +301,86 @@ body {
     .about-content {
       padding: 2rem;
 
-      #carouselExample{
-
+      #carouselExample {
         .carousel-item {
-          transition: opacity 1s ease-in-out ;
+          transition: opacity 1s ease-in-out;
           opacity: 0;
-      }
+        }
 
-      .carousel-item.active{
-        opacity: 1;
-      }
+        .carousel-item.active {
+          opacity: 1;
+        }
 
-        .carousel-control-prev{
+        .carousel-control-prev {
           left: -13rem;
         }
-        .carousel-control-next{
+        .carousel-control-next {
           left: 99rem;
         }
       }
-      
-      .card{
-        width: 100rem;
 
-        h1{
-font-size: 24pt;
+      .card {
+        max-width: 100rem;
+
+        h1 {
+          font-size: 24pt;
         }
 
-        .image-container{
+        .image-container {
           position: relative;
           width: 26rem;
           height: 26rem;
 
-      img {
-        box-shadow: 0 0 10px 5px $main-color;
-        border-radius: 50%;
-        width: 225px;
-        height: 225px;
-        transition: 0.5s;
-        margin: 2rem 0;
+          img {
+            box-shadow: 0 0 10px 5px $main-color;
+            border-radius: 50%;
+            max-width: 225px;
+            height: 225px;
+            transition: 0.5s;
+            margin: 2rem 0;
+          }
+
+          .circle-spin {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0);
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+            border-top: 0.3rem solid $bg-secundary;
+            border-bottom: 0.3rem solid $bg-secundary;
+            border-right: 0.3rem solid $main-color;
+            border-left: 0.3rem solid $main-color;
+            animation: RotationAbout 8s linear infinite;
+          }
+
+          .circle-spin2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0);
+            max-width: 110%;
+            max-height: 110%;
+            border-radius: 50%;
+            border-top: 0.3rem solid $bg-secundary;
+            border-bottom: 0.3rem solid $bg-secundary;
+            border-right: 0.3rem solid $main-color;
+            border-left: 0.3rem solid $main-color;
+            animation: RotationAbout2 8s linear infinite;
+          }
+        }
+
+        hr {
+          border: none;
+          border-bottom: solid 2px $main-color;
+          border-radius: 15px;
+        }
       }
-
-      .circle-spin{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0);
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border-top: 0.3rem solid $bg-secundary;
-        border-bottom: 0.3rem solid $bg-secundary;
-        border-right: 0.3rem solid $main-color;
-        border-left: 0.3rem solid $main-color;
-        animation: RotationAbout 8s linear infinite;
-      }
-
-      .circle-spin2{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0);
-        width: 110%;
-        height: 110%;
-        border-radius: 50%;
-        border-top: 0.3rem solid $bg-secundary;
-        border-bottom: 0.3rem solid $bg-secundary;
-        border-right: 0.3rem solid $main-color;
-        border-left: 0.3rem solid $main-color;
-        animation: RotationAbout2 8s linear infinite;
-      }
-}
-
-
-      hr {
-        border: none;
-        border-bottom: solid 2px $main-color;
-        border-radius: 15px;
-      }
-
-    }
     }
 
-
-
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -391,77 +392,167 @@ font-size: 24pt;
     }
   }
 
-  .SKills{
-  padding: 0 10%;
-  padding-top: 13rem;
-  padding-bottom: 10rem;
-  background: linear-gradient(to top, rgb(113, 113, 113), black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  h1{
-    text-align: center;
-    font-family: "Kenia", sans-serif;
-    font-size: 5rem;
-
-
-    span {
-      font-family: "Kenia", sans-serif;
-      color: $main-color;
-    }
-  }
-
-  .skill-container{
-    margin-top: 3rem;
-    width: 120rem;
-    height: 50rem;
-    border: solid $main-color 2px;
-    filter: blur(10%);
-    box-shadow: 0 0 5rem $main-color;
+  .SKills {
+    padding: 0 10%;
+    padding-top: 13rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(to top, rgb(113, 113, 113), black);
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
-    .skill-box{
-      position: relative;
+    #MY {
+      text-align: center;
+      font-family: "Kenia", sans-serif;
+      font-size: 5rem;
+
+      span {
+        font-family: "Kenia", sans-serif;
+        color: $main-color;
+      }
+    }
+
+    .skill-container {
+      margin-top: 6rem;
+      padding: 2rem;
+      padding-bottom: 4rem;
+      max-width: 118rem;
+      border: solid $main-color 2px;
+      filter: blur(10%);
+      box-shadow: 0 0 5rem $main-color;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
-      width: 18rem;
-      height: 18rem;
-      border-radius: 50%;
-      border: solid rgb(0, 255, 13) 2px;
+      overflow: hidden;
 
-      .imageS{
-        position: absolute;
-        img{
-          width: 10rem;
-          border: solid red 2px;
+      #lng {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        span {
+          font-size: 24pt;
+          font-weight: 700;
+          padding: 1rem 2rem;
+          position: relative;
+          text-align: center;
         }
       }
 
-      .SkillT{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        border: solid red 2px;
+      .card {
+        cursor: pointer;
+        text-align: center;
+        width: 15rem;
+        margin: 2rem;
+        border-radius: 50%;
+        border: none;
+        transition: all 300mx;
+
+        .imageS {
+          max-width: 100%;
+          height: 15rem;
+          padding: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          border-radius: 50%;
+          z-index: 1;
+
+          i {
+            font-size: 125px;
+            color: white 1rem;
+          }
+        }
+
+        .skillbox {
+          .card-body {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $text-color;
+            opacity: 0;
+            margin-top: -50%;
+          }
+        }
+
+        &:hover {
+          .card-body {
+            color: $text-color;
+            opacity: 1;
+            margin-top: 0;
+            transition: all 400ms ease-in-out;
+          }
+        }
+      }
+    }
+
+    #HTML {
+      .imageS {
+        i {
+          color: #dd4b24;
+        }
+        &:hover {
+          box-shadow: 0 0 4rem #fd5f34;
+          background-color: #dd4b24 !important;
+          transition: 0.5s;
+          transition: box-shadow 0.3s ease-in-out;
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    #CSS {
+      .imageS {
+        i {
+          color: #29a8e0;
+        }
+
+        &:hover {
+          box-shadow: 0 0 4rem #2fc0ff;
+          background-color: #29a8e0 !important;
+          transition: 0.5s;
+          transition: box-shadow 0.3s ease-in-out;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    #javascript {
+      .imageS {
+        i {
+          color: #ebba20;
+        }
+      }
+      &:hover {
+        box-shadow: 0 0 4rem #ffcf31;
+        background-color: #ebba20 !important;
+        transition: 0.5s;
+        transition: box-shadow 0.3s ease-in-out;
+
+        .imageS {
+          i {
+            color: white;
+          }
+        }
       }
     }
   }
-  }
 }
 
-
-@keyframes Dtop{
-  0%{
+@keyframes Dtop {
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-
-
 
 @keyframes homeBgtext {
   0%,
@@ -493,15 +584,14 @@ font-size: 24pt;
   }
 }
 
-
-@keyframes RotationAbout{
-  100%{
-    transform: translate(-50%,-50%) rotate(360deg);
+@keyframes RotationAbout {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-@keyframes RotationAbout2{
-  100%{
-    transform: translate(-50%,-50%) rotate(-360deg);
+@keyframes RotationAbout2 {
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
