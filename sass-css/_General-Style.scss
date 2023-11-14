@@ -393,14 +393,11 @@ body {
   }
 
   .SKills {
+    position: relative;
     padding: 0 10%;
     padding-top: 13rem;
     padding-bottom: 10rem;
     background: linear-gradient(to top, rgb(113, 113, 113), black);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 
     #MY {
       text-align: center;
@@ -414,130 +411,168 @@ body {
     }
 
     .skill-container {
-      margin-top: 6rem;
-      padding: 2rem;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: 4rem;
       padding-bottom: 4rem;
-      max-width: 118rem;
       border: solid $main-color 2px;
-      filter: blur(10%);
       box-shadow: 0 0 5rem $main-color;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      overflow: hidden;
 
-      #lng {
-        width: 100%;
+      #carouselSkills {
+        .carousel-item {
+          transition: opacity 1s ease-in-out;
+          opacity: 0;
+        }
+
+        .carousel-item.active {
+          opacity: 1;
+        }
+
+        .carousel-control-prev {
+          left: -6%;
+        }
+        .carousel-control-next {
+          left: 91%;
+        }
+      }
+
+
+      #Scontenedor {
+        margin: auto;
+        margin-bottom: 1rem;
+        max-width: 100%;
+        padding: 2rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        span {
-          font-size: 24pt;
-          font-weight: 700;
-          padding: 1rem 2rem;
-          position: relative;
+        align-items: center;
+        gap: 3rem;
+
+        .card {
+          background: transparent;
+          width: 17rem;
+          margin: 2rem;
           text-align: center;
-        }
-      }
+          border: none;
 
-      .card {
-        cursor: pointer;
-        text-align: center;
-        width: 15rem;
-        margin: 2rem;
-        border-radius: 50%;
-        border: none;
-        transition: all 300mx;
+          .icon {
+            width: 100%;
+            height: 17rem;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
 
-        .imageS {
-          max-width: 100%;
-          height: 15rem;
-          padding: 2rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          border-radius: 50%;
-          z-index: 1;
+            i {
+              font-size: 150px;
+            }
 
-          i {
-            font-size: 125px;
-            color: white 1rem;
+            img{
+              width: 15rem;
+            }
           }
-        }
 
-        .skillbox {
-          .card-body {
+          .Stitle {
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            color: $text-color;
+            width: 100%;
+            top: 50%;
             opacity: 0;
-            margin-top: -50%;
+            transition: all 0.6s ease-in-out;
+
+            h5 {
+              color: $text-color;
+              font-size: 18pt;
+              font-weight: bold;
+              margin-top: 1rem;
+            }
           }
         }
 
-        &:hover {
-          .card-body {
-            color: $text-color;
-            opacity: 1;
-            margin-top: 0;
-            transition: all 400ms ease-in-out;
-          }
-        }
-      }
-    }
-
-    #HTML {
-      .imageS {
-        i {
-          color: #dd4b24;
-        }
-        &:hover {
-          box-shadow: 0 0 4rem #fd5f34;
-          background-color: #dd4b24 !important;
-          transition: 0.5s;
-          transition: box-shadow 0.3s ease-in-out;
+        #HTML {
           i {
-            color: white;
+            color: #e44d26;
+          }
+          &:hover {
+            .icon {
+              cursor: pointer;
+              background-color: #e44d26;
+              box-shadow: 0 0 2rem 0.5rem #fd7b5a;
+              transition: box-shadow 0.5s;
+              i {
+                color: white;
+              }
+            }
+
+            .Stitle {
+              top: 100%;
+              opacity: 1;
+            }
           }
         }
-      }
-    }
 
-    #CSS {
-      .imageS {
-        i {
-          color: #29a8e0;
-        }
-
-        &:hover {
-          box-shadow: 0 0 4rem #2fc0ff;
-          background-color: #29a8e0 !important;
-          transition: 0.5s;
-          transition: box-shadow 0.3s ease-in-out;
-
+        #CSS {
           i {
-            color: white;
+            color: #2d92cd;
+          }
+          &:hover {
+            .icon {
+              cursor: pointer;
+              background-color: #2d92cd;
+              box-shadow: 0 0 2rem 0.5rem #3bb3f8;
+              transition: box-shadow 0.5s;
+              i {
+                color: white;
+              }
+            }
+
+            .Stitle {
+              top: 100%;
+              opacity: 1;
+            }
           }
         }
-      }
-    }
 
-    #javascript {
-      .imageS {
-        i {
-          color: #ebba20;
-        }
-      }
-      &:hover {
-        box-shadow: 0 0 4rem #ffcf31;
-        background-color: #ebba20 !important;
-        transition: 0.5s;
-        transition: box-shadow 0.3s ease-in-out;
-
-        .imageS {
+        #JAVASCRIPT {
           i {
-            color: white;
+            color: #f0c02b;
+          }
+          &:hover {
+            .icon {
+              cursor: pointer;
+              background-color: #f0c02b;
+              box-shadow: 0 0 2rem 0.5rem #ffd042;
+              transition: box-shadow 0.5s;
+              i {
+                color: white;
+              }
+            }
+
+            .Stitle {
+              top: 100%;
+              opacity: 1;
+            }
+          }
+        }
+
+        #JAVA {
+          &:hover {
+            .icon {
+              cursor: pointer;
+              background-color: white;
+              box-shadow: 0 0 2rem 0.5rem white;
+              transition: box-shadow 0.5s;
+            }
+
+            .Stitle {
+              top: 100%;
+              opacity: 1;
+            }
           }
         }
       }
@@ -545,14 +580,7 @@ body {
   }
 }
 
-@keyframes Dtop {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 @keyframes homeBgtext {
   0%,

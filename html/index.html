@@ -67,7 +67,7 @@
   <section class="About" id="About Me">
     <h2 class="heading">About <span>Me</span></h2>
     <div class="about-content">
-      <div id="carouselExample" class="carousel slid carousel-fade" data-bs-ride="true" data-bs-touch="true">
+      <div id="carouselExample" class="carousel carousel-fade" data-bs-ride="true" data-bs-touch="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
@@ -154,7 +154,7 @@
                 <img src="../img/1288491.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
                 <span class="circle-spin"></span>
                 <span class="circle-spin2"></span>
-              </div> <span class="circle-spin">/span>
+              </div>
                 <div class="text-container" id="Description">
                   <div class="card-body border border-0">
                     <h1 class="card-title fw-bold mb-4 text-center my-4">
@@ -191,43 +191,102 @@
     <div>
       <h1 id="MY">My <span>Skills</span></h1>
       <div class="skill-container">
-        <div id="lng">
-           <span>Lenguages</span> 
-        </div>
-        <div class="card position-relative bg-transparent" id="HTML">
-          <div class="imageS">
-            <i class='bx bxl-html5'></i>
-          </div>
-          <div class="skillbox">
-            <div class="card-body">
-              <h1 class="card-text">CARD</h1>
-            </div>
+        <div class="carousel carousel-fade" id="carouselSkills" data-bs-ride="true" data-bs-touch="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="Scontenedor">
+                <div class="card" id="HTML">
+                  <div class="icon">
+                    <i class='bx bxl-html5'></i>
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">HTML</h5>
+                    </div>
+                  </div>
 
-          </div>
-        </div>
-        <div class="card position-relative bg-transparent " id="CSS">
-          <div class="imageS">
-            <i class='bx bxl-css3' ></i>
-          </div>
-          <div class="skillbox">
-            <div class="card-body">
-              <h1 class="card-text">CARD</h1>
-            </div>
+                </div>
+                <div class="card" id="CSS">
+                  <div class="icon">
+                    <i class='bx bxl-css3'></i>
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">CSS</h5>
+                    </div>
+                  </div>
 
-          </div>
-        </div>
-        <div class="card position-relative bg-transparent " id="javascript">
-          <div class="imageS">
-            <i class='bx bxl-javascript' ></i>
-          </div>
-          <div class="skillbox">
-            <div class="card-body">
-              <h1 class="card-text">CARD</h1>
-            </div>
+                </div>
+                <div class="card" id="JAVASCRIPT">
+                  <div class="icon">
+                    <i class='bx bxl-javascript'></i>
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">Javascript</h5>
+                    </div>
+                  </div>
 
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="Scontenedor">
+                <div class="card" id="JAVA">
+                  <div class="icon">
+                    <img src="../img/java.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">Java</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card" id="CSS">
+                  <div class="icon">
+                    <i class='bx bxl-css3'></i>
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">CSS1</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card" id="JAVASCRIPT">
+                  <div class="icon">
+                    <i class='bx bxl-javascript'></i>
+                  </div>
+                  <div class="Stitle">
+                    <div class="card-body">
+                      <h5 class="card-title">Javascript1</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSkills" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSkills" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        
+        
         </div>
+
+
+
+
+
       </div>
+
+    </div>
     </div>
   </section>
 </body>
