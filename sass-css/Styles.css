@@ -237,14 +237,12 @@ body .Home .home-rds a:hover {
 }
 body .About {
   position: relative;
-  z-index: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
   background: linear-gradient(to top, #295c88, #0e2336);
-  padding-top: 14rem;
+  position: relative;
+  padding: 0 10%;
+  padding-top: 13rem;
   padding-bottom: 10rem;
+  text-align: center;
 }
 body .About .heading {
   font-family: "Kenia", sans-serif;
@@ -255,33 +253,40 @@ body .About .heading span {
   color: #00b7ff;
 }
 body .About .about-content {
-  padding: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 body .About .about-content #carouselExample .carousel-item {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   opacity: 0;
 }
 body .About .about-content #carouselExample .carousel-item.active {
   opacity: 1;
 }
-body .About .about-content #carouselExample .carousel-control-prev {
-  left: -13rem;
+body .About .about-content #carouselExample #Acontenedor {
+  margin: auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-body .About .about-content #carouselExample .carousel-control-next {
-  left: 99rem;
-}
-body .About .about-content .card {
+body .About .about-content #carouselExample .card {
   max-width: 100rem;
 }
-body .About .about-content .card h1 {
+body .About .about-content #carouselExample .card h1 {
   font-size: 24pt;
 }
-body .About .about-content .card .image-container {
+body .About .about-content #carouselExample .card .image-container {
   position: relative;
   width: 26rem;
   height: 26rem;
 }
-body .About .about-content .card .image-container img {
+body .About .about-content #carouselExample .card .image-container img {
   box-shadow: 0 0 10px 5px #00b7ff;
   border-radius: 50%;
   max-width: 225px;
@@ -289,13 +294,13 @@ body .About .about-content .card .image-container img {
   transition: 0.5s;
   margin: 2rem 0;
 }
-body .About .about-content .card .image-container .circle-spin {
+body .About .about-content #carouselExample .card .image-container .circle-spin {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   border-top: 0.3rem solid #295c88;
   border-bottom: 0.3rem solid #295c88;
@@ -303,13 +308,13 @@ body .About .about-content .card .image-container .circle-spin {
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
 }
-body .About .about-content .card .image-container .circle-spin2 {
+body .About .about-content #carouselExample .card .image-container .circle-spin2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-  max-width: 110%;
-  max-height: 110%;
+  width: 110%;
+  height: 110%;
   border-radius: 50%;
   border-top: 0.3rem solid #295c88;
   border-bottom: 0.3rem solid #295c88;
@@ -317,12 +322,12 @@ body .About .about-content .card .image-container .circle-spin2 {
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout2 8s linear infinite;
 }
-body .About .about-content .card hr {
+body .About .about-content #carouselExample .card hr {
   border: none;
   border-bottom: solid 2px #00b7ff;
   border-radius: 15px;
 }
-body .About::before {
+body .About .about-content::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -353,31 +358,39 @@ body .SKills .skill-container {
   max-width: 100%;
   max-height: 100%;
   margin-top: 4rem;
+  margin-bottom: 8rem;
   padding-bottom: 4rem;
   border: solid #00b7ff 2px;
   box-shadow: 0 0 5rem #00b7ff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
 }
-body .SKills .skill-container #carouselSkills .carousel-item {
-  transition: opacity 1s ease-in-out;
+body .SKills .skill-container #ln {
+  padding: 2rem;
+  font-size: 22pt;
+  margin: auto;
+  margin-top: 2rem;
+}
+body .SKills .skill-container #FW,
+body .SKills .skill-container #PR {
+  padding: 2rem;
+  font-size: 22pt;
+  margin: auto;
+}
+body .SKills .skill-container #carouselSkills .carousel-item,
+body .SKills .skill-container #carouselSkillsF .carousel-item {
+  transition: opacity 0.4s ease-in-out;
   opacity: 0;
 }
-body .SKills .skill-container #carouselSkills .carousel-item.active {
+body .SKills .skill-container #carouselSkills .carousel-item.active,
+body .SKills .skill-container #carouselSkillsF .carousel-item.active {
   opacity: 1;
-}
-body .SKills .skill-container #carouselSkills .carousel-control-prev {
-  left: -6%;
-}
-body .SKills .skill-container #carouselSkills .carousel-control-next {
-  left: 91%;
 }
 body .SKills .skill-container #Scontenedor {
   margin: auto;
   margin-bottom: 1rem;
   max-width: 100%;
-  padding: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -469,6 +482,28 @@ body .SKills .skill-container #Scontenedor #JAVASCRIPT:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
+body .SKills .skill-container #Scontenedor #C {
+  filter: grayscale(50%);
+}
+body .SKills .skill-container #Scontenedor #C:hover {
+  filter: grayscale(0%);
+}
+body .SKills .skill-container #Scontenedor #C:hover .icon {
+  cursor: pointer;
+  background-color: rgb(59, 204, 248);
+  box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
+  transition: box-shadow 0.5s;
+}
+body .SKills .skill-container #Scontenedor #C:hover .Stitle {
+  top: 100%;
+  opacity: 1;
+}
+body .SKills .skill-container #Scontenedor #JAVA {
+  filter: grayscale(50%);
+}
+body .SKills .skill-container #Scontenedor #JAVA:hover {
+  filter: grayscale(0%);
+}
 body .SKills .skill-container #Scontenedor #JAVA:hover .icon {
   cursor: pointer;
   background-color: white;
@@ -478,6 +513,58 @@ body .SKills .skill-container #Scontenedor #JAVA:hover .icon {
 body .SKills .skill-container #Scontenedor #JAVA:hover .Stitle {
   top: 100%;
   opacity: 1;
+}
+body .SKills .skill-container #Scontenedor #BOOTSTRAP i {
+  color: white;
+}
+body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .icon {
+  cursor: pointer;
+  background-color: #702df5;
+  box-shadow: 0 0 2rem 0.5rem #af8bf7;
+  transition: box-shadow 0.5s;
+}
+body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .icon i {
+  color: white;
+}
+body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .Stitle {
+  top: 100%;
+  opacity: 1;
+}
+body .SKills .skill-container #Scontenedor #SASS i {
+  color: #cd669a;
+}
+body .SKills .skill-container #Scontenedor #SASS:hover .icon {
+  cursor: pointer;
+  background-color: #cd669a;
+  box-shadow: 0 0 2rem 0.5rem #fa9aca;
+  transition: box-shadow 0.5s;
+}
+body .SKills .skill-container #Scontenedor #SASS:hover .icon i {
+  color: white;
+}
+body .SKills .skill-container #Scontenedor #SASS:hover .Stitle {
+  top: 100%;
+  opacity: 1;
+}
+body .SKills .skill-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid #0e2336; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-right: 50vw solid #0e2336; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-top: 100px solid transparent;
+}
+body .Projects {
+  position: relative;
+  background: linear-gradient(to top, #295c88, #0e2336);
+  position: relative;
+  padding: 0 10%;
+  padding-top: 13rem;
+  padding-bottom: 10rem;
+  text-align: center;
 }
 
 @keyframes homeBgtext {
