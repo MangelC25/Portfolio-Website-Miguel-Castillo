@@ -20,6 +20,7 @@ $Animation1: Dtop 1.5s ease-in-out;
   outline: none;
   scroll-behavior: smooth;
   font-family: "Poppins",  sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -672,14 +673,197 @@ body {
     }
   }
 
-  .Projects{
+  .Projects {
     position: relative;
     background: linear-gradient(to top, $bg-secundary, $bg-primary);
-    position: relative;
     padding: 0 10%;
     padding-top: 13rem;
     padding-bottom: 10rem;
-    text-align: center;
+
+    #MY {
+      text-align: center;
+      font-family: "Kenia", sans-serif;
+      font-size: 5rem;
+
+      span {
+        font-family: "Kenia", sans-serif;
+        color: $main-color;
+      }
+    }
+
+    .projects-container {
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      .owl-carousel {
+        display: flex;
+        justify-content: center;
+
+        
+        .card {
+          margin: 2rem;
+          color: $text-color;
+          background-image: url("../img/1288491.jpg");
+          background-size: cover;
+          background-position: center;
+          padding: 16rem 0 0;
+          border: none;
+          width: 100%;
+          height: 40rem;
+          max-width: 50ch;
+          transition: all 0.3s ease-in-out;
+          border-radius: 1rem;
+          overflow: hidden;
+
+          .card-container {
+            border-radius: 1rem;
+            background: linear-gradient(
+              to top,
+              rgb(0, 0, 0),
+              rgba(0, 0, 0, 0.9),
+              rgba(0, 0, 0, 0.7),
+              rgba(0, 0, 0, 0.4)
+            );
+
+            transform: translateY(82%);
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+
+            .card-body {
+              text-align: center;
+
+              .card-title {
+                font-weight: bold;
+                position: relative;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 0.4rem;
+                  background-color: $main-color;
+                  width: 120%;
+                  left: -1.5rem;
+                  bottom: 0;
+                  transform: scaleX(0);
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+
+              .card-text {
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                text-align: justify;
+              }
+
+              #Spans {
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                transition-delay: 500ms;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+                gap: 0.5rem;
+
+                span {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 0.3rem;
+                  gap: 0.5rem;
+                }
+
+                #SpHTML {
+                  background-color: #e44d26;
+                  border-radius: 0.5rem;
+                }
+
+                #SpCSS {
+                  background-color: #2d92cd;
+                  border-radius: 0.5rem;
+                }
+                #SpJavascript {
+                  background-color: #f0c02b;
+                  border-radius: 0.5rem;
+                }
+                #SpBootstrap {
+                  background-color: #702df5;
+                  border-radius: 0.5rem;
+                }
+                #SpSASS {
+                  background-color: #cd669a;
+                  border-radius: 0.5rem;
+                }
+              }
+
+              a {
+                position: relative;
+                display: inline-flex;
+                flex-wrap: wrap;
+                margin: 0 0.8rem;
+                margin-top: 2rem;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border: solid 0.2rem $main-color;
+                border-radius: 50%;
+                transition: 0.5s;
+                transition: box-shadow 0.3s ease;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                transition-delay: 1s;
+
+                i {
+                  font-size: 2.5rem;
+                }
+
+                &:hover {
+                  box-shadow: 0 0 1rem 0.5rem $main-color;
+                  color: $text-color;
+                }
+              }
+            }
+          }
+
+          &:hover,
+          :focus-within {
+            box-shadow: 0 0 1rem 0.5rem $main-color;
+            transform: scale(1.05);
+            cursor: pointer;
+            transition-duration: 0ms;
+
+            .card-container,
+            .card:focus-within .card-container {
+              transform: translateY(0%);
+              transition-delay: 250ms;
+              .card-body {
+                .card-title {
+                  &::after {
+                    transform: scaleX(1);
+                  }
+                }
+                .card-text {
+                  opacity: 1;
+                }
+
+                #Spans {
+                  opacity: 1;
+                }
+
+                a {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -723,4 +907,7 @@ body {
   100% {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
+}
+
+@media (hover) {
 }
