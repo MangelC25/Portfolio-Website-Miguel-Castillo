@@ -855,7 +855,7 @@ body .Contact form .btn-box .btn {
   transition: box-shadow 0.3s ease;
 }
 body .Contact form .btn-box .btn:hover {
-  box-shadow: 0 0 5rem #00b7ff;
+  box-shadow: 0 0 2.5 rem #00b7ff;
   color: white;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }

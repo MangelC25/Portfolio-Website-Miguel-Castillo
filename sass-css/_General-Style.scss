@@ -1005,7 +1005,7 @@ body {
           transition: box-shadow 0.3s ease;
 
           &:hover {
-            box-shadow: 0 0 5rem $main-color;
+            box-shadow: 0 0 2.5 rem $main-color;
             color: $text-color;
             background: linear-gradient(to bottom, $main-color, #009cd9);
           }
