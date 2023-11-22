@@ -364,6 +364,7 @@ body .SKills .skill-container {
   border: solid #00b7ff 2px;
   box-shadow: 0 0 5rem #00b7ff;
   text-align: center;
+  justify-content: center;
 }
 body .SKills .skill-container #ln {
   padding: 2rem;
@@ -377,37 +378,16 @@ body .SKills .skill-container #PR {
   font-size: 22pt;
   margin: auto;
 }
-body .SKills .skill-container #carouselSkills .carousel-item,
-body .SKills .skill-container #carouselSkillsF .carousel-item {
-  transition: opacity 0.4s ease-in-out;
-  opacity: 0;
-}
-body .SKills .skill-container #carouselSkills .carousel-item.active,
-body .SKills .skill-container #carouselSkillsF .carousel-item.active {
-  opacity: 1;
-}
-body .SKills .skill-container #Scontenedor {
-  margin: auto;
-  margin-bottom: 1rem;
-  max-width: 100%;
-  padding-bottom: 3rem;
-  padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-body .SKills .skill-container #Scontenedor .card {
+body .SKills .skill-container .card {
   background: transparent;
-  width: 17rem;
-  margin: 2rem;
+  width: 15rem;
+  margin: 2rem 0;
   text-align: center;
   border: none;
 }
-body .SKills .skill-container #Scontenedor .card .icon {
+body .SKills .skill-container .card .icon {
   width: 100%;
-  height: 17rem;
+  height: 15rem;
   border-radius: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -416,138 +396,162 @@ body .SKills .skill-container #Scontenedor .card .icon {
   position: relative;
   z-index: 1;
 }
-body .SKills .skill-container #Scontenedor .card .icon i {
-  font-size: 150px;
+body .SKills .skill-container .card .icon i {
+  font-size: 130px;
 }
-body .SKills .skill-container #Scontenedor .card .icon img {
-  width: 15rem;
+body .SKills .skill-container .card .icon img {
+  width: 14rem;
 }
-body .SKills .skill-container #Scontenedor .card .Stitle {
+body .SKills .skill-container .card .Stitle {
   position: absolute;
   width: 100%;
   top: 50%;
   opacity: 0;
   transition: all 0.6s ease-in-out;
 }
-body .SKills .skill-container #Scontenedor .card .Stitle h5 {
+body .SKills .skill-container .card .Stitle h5 {
   color: white;
-  font-size: 18pt;
+  font-size: 17pt;
   font-weight: bold;
   margin-top: 1rem;
 }
-body .SKills .skill-container #Scontenedor #HTML i {
+body .SKills .skill-container .lenguages {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .SKills .skill-container .lenguages .owl-carousel-2 {
+  display: flex;
+  height: 25rem;
+}
+body .SKills .skill-container .lenguages .owl-carousel-2 .item {
+  display: flex;
+  justify-content: center;
+}
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML i {
   color: #e44d26;
 }
-body .SKills .skill-container #Scontenedor #HTML:hover .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon {
   cursor: pointer;
   background-color: #e44d26;
   box-shadow: 0 0 2rem 0.5rem #fd7b5a;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #HTML:hover .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #HTML:hover .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #CSS i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS i {
   color: #2d92cd;
 }
-body .SKills .skill-container #Scontenedor #CSS:hover .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon {
   cursor: pointer;
   background-color: #2d92cd;
   box-shadow: 0 0 2rem 0.5rem #3bb3f8;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #CSS:hover .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #CSS:hover .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #JAVASCRIPT i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT i {
   color: #f0c02b;
 }
-body .SKills .skill-container #Scontenedor #JAVASCRIPT:hover .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon {
   cursor: pointer;
   background-color: #f0c02b;
   box-shadow: 0 0 2rem 0.5rem #ffd042;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #JAVASCRIPT:hover .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #JAVASCRIPT:hover .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #C {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C {
   filter: grayscale(50%);
 }
-body .SKills .skill-container #Scontenedor #C:hover {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover {
   filter: grayscale(0%);
 }
-body .SKills .skill-container #Scontenedor #C:hover .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .icon {
   cursor: pointer;
   background-color: rgb(59, 204, 248);
   box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #C:hover .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #JAVA {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA {
   filter: grayscale(50%);
 }
-body .SKills .skill-container #Scontenedor #JAVA:hover {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover {
   filter: grayscale(0%);
 }
-body .SKills .skill-container #Scontenedor #JAVA:hover .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .icon {
   cursor: pointer;
   background-color: white;
   box-shadow: 0 0 2rem 0.5rem white;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #JAVA:hover .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #BOOTSTRAP i {
+body .SKills .skill-container .frameworks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+body .SKills .skill-container .frameworks #BOOTSTRAP i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .icon {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon {
   cursor: pointer;
   background-color: #702df5;
   box-shadow: 0 0 2rem 0.5rem #af8bf7;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .icon i {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #BOOTSTRAP:hover .Stitle {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container #Scontenedor #SASS i {
+body .SKills .skill-container .PREPOCESSOR {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+body .SKills .skill-container .PREPOCESSOR #SASS i {
   color: #cd669a;
 }
-body .SKills .skill-container #Scontenedor #SASS:hover .icon {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon {
   cursor: pointer;
   background-color: #cd669a;
   box-shadow: 0 0 2rem 0.5rem #fa9aca;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container #Scontenedor #SASS:hover .icon i {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon i {
   color: white;
 }
-body .SKills .skill-container #Scontenedor #SASS:hover .Stitle {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container::before {
+body .SKills::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -579,11 +583,11 @@ body .Projects .projects-container {
   display: flex;
   flex-wrap: wrap;
 }
-body .Projects .projects-container .owl-carousel {
+body .Projects .projects-container .owl-carousel-1 {
   display: flex;
   justify-content: center;
 }
-body .Projects .projects-container .owl-carousel .card {
+body .Projects .projects-container .owl-carousel-1 .card {
   margin: 2rem;
   color: white;
   background-image: url("../img/1288491.jpg");
@@ -598,21 +602,21 @@ body .Projects .projects-container .owl-carousel .card {
   border-radius: 1rem;
   overflow: hidden;
 }
-body .Projects .projects-container .owl-carousel .card .card-container {
+body .Projects .projects-container .owl-carousel-1 .card .card-container {
   border-radius: 1rem;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
   transform: translateY(82%);
   transition: transform 0.5s ease-in-out;
   height: 100%;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body {
   text-align: center;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body .card-title {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-title {
   font-weight: bold;
   position: relative;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body .card-title::after {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-title::after {
   content: "";
   position: absolute;
   height: 0.4rem;
@@ -623,12 +627,12 @@ body .Projects .projects-container .owl-carousel .card .card-container .card-bod
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body .card-text {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-text {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   text-align: justify;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans {
   opacity: 0;
   transition: opacity 1s ease-in-out;
   transition-delay: 500ms;
@@ -639,34 +643,34 @@ body .Projects .projects-container .owl-carousel .card .card-container .card-bod
   margin-top: 2rem;
   gap: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans span {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans span {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
   gap: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans #SpHTML {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpHTML {
   background-color: #e44d26;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans #SpCSS {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpCSS {
   background-color: #2d92cd;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans #SpJavascript {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpJavascript {
   background-color: #f0c02b;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans #SpBootstrap {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpBootstrap {
   background-color: #702df5;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body #Spans #SpSASS {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpSASS {
   background-color: #cd669a;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body a {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a {
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
@@ -686,49 +690,49 @@ body .Projects .projects-container .owl-carousel .card .card-container .card-bod
   transition: opacity 1s ease-in-out;
   transition-delay: 1s;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body a i {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a i {
   font-size: 2.5rem;
 }
-body .Projects .projects-container .owl-carousel .card .card-container .card-body a:hover {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a:hover {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   color: white;
 }
-body .Projects .projects-container .owl-carousel .card:hover,
-body .Projects .projects-container .owl-carousel .card :focus-within {
+body .Projects .projects-container .owl-carousel-1 .card:hover,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   transform: scale(1.05);
   cursor: pointer;
   transition-duration: 0ms;
 }
-body .Projects .projects-container .owl-carousel .card:hover .card-container,
-body .Projects .projects-container .owl-carousel .card:hover .card:focus-within .card-container,
-body .Projects .projects-container .owl-carousel .card :focus-within .card-container,
-body .Projects .projects-container .owl-carousel .card :focus-within .card:focus-within .card-container {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container {
   transform: translateY(0%);
   transition-delay: 250ms;
 }
-body .Projects .projects-container .owl-carousel .card:hover .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel .card:hover .card:focus-within .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel .card :focus-within .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel .card :focus-within .card:focus-within .card-container .card-body .card-title::after {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-title::after,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-title::after,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body .card-title::after,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body .card-title::after {
   transform: scaleX(1);
 }
-body .Projects .projects-container .owl-carousel .card:hover .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel .card:hover .card:focus-within .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel .card :focus-within .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel .card :focus-within .card:focus-within .card-container .card-body .card-text {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-text,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-text,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body .card-text,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body .card-text {
   opacity: 1;
 }
-body .Projects .projects-container .owl-carousel .card:hover .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel .card:hover .card:focus-within .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel .card :focus-within .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel .card :focus-within .card:focus-within .card-container .card-body #Spans {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body #Spans,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Spans,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body #Spans,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body #Spans {
   opacity: 1;
 }
-body .Projects .projects-container .owl-carousel .card:hover .card-container .card-body a,
-body .Projects .projects-container .owl-carousel .card:hover .card:focus-within .card-container .card-body a,
-body .Projects .projects-container .owl-carousel .card :focus-within .card-container .card-body a,
-body .Projects .projects-container .owl-carousel .card :focus-within .card:focus-within .card-container .card-body a {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body a,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body a,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body a,
+body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body a {
   opacity: 1;
 }
 

@@ -425,6 +425,7 @@ body {
       border: solid $main-color 2px;
       box-shadow: 0 0 5rem $main-color;
       text-align: center;
+      justify-content: center;
 
       #ln {
         padding: 2rem;
@@ -440,179 +441,172 @@ body {
         margin: auto;
       }
 
-      #carouselSkills,
-      #carouselSkillsF {
-        .carousel-item {
-          transition: opacity 0.4s ease-in-out;
+      .card {
+        background: transparent;
+        width: 15rem;
+        margin: 2rem 0;
+        text-align: center;
+        border: none;
+
+        .icon {
+          width: 100%;
+          height: 15rem;
+          border-radius: 50%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+
+          i {
+            font-size: 130px;
+          }
+
+          img {
+            width: 14rem;
+          }
+        }
+
+        .Stitle {
+          position: absolute;
+          width: 100%;
+          top: 50%;
           opacity: 0;
-        }
+          transition: all 0.6s ease-in-out;
 
-        .carousel-item.active {
-          opacity: 1;
-        }
-
-        .carousel-control-prev {
-        }
-        .carousel-control-next {
+          h5 {
+            color: $text-color;
+            font-size: 17pt;
+            font-weight: bold;
+            margin-top: 1rem;
+          }
         }
       }
 
-      #Scontenedor {
-        margin: auto;
-        margin-bottom: 1rem;
-        max-width: 100%;
-        padding-bottom: 3rem;
-        padding-top: 0;
+      .lenguages {
+        display: flex;
+        flex-wrap: wrap;
+
+        .owl-carousel-2 {
+          
+          display: flex;
+          height: 25rem;
+
+          .item{
+display: flex;
+justify-content: center;
+          }
+
+          #HTML {
+            i {
+              color: #e44d26;
+            }
+            &:hover {
+              .icon {
+                cursor: pointer;
+                background-color: #e44d26;
+                box-shadow: 0 0 2rem 0.5rem #fd7b5a;
+                transition: box-shadow 0.5s;
+                i {
+                  color: white;
+                }
+              }
+
+              .Stitle {
+                top: 100%;
+                opacity: 1;
+              }
+            }
+          }
+
+          #CSS {
+            i {
+              color: #2d92cd;
+            }
+            &:hover {
+              .icon {
+                cursor: pointer;
+                background-color: #2d92cd;
+                box-shadow: 0 0 2rem 0.5rem #3bb3f8;
+                transition: box-shadow 0.5s;
+                i {
+                  color: white;
+                }
+              }
+
+              .Stitle {
+                top: 100%;
+                opacity: 1;
+              }
+            }
+          }
+
+          #JAVASCRIPT {
+            i {
+              color: #f0c02b;
+            }
+            &:hover {
+              .icon {
+                cursor: pointer;
+                background-color: #f0c02b;
+                box-shadow: 0 0 2rem 0.5rem #ffd042;
+                transition: box-shadow 0.5s;
+                i {
+                  color: white;
+                }
+              }
+
+              .Stitle {
+                top: 100%;
+                opacity: 1;
+              }
+            }
+          }
+
+          #C {
+            filter: grayscale(50%);
+            &:hover {
+              filter: grayscale(0%);
+              .icon {
+                cursor: pointer;
+                background-color: rgb(59, 204, 248);
+                box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
+                transition: box-shadow 0.5s;
+              }
+
+              .Stitle {
+                top: 100%;
+                opacity: 1;
+              }
+            }
+          }
+
+          #JAVA {
+            filter: grayscale(50%);
+            &:hover {
+              filter: grayscale(0%);
+              .icon {
+                cursor: pointer;
+                background-color: white;
+                box-shadow: 0 0 2rem 0.5rem white;
+                transition: box-shadow 0.5s;
+              }
+
+              .Stitle {
+                top: 100%;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .frameworks {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        gap: 3rem;
-
-        .card {
-          background: transparent;
-          width: 17rem;
-          margin: 2rem;
-          text-align: center;
-          border: none;
-
-          .icon {
-            width: 100%;
-            height: 17rem;
-            border-radius: 50%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-
-            i {
-              font-size: 150px;
-            }
-
-            img {
-              width: 15rem;
-            }
-          }
-
-          .Stitle {
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            opacity: 0;
-            transition: all 0.6s ease-in-out;
-
-            h5 {
-              color: $text-color;
-              font-size: 18pt;
-              font-weight: bold;
-              margin-top: 1rem;
-            }
-          }
-        }
-
-        #HTML {
-          i {
-            color: #e44d26;
-          }
-          &:hover {
-            .icon {
-              cursor: pointer;
-              background-color: #e44d26;
-              box-shadow: 0 0 2rem 0.5rem #fd7b5a;
-              transition: box-shadow 0.5s;
-              i {
-                color: white;
-              }
-            }
-
-            .Stitle {
-              top: 100%;
-              opacity: 1;
-            }
-          }
-        }
-
-        #CSS {
-          i {
-            color: #2d92cd;
-          }
-          &:hover {
-            .icon {
-              cursor: pointer;
-              background-color: #2d92cd;
-              box-shadow: 0 0 2rem 0.5rem #3bb3f8;
-              transition: box-shadow 0.5s;
-              i {
-                color: white;
-              }
-            }
-
-            .Stitle {
-              top: 100%;
-              opacity: 1;
-            }
-          }
-        }
-
-        #JAVASCRIPT {
-          i {
-            color: #f0c02b;
-          }
-          &:hover {
-            .icon {
-              cursor: pointer;
-              background-color: #f0c02b;
-              box-shadow: 0 0 2rem 0.5rem #ffd042;
-              transition: box-shadow 0.5s;
-              i {
-                color: white;
-              }
-            }
-
-            .Stitle {
-              top: 100%;
-              opacity: 1;
-            }
-          }
-        }
-
-        #C {
-          filter: grayscale(50%);
-          &:hover {
-            filter: grayscale(0%);
-            .icon {
-              cursor: pointer;
-              background-color: rgb(59, 204, 248);
-              box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
-              transition: box-shadow 0.5s;
-            }
-
-            .Stitle {
-              top: 100%;
-              opacity: 1;
-            }
-          }
-        }
-
-        #JAVA {
-          filter: grayscale(50%);
-          &:hover {
-            filter: grayscale(0%);
-            .icon {
-              cursor: pointer;
-              background-color: white;
-              box-shadow: 0 0 2rem 0.5rem white;
-              transition: box-shadow 0.5s;
-            }
-
-            .Stitle {
-              top: 100%;
-              opacity: 1;
-            }
-          }
-        }
+        margin-bottom: 4rem;
 
         #BOOTSTRAP {
           i {
@@ -635,7 +629,12 @@ body {
             }
           }
         }
-
+      }
+      .PREPOCESSOR {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 4rem;
         #SASS {
           i {
             color: #cd669a;
@@ -658,18 +657,18 @@ body {
           }
         }
       }
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-left: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-        border-right: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-        border-top: 100px solid transparent;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-right: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-top: 100px solid transparent;
     }
   }
 
@@ -696,11 +695,10 @@ body {
       display: flex;
       flex-wrap: wrap;
 
-      .owl-carousel {
+      .owl-carousel-1 {
         display: flex;
         justify-content: center;
 
-        
         .card {
           margin: 2rem;
           color: $text-color;
