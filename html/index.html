@@ -267,7 +267,7 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
 
         <h2 id="FW">FRAMEWORKS</h2>
@@ -315,16 +315,18 @@
                 <h1 class="card-title">Portfolio Web 1</h1>
                 <p class="card-text">Explore my portfolio website, a showcase of creativity and technical skills.
                   Designed
-                  with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal.</p>
+                  with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes <span
+                    class="tech-used">JavaScript</span> for interactive features.</p>
                 <div id="Spans">
                   <span id="SpHTML"><i class='bx bxl-html5'></i>HTML</span>
                   <span id="SpCSS"><i class='bx bxl-css3'></i>CSS</span>
                   <span id="SpBootstrap"><i class='bx bxl-bootstrap'></i>Bootstrap</span>
                   <span id="SpSASS"><i class='bx bxl-sass'></i>SASS</span>
                 </div>
-                <div>
+                <div id="Enlaces">
                   <a href="#" class="bx-Link"><i class='bx bx-link'></i></a>
-                  <a href="#" class="bx-Git"><i class="bi bi-github"></i></a>
+                  <a href="https://github.com/MangelC25/Portfolio-Website-Miguel-Castillo.git" class="bx-Git"
+                    target="_blank"><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
@@ -380,8 +382,44 @@
           </div>
         </div>
       </div>
+      <div class="viewm">
+        <button type="button" class="btn" id="viewmp"><a href="#" target="_blank">View More Projects</a></button>
+      </div>
 
     </div>
+  </section>
+
+  <section class="Contact">
+    <h1 id="contact">Contact <span>Me</span></h1>
+    <form action="#">
+      <div class="input-box">
+        <div class="input-field">
+          <input type="text" placeholder="Full Name" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Email Address" required>
+          <span class="focus"></span>
+        </div>
+      </div>
+      <div class="input-box">
+        <div class="input-field">
+          <input type="textr" placeholder="Mobile Number" required>
+          <span class="focus"></span>
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Email Subject" required>
+          <span class="focus"></span>
+        </div>
+      </div>
+      <div class="textarea-field">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <span class="focus"></span>
+      </div>
+      <div class="btn-box btns">
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
   </section>
 </body>
 
@@ -399,12 +437,23 @@
       loop: false,
       margin: 10,
       nav: false,
+      mouseDrag: false,
       responsive: {
         0: {
+          center: true,
+
           items: 1
         },
         600: {
-          items: 3
+          center: true,
+
+          items: 1
+        }
+        ,
+        1000: {
+          center: true,
+
+          items: 1
         }
       }
     });
@@ -416,7 +465,8 @@
       nav: false,
       responsive: {
         0: {
-          items: 2
+          center: true,
+          items: 1
         },
         600: {
           items: 3

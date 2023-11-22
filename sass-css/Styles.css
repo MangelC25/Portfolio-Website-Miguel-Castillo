@@ -32,7 +32,7 @@ body .header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 10%;
+  padding: 0 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -256,7 +256,7 @@ body .About .heading span {
 body .About .about-content {
   max-width: 100%;
   max-height: 100%;
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding-bottom: 4rem;
 }
 body .About .about-content #carouselExample .carousel-item {
@@ -400,7 +400,7 @@ body .SKills .skill-container .card .icon i {
   font-size: 130px;
 }
 body .SKills .skill-container .card .icon img {
-  width: 14rem;
+  width: 13rem;
 }
 body .SKills .skill-container .card .Stitle {
   position: absolute;
@@ -567,7 +567,7 @@ body .Projects {
   background: linear-gradient(to top, #295c88, #0e2336);
   padding: 0 10%;
   padding-top: 13rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 body .Projects #MY {
   text-align: center;
@@ -579,11 +579,16 @@ body .Projects #MY span {
   color: #00b7ff;
 }
 body .Projects .projects-container {
-  margin-top: 4rem;
+  margin-top: 2.5rem;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 body .Projects .projects-container .owl-carousel-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .Projects .projects-container .owl-carousel-1 .item {
   display: flex;
   justify-content: center;
 }
@@ -598,14 +603,14 @@ body .Projects .projects-container .owl-carousel-1 .card {
   width: 100%;
   height: 40rem;
   max-width: 50ch;
-  transition: all 0.3s ease-in-out;
   border-radius: 1rem;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container {
   border-radius: 1rem;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
-  transform: translateY(82%);
+  transform: translateY(84%);
   transition: transform 0.5s ease-in-out;
   height: 100%;
 }
@@ -670,7 +675,12 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   background-color: #cd669a;
   border-radius: 0.5rem;
 }
-body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a {
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
@@ -690,50 +700,164 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   transition: opacity 1s ease-in-out;
   transition-delay: 1s;
 }
-body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a i {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a i {
   font-size: 2.5rem;
 }
-body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body a:hover {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:hover {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   color: white;
 }
-body .Projects .projects-container .owl-carousel-1 .card:hover,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within {
+body .Projects .projects-container .owl-carousel-1 .card:hover {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   transform: scale(1.05);
   cursor: pointer;
   transition-duration: 0ms;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container {
   transform: translateY(0%);
   transition-delay: 250ms;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body .card-title::after {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-title::after {
   transform: scaleX(1);
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body .card-text {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-text {
   opacity: 1;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body #Spans {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Spans {
   opacity: 1;
 }
-body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body a,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body a,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card-container .card-body a,
-body .Projects .projects-container .owl-carousel-1 .card :focus-within .card:focus-within .card-container .card-body a {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body #Enlaces a,
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Enlaces a {
   opacity: 1;
+}
+body .Projects .projects-container .viewm {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .Projects .projects-container .viewm #viewmp a {
+  border: solid 0.2rem #00b7ff;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 100%;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+  transition: box-shadow 0.3s ease;
+  color: #00b7ff;
+  text-decoration: none;
+}
+body .Projects .projects-container .viewm #viewmp a:hover {
+  box-shadow: 0 0 3rem #00b7ff;
+  color: white;
+  background: linear-gradient(to bottom, #00b7ff, #009cd9);
+}
+body .Contact {
+  min-height: auto;
+  position: relative;
+  background: linear-gradient(to bottom, #295c88, #0e2336);
+  padding: 0 10%;
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+}
+body .Contact #contact {
+  text-align: center;
+  font-family: "Kenia", sans-serif;
+  font-size: 5rem;
+}
+body .Contact #contact span {
+  font-family: "Kenia", sans-serif;
+  color: #00b7ff;
+}
+body .Contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+body .Contact form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .Contact form .input-box .input-field {
+  position: relative;
+  width: 49%;
+  margin: 0.8rem 0;
+}
+body .Contact form .input-box .input-field input {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background: transparent;
+  border-radius: 0.6rem;
+  border: solid #00b7ff 2px;
+}
+body .Contact form .input-box .input-field input::-moz-placeholder {
+  color: white;
+}
+body .Contact form .input-box .input-field input::placeholder {
+  color: white;
+}
+body .Contact form .textarea-field {
+  position: relative;
+  margin: 0.8rem 0 2.7rem;
+  display: flex;
+}
+body .Contact form .textarea-field textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: white;
+  background: transparent;
+  border-radius: 0.6rem;
+  resize: none;
+  border: solid #00b7ff 2px;
+}
+body .Contact form .textarea-field textarea::-moz-placeholder {
+  color: white;
+}
+body .Contact form .textarea-field textarea::placeholder {
+  color: white;
+}
+body .Contact form .btn-box {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 5rem;
+  justify-content: center;
+}
+body .Contact form .btn-box .btn {
+  position: relative;
+  width: 15rem;
+  height: 100%;
+  border: solid 0.2rem #00b7ff;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #00b7ff;
+  transition: 0.3s;
+  transition: box-shadow 0.3s ease;
+}
+body .Contact form .btn-box .btn:hover {
+  box-shadow: 0 0 5rem #00b7ff;
+  color: white;
+  background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
 
 @keyframes homeBgtext {
