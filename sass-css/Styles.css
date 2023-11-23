@@ -52,7 +52,7 @@ body .header #menu-icon {
   cursor: pointer;
   display: none;
 }
-body .header #menu-icon:hover, body .header #menu-icon:active {
+body .header #menu-icon:hover {
   color: #00b7ff;
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
@@ -68,7 +68,7 @@ body .header .navbar a {
   transition: 0.3s;
   transition: text-shadow 0.3s ease;
 }
-body .header .navbar a:hover, body .header .navbar a:active {
+body .header .navbar a:hover {
   color: #00b7ff;
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
@@ -200,7 +200,7 @@ body .Home .btn-box .btn {
   transition: 0.3s;
   transition: box-shadow 0.3s ease;
 }
-body .Home .btn-box .btn:hover, body .Home .btn-box .btn:active {
+body .Home .btn-box .btn:hover {
   box-shadow: 0 0 5rem #00b7ff;
   color: white;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
@@ -428,80 +428,80 @@ body .SKills .skill-container .lenguages .owl-carousel-2 .item {
 body .SKills .skill-container .lenguages .owl-carousel-2 #HTML i {
   color: #e44d26;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon {
   cursor: pointer;
   background-color: #e44d26;
   box-shadow: 0 0 2rem 0.5rem #fd7b5a;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:active .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon i {
   color: white;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #CSS i {
   color: #2d92cd;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon {
   cursor: pointer;
   background-color: #2d92cd;
   box-shadow: 0 0 2rem 0.5rem #3bb3f8;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:active .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon i {
   color: white;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT i {
   color: #f0c02b;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon {
   cursor: pointer;
   background-color: #f0c02b;
   box-shadow: 0 0 2rem 0.5rem #ffd042;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:active .icon i {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon i {
   color: white;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #C {
   filter: grayscale(50%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover {
   filter: grayscale(0%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .icon {
   cursor: pointer;
   background-color: rgb(59, 204, 248);
   box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA {
   filter: grayscale(50%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:active {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover {
   filter: grayscale(0%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .icon {
   cursor: pointer;
   background-color: white;
   box-shadow: 0 0 2rem 0.5rem white;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
@@ -514,16 +514,16 @@ body .SKills .skill-container .frameworks {
 body .SKills .skill-container .frameworks #BOOTSTRAP i {
   color: white;
 }
-body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon, body .SKills .skill-container .frameworks #BOOTSTRAP:active .icon {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon {
   cursor: pointer;
   background-color: #702df5;
   box-shadow: 0 0 2rem 0.5rem #af8bf7;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon i, body .SKills .skill-container .frameworks #BOOTSTRAP:active .icon i {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon i {
   color: white;
 }
-body .SKills .skill-container .frameworks #BOOTSTRAP:hover .Stitle, body .SKills .skill-container .frameworks #BOOTSTRAP:active .Stitle {
+body .SKills .skill-container .frameworks #BOOTSTRAP:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
@@ -536,16 +536,16 @@ body .SKills .skill-container .PREPOCESSOR {
 body .SKills .skill-container .PREPOCESSOR #SASS i {
   color: #cd669a;
 }
-body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon, body .SKills .skill-container .PREPOCESSOR #SASS:active .icon {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon {
   cursor: pointer;
   background-color: #cd669a;
   box-shadow: 0 0 2rem 0.5rem #fa9aca;
   transition: box-shadow 0.5s;
 }
-body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon i, body .SKills .skill-container .PREPOCESSOR #SASS:active .icon i {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon i {
   color: white;
 }
-body .SKills .skill-container .PREPOCESSOR #SASS:hover .Stitle, body .SKills .skill-container .PREPOCESSOR #SASS:active .Stitle {
+body .SKills .skill-container .PREPOCESSOR #SASS:hover .Stitle {
   top: 100%;
   opacity: 1;
 }
@@ -587,6 +587,7 @@ body .Projects .projects-container .owl-carousel-1 {
   flex-wrap: wrap;
 }
 body .Projects .projects-container .owl-carousel-1 .item {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -701,40 +702,35 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a i {
   font-size: 2.5rem;
 }
-body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:hover, body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:active {
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:hover {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   color: white;
 }
-body .Projects .projects-container .owl-carousel-1 .card:hover, body .Projects .projects-container .owl-carousel-1 .card:active {
+body .Projects .projects-container .owl-carousel-1 .card:hover {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
   transform: scale(1.05);
   cursor: pointer;
   transition-duration: 0ms;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container, body .Projects .projects-container .owl-carousel-1 .card:active .card-container,
-body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container {
   transform: translateY(0%);
   transition-delay: 250ms;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-title::after, body .Projects .projects-container .owl-carousel-1 .card:active .card-container .card-body .card-title::after,
-body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container .card-body .card-title::after {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-title::after {
   transform: scaleX(1);
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-text, body .Projects .projects-container .owl-carousel-1 .card:active .card-container .card-body .card-text,
-body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container .card-body .card-text {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body .card-text {
   opacity: 1;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Spans, body .Projects .projects-container .owl-carousel-1 .card:active .card-container .card-body #Spans,
-body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container .card-body #Spans {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Spans {
   opacity: 1;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .card-body #Enlaces a,
-body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Enlaces a, body .Projects .projects-container .owl-carousel-1 .card:active .card-container .card-body #Enlaces a,
-body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container .card-body #Enlaces a {
+body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Enlaces a {
   opacity: 1;
 }
 body .Projects .projects-container .viewm {
@@ -759,7 +755,7 @@ body .Projects .projects-container .viewm #viewmp a {
   color: #00b7ff;
   text-decoration: none;
 }
-body .Projects .projects-container .viewm #viewmp a:hover, body .Projects .projects-container .viewm #viewmp a:active {
+body .Projects .projects-container .viewm #viewmp a:hover {
   box-shadow: 0 0 3rem #00b7ff;
   color: white;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
@@ -887,7 +883,7 @@ body .Contact form .btn-box .btn {
   transition: 0.3s;
   transition: box-shadow 0.3s ease;
 }
-body .Contact form .btn-box .btn:hover, body .Contact form .btn-box .btn:active {
+body .Contact form .btn-box .btn:hover {
   box-shadow: 0 0 2.5rem #00b7ff;
   color: white;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
@@ -926,10 +922,10 @@ body .footer .footer-iconTop a::before {
   transition: 0.5s;
   z-index: -1;
 }
-body .footer .footer-iconTop a:hover::before, body .footer .footer-iconTop a:active::before {
+body .footer .footer-iconTop a:hover::before {
   width: 100%;
 }
-body .footer .footer-iconTop a:hover i, body .footer .footer-iconTop a:active i {
+body .footer .footer-iconTop a:hover i {
   color: #00b7ff;
 }
 body .footer .footer-iconTop a i {
