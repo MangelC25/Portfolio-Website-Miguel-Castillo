@@ -64,7 +64,7 @@ body .header .navbar a {
   font-size: 2rem;
   color: white;
   font-weight: 500;
-  margin-left: 3.5rem;
+  margin-left: 3rem;
   transition: 0.3s;
   transition: text-shadow 0.3s ease;
 }
@@ -139,7 +139,7 @@ body .Home .Foto .circle-spin2 {
 body .Home .home-content {
   max-width: 70rem;
 }
-body .Home .home-content h1 {
+body .Home .home-content #I {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.5;
@@ -566,7 +566,7 @@ body .Projects {
   position: relative;
   background: linear-gradient(to top, #295c88, #0e2336);
   padding: 0 10%;
-  padding-top: 13rem;
+  padding-top: 12rem;
   padding-bottom: 5rem;
 }
 body .Projects #MY {
@@ -579,7 +579,7 @@ body .Projects #MY span {
   color: #00b7ff;
 }
 body .Projects .projects-container {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -766,8 +766,8 @@ body .Contact {
   position: relative;
   background: linear-gradient(to bottom, #295c88, #0e2336);
   padding: 0 10%;
-  padding-top: 10rem;
-  padding-bottom: 7rem;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
 }
 body .Contact #contact {
   text-align: center;
@@ -795,6 +795,7 @@ body .Contact form .input-box .input-field {
   margin: 0.8rem 0;
 }
 body .Contact form .input-box .input-field input {
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 1.5rem;
@@ -803,6 +804,7 @@ body .Contact form .input-box .input-field input {
   background: transparent;
   border-radius: 0.6rem;
   border: solid #00b7ff 2px;
+  z-index: 2;
 }
 body .Contact form .input-box .input-field input::-moz-placeholder {
   color: white;
@@ -810,12 +812,26 @@ body .Contact form .input-box .input-field input::-moz-placeholder {
 body .Contact form .input-box .input-field input::placeholder {
   color: white;
 }
+body .Contact form .input-box .input-field input:focus ~ .focus, body .Contact form .input-box .input-field input:valid ~ .focus {
+  width: 100%;
+}
+body .Contact form .input-box .input-field .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #295c88;
+  z-index: 1;
+  transition: 0.5s;
+}
 body .Contact form .textarea-field {
   position: relative;
   margin: 0.8rem 0 2.7rem;
   display: flex;
 }
 body .Contact form .textarea-field textarea {
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 1.5rem;
@@ -825,12 +841,26 @@ body .Contact form .textarea-field textarea {
   border-radius: 0.6rem;
   resize: none;
   border: solid #00b7ff 2px;
+  z-index: 2;
 }
 body .Contact form .textarea-field textarea::-moz-placeholder {
   color: white;
 }
 body .Contact form .textarea-field textarea::placeholder {
   color: white;
+}
+body .Contact form .textarea-field textarea:focus ~ .focus, body .Contact form .textarea-field textarea:valid ~ .focus {
+  width: 100%;
+}
+body .Contact form .textarea-field .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #295c88;
+  z-index: 1;
+  transition: 0.5s;
 }
 body .Contact form .btn-box {
   margin-top: 3rem;
@@ -855,9 +885,54 @@ body .Contact form .btn-box .btn {
   transition: box-shadow 0.3s ease;
 }
 body .Contact form .btn-box .btn:hover {
-  box-shadow: 0 0 2.5 rem #00b7ff;
+  box-shadow: 0 0 2.5rem #00b7ff;
   color: white;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
+}
+body .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+}
+body .footer .footer-text p {
+  font-size: 1.6rem;
+}
+body .footer .footer-iconTop a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background: #00b7ff;
+  border: solid 0.2rem #00b7ff;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+body .footer .footer-iconTop a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #295c88;
+  transition: 0.5s;
+  z-index: -1;
+}
+body .footer .footer-iconTop a:hover::before {
+  width: 100%;
+}
+body .footer .footer-iconTop a:hover i {
+  color: #00b7ff;
+}
+body .footer .footer-iconTop a i {
+  font-size: 2.4rem;
+  color: #0e2336;
+  transition: 0.5s;
 }
 
 @keyframes homeBgtext {
@@ -888,5 +963,29 @@ body .Contact form .btn-box .btn:hover {
 @keyframes RotationAbout2 {
   100% {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55% !important;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 0 4% !important;
+  }
+  section {
+    padding: 10rem 4% 2rem !important;
+  }
+  .Home {
+    padding: 0 4% !important;
+  }
+  .footer {
+    padding: 2rem 4% !important;
+  }
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block !important;
   }
 }/*# sourceMappingURL=Styles.css.map */
