@@ -14,8 +14,7 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -393,26 +392,26 @@
     <form action="#">
       <div class="input-box">
         <div class="input-field">
-          <input type="text" placeholder="Full Name" required>
+          <input type="text" placeholder="Full Name" id="Name" autocomplete="off" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text" placeholder="Email Address" required>
+          <input type="text" placeholder="Email Address" id="Email" autocomplete="off" required>
           <span class="focus"></span>
         </div>
       </div>
       <div class="input-box">
         <div class="input-field">
-          <input type="textr" placeholder="Mobile Number" required>
+          <input type="textr" placeholder="Mobile Number" id="Number" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input type="text" placeholder="Email Subject" required>
+          <input type="text" placeholder="Email Subject" id="Subject" required>
           <span class="focus"></span>
         </div>
       </div>
       <div class="textarea-field">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <span class="focus"></span>
       </div>
       <div class="btn-box btns">
@@ -435,8 +434,9 @@
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 <script>
@@ -448,26 +448,17 @@
       mouseDrag: false,
       responsive: {
         0: {
-          center: true,
-
           items: 1
         },
         600: {
-          center: true,
-
           items: 1
-        }
-        ,
+        },
         1000: {
-          center: true,
-
           items: 1
         }
       }
     });
-  });
 
-  $(document).ready(function () {
     $('.owl-carousel-2').owlCarousel({
       loop: false,
       nav: false,
