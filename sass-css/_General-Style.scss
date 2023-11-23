@@ -62,9 +62,8 @@ body {
       cursor: pointer;
       display: none;
 
-
       &:hover,
-      &:active  {
+      &:active {
         color: $main-color;
         text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
           0 0 30px $main-color;
@@ -83,7 +82,7 @@ body {
         transition: text-shadow 0.3s ease;
 
         &:hover,
-        &:active  {
+        &:active {
           color: $main-color;
           text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
             0 0 30px $main-color;
@@ -109,7 +108,6 @@ body {
 
     .Foto {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       position: absolute;
@@ -133,7 +131,7 @@ body {
         width: 360px;
         height: 360px;
         transition: 0.5s;
-        margin: 2rem 0;
+        
       }
 
       .circle-spin {
@@ -240,7 +238,7 @@ body {
         transition: box-shadow 0.3s ease;
 
         &:hover,
-        &:active  {
+        &:active {
           box-shadow: 0 0 5rem $main-color;
           color: $text-color;
           background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -506,7 +504,7 @@ body {
               color: #e44d26;
             }
             &:hover,
-            &:active  {
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #e44d26;
@@ -529,7 +527,7 @@ body {
               color: #2d92cd;
             }
             &:hover,
-            &:active  {
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #2d92cd;
@@ -552,7 +550,7 @@ body {
               color: #f0c02b;
             }
             &:hover,
-            &:active  {
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #f0c02b;
@@ -573,7 +571,7 @@ body {
           #C {
             filter: grayscale(50%);
             &:hover,
-            &:active  {
+            &:active {
               filter: grayscale(0%);
               .icon {
                 cursor: pointer;
@@ -592,7 +590,7 @@ body {
           #JAVA {
             filter: grayscale(50%);
             &:hover,
-            &:active  {
+            &:active {
               filter: grayscale(0%);
               .icon {
                 cursor: pointer;
@@ -621,7 +619,7 @@ body {
             color: white;
           }
           &:hover,
-          &:active  {
+          &:active {
             .icon {
               cursor: pointer;
               background-color: #702df5;
@@ -649,7 +647,7 @@ body {
             color: #cd669a;
           }
           &:hover,
-          &:active  {
+          &:active {
             .icon {
               cursor: pointer;
               background-color: #cd669a;
@@ -842,7 +840,7 @@ body {
                   }
 
                   &:hover,
-                  &:active  {
+                  &:active {
                     box-shadow: 0 0 1rem 0.5rem $main-color;
                     color: $text-color;
                   }
@@ -911,7 +909,7 @@ body {
             text-decoration: none;
 
             &:hover,
-            &:active  {
+            &:active {
               box-shadow: 0 0 3rem $main-color;
               color: $text-color;
               background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -1059,7 +1057,7 @@ body {
           transition: box-shadow 0.3s ease;
 
           &:hover,
-          &:active  {
+          &:active {
             box-shadow: 0 0 2.5rem $main-color;
             color: $text-color;
             background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -1109,7 +1107,7 @@ body {
         }
 
         &:hover,
-        &:active  {
+        &:active {
           &::before {
             width: 100%;
           }
@@ -1170,33 +1168,3 @@ body {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
-
-@media (max-width: 1200px){
-html{
-  font-size: 55% !important;
-}
-}
-
-@media (max-width: 991px){
-  .header{
-    padding: 0 4% !important;
-  }
-
-  section{
-    padding: 10rem 4% 2rem !important;
-  }
-
-  .Home{
-    padding: 0 4% !important;
-  }
-
-  .footer{
-    padding: 2rem 4% !important;
-  }
-  }
-
-  @media (max-width: 768px){
-    #menu-icon{
-     display: block !important;
-    }
-    }

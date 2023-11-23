@@ -87,7 +87,6 @@ body .Home {
 }
 body .Home .Foto {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -106,7 +105,6 @@ body .Home .Foto img {
   width: 360px;
   height: 360px;
   transition: 0.5s;
-  margin: 2rem 0;
 }
 body .Home .Foto .circle-spin {
   position: absolute;
@@ -968,29 +966,5 @@ body .footer .footer-iconTop a i {
 @keyframes RotationAbout2 {
   100% {
     transform: translate(-50%, -50%) rotate(-360deg);
-  }
-}
-@media (max-width: 1200px) {
-  html {
-    font-size: 55% !important;
-  }
-}
-@media (max-width: 991px) {
-  .header {
-    padding: 0 4% !important;
-  }
-  section {
-    padding: 10rem 4% 2rem !important;
-  }
-  .Home {
-    padding: 0 4% !important;
-  }
-  .footer {
-    padding: 2rem 4% !important;
-  }
-}
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block !important;
   }
 }/*# sourceMappingURL=Styles.css.map */
