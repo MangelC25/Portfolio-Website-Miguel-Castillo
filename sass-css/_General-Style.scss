@@ -25,11 +25,12 @@ $Animation1: Dtop 1.5s ease-in-out;
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 section {
-  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 9%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,6 +73,7 @@ body {
 
     .navbar {
       animation: $Animation1;
+      gap: 3rem;
 
       a {
         display: flex;
@@ -79,7 +81,6 @@ body {
         font-size: 2rem;
         color: $text-color;
         font-weight: 700;
-        margin-left: 3rem;
         transition: 0.3s;
         transition: text-shadow 0.3s ease;
 
@@ -99,73 +100,71 @@ body {
   }
 
   .Home {
-    position: relative;
     min-height: 100vh;
     background: $bg-degradado;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     padding: 0 10%;
+    gap: 5rem;
     z-index: 1;
 
-    .Foto {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 25%;
-      left: 62%;
-      margin: 0;
-      width: 40rem;
-      height: 40rem;
-      border-radius: 50%;
-      box-shadow: 0 0 30px $main-color;
-      background: radial-gradient(
-        at center,
-        white,
-        rgb(0, 149, 255),
-        rgb(0, 108, 184)
-      );
+    .ImgF {
+      position: relative;
 
-      img {
-        box-shadow: 0 0 10px 5px $main-color;
+      .Foto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38rem;
+        height: 38rem;
         border-radius: 50%;
-        width: 36rem;
-        height: 36rem;
-        transition: 0.5s;
-      }
+        box-shadow: 0 0 30px $main-color;
+        background: radial-gradient(
+          at center,
+          white,
+          rgb(0, 149, 255),
+          rgb(0, 108, 184)
+        );
 
-      .circle-spin {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0);
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border-top: 0.3rem solid $bg-secundary;
-        border-bottom: 0.3rem solid $bg-secundary;
-        border-right: 0.3rem solid $main-color;
-        border-left: 0.3rem solid $main-color;
-        animation: RotationAbout 8s linear infinite;
-      }
+        img {
+          box-shadow: 0 0 10px 5px $main-color;
+          border-radius: 50%;
+          width: 34rem;
+          height: 34rem;
+          transition: 0.5s;
+        }
 
-      .circle-spin2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0);
-        width: 110%;
-        height: 110%;
-        border-radius: 50%;
-        border-top: 0.3rem solid $bg-secundary;
-        border-bottom: 0.3rem solid $bg-secundary;
-        border-right: 0.3rem solid $main-color;
-        border-left: 0.3rem solid $main-color;
-        animation: RotationAbout2 8s linear infinite;
+        .circle-spin {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(0);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          border-top: 0.3rem solid $bg-secundary;
+          border-bottom: 0.3rem solid $bg-secundary;
+          border-right: 0.3rem solid $main-color;
+          border-left: 0.3rem solid $main-color;
+          animation: RotationAbout 8s linear infinite;
+        }
+
+        .circle-spin2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(0);
+          width: 110%;
+          height: 110%;
+          border-radius: 50%;
+          border-top: 0.3rem solid $bg-secundary;
+          border-bottom: 0.3rem solid $bg-secundary;
+          border-right: 0.3rem solid $main-color;
+          border-left: 0.3rem solid $main-color;
+          animation: RotationAbout2 8s linear infinite;
+        }
       }
     }
-
     .home-content {
       width: 100%;
       max-width: 70rem;
@@ -255,16 +254,17 @@ body {
       position: absolute;
       bottom: -30%;
       width: 100%;
-      gap: 2rem;
+      gap: 3rem;
 
       a {
+        text-decoration: none;
         position: relative;
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
         background: transparent;
         border: solid 0.2rem $main-color;
         border-radius: 50%;
@@ -725,7 +725,7 @@ body {
           padding: 16rem 0 0;
           border: none;
           width: 100%;
-          height: 40rem;
+          height: 42rem;
           max-width: 50ch;
           border-radius: 1rem;
           overflow: hidden;
@@ -743,9 +743,10 @@ body {
 
             transform: translateY(84%);
             transition: transform 0.5s ease-in-out;
-            height: 100%;
+            height: 100vh;
 
             .card-body {
+              width: 100%;
               text-align: center;
 
               .card-title {
@@ -772,7 +773,7 @@ body {
               .card-text {
                 opacity: 0;
                 transition: opacity 1s ease-in-out;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 text-align: justify;
               }
 
@@ -820,20 +821,19 @@ body {
 
               #Enlaces {
                 display: flex;
-                flex-wrap: wrap;
+                width: 100%;
                 justify-content: center;
+                position: relative;
 
                 a {
-                  position: relative;
                   display: inline-flex;
-                  flex-wrap: wrap;
                   margin: 0 0.8rem;
                   margin-top: 2rem;
                   text-decoration: none;
                   justify-content: center;
                   align-items: center;
-                  width: 40px;
-                  height: 40px;
+                  width: 4rem;
+                  height: 4rem;
                   background: transparent;
                   border: solid 0.2rem $main-color;
                   border-radius: 50%;
@@ -1151,7 +1151,7 @@ body {
   0%,
   10%,
   100% {
-    width: 0;
+    width: 5%;
   }
   65%,
   78%,
@@ -1179,13 +1179,13 @@ body {
 
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 
 @media (max-width: 991px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
 
   body {
@@ -1194,11 +1194,47 @@ body {
     }
 
     .Home {
-      padding: 2rem 4%;
+      padding: 15rem 4%;
+      flex-direction: column-reverse;
+
+      .ImgF {
+        margin-top: 5rem;
+        .Foto {
+          width: 34rem;
+          height: 34rem;
+
+          img {
+            width: 30rem;
+            height: 30rem;
+          }
+        }
+      }
+
+      .home-content {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .text-animate {
+          display: flex;
+          justify-content: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      .home-rds {
+        gap: 5rem;
+        bottom: -40%;
+        justify-content: center;
+      }
     }
 
     .footer {
-      padding: 2rem 4%;
+      padding: 0 4%;
     }
   }
 }
@@ -1211,20 +1247,7 @@ body {
       }
 
       .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 0 4%;
-        background: $bg-navbar;
-        box-shadow: 0 0.5rem 1rem rgb(0, 0, 0), 0.2;
-
-        a {
-          width: 100%;
-          display: none;
-          font-size: 2rem;
-          margin: 3rem 0;
-        }
+        display: none;
       }
     }
   }
@@ -1232,20 +1255,26 @@ body {
 
 @media (max-width: 520px) {
   html {
-    font-size: 50%;
+    font-size: 39%;
   }
+
   body {
     .Home {
       .home-content {
         h1 {
           display: flex;
           flex-direction: column;
+          align-items: center;
         }
+      }
 
-        .home-rds {
-          a {
-            width: 38px;
-            height: 38px;
+      .home-rds {
+        a {
+          width: 8rem;
+          height: 8rem;
+
+          i {
+            font-size: 4rem;
           }
         }
       }
@@ -1254,21 +1283,10 @@ body {
 }
 
 @media (max-width: 462px) {
-
+  html {
+    font-size: 37%;
+  }
   body {
-    .Home {
-      .home-content {
-        h1 {
-          font-size: 5rem;
-        }
-        .text-animate {
-          h3 {
-            font-size: 3.5rem;
-          }
-        }
-      }
-    }
-
     .Contact {
       form {
         .input-box {
@@ -1279,60 +1297,13 @@ body {
       }
     }
 
-    .footer {
-      display: flex;
+    .footer{
       flex-direction: column-reverse;
 
-      p {
-        margin-top: 2rem;
-        text-align: center;
+      p{
+        padding: 2rem;
       }
     }
   }
 }
 
-@media (max-width: 371px) {
-
-  
-  body {
-    .Home {
-      padding-bottom: 15rem;
-      justify-content: center;
-      position: relative;
-
-      .Foto {
-        position: relative; /* Cambiado a relativo para ajustar al flujo normal del documento */
-        margin-top: 40%;
-        margin-bottom: 10%; /* Ajusta la distancia desde la parte superior según sea necesario */
-        left: 50%;
-        width: 30rem;
-        height: 30rem;
-        transform: translateX(-50%);
-
-        img {
-          width: 25rem;
-          height: 25rem;
-        }
-      }
-
-      .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-      }
-
-      .home-rds {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        bottom: -20%; // Alinea el texto al centro si es necesario
-
-        a {
-          margin: 0 1rem; // Ajusta el margen entre los enlaces según sea necesario
-        }
-      }
-    }
-  }
-}

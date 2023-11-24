@@ -16,11 +16,12 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 section {
-  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -32,7 +33,7 @@ body .header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 9%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -58,6 +59,7 @@ body .header #menu-icon:hover, body .header #menu-icon:active {
 }
 body .header .navbar {
   animation: Dtop 1.5s ease-in-out;
+  gap: 3rem;
 }
 body .header .navbar a {
   display: flex;
@@ -65,7 +67,6 @@ body .header .navbar a {
   font-size: 2rem;
   color: white;
   font-weight: 700;
-  margin-left: 3rem;
   transition: 0.3s;
   transition: text-shadow 0.3s ease;
 }
@@ -78,37 +79,35 @@ body .header .navbar .active {
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
 body .Home {
-  position: relative;
   min-height: 100vh;
   background: linear-gradient(to top, #0e2336, black);
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   padding: 0 10%;
+  gap: 5rem;
   z-index: 1;
 }
-body .Home .Foto {
+body .Home .ImgF {
+  position: relative;
+}
+body .Home .ImgF .Foto {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 25%;
-  left: 62%;
-  margin: 0;
-  width: 40rem;
-  height: 40rem;
+  width: 38rem;
+  height: 38rem;
   border-radius: 50%;
   box-shadow: 0 0 30px #00b7ff;
   background: radial-gradient(at center, white, rgb(0, 149, 255), rgb(0, 108, 184));
 }
-body .Home .Foto img {
+body .Home .ImgF .Foto img {
   box-shadow: 0 0 10px 5px #00b7ff;
   border-radius: 50%;
-  width: 36rem;
-  height: 36rem;
+  width: 34rem;
+  height: 34rem;
   transition: 0.5s;
 }
-body .Home .Foto .circle-spin {
+body .Home .ImgF .Foto .circle-spin {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,7 +121,7 @@ body .Home .Foto .circle-spin {
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
 }
-body .Home .Foto .circle-spin2 {
+body .Home .ImgF .Foto .circle-spin2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -215,16 +214,17 @@ body .Home .home-rds {
   position: absolute;
   bottom: -30%;
   width: 100%;
-  gap: 2rem;
+  gap: 3rem;
 }
 body .Home .home-rds a {
+  text-decoration: none;
   position: relative;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   background: transparent;
   border: solid 0.2rem #00b7ff;
   border-radius: 50%;
@@ -603,7 +603,7 @@ body .Projects .projects-container .owl-carousel-1 .card {
   padding: 16rem 0 0;
   border: none;
   width: 100%;
-  height: 40rem;
+  height: 42rem;
   max-width: 50ch;
   border-radius: 1rem;
   overflow: hidden;
@@ -614,9 +614,10 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
   transform: translateY(84%);
   transition: transform 0.5s ease-in-out;
-  height: 100%;
+  height: 100vh;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body {
+  width: 100%;
   text-align: center;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-title {
@@ -640,7 +641,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-text {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans {
@@ -683,20 +684,19 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
+  position: relative;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a {
-  position: relative;
   display: inline-flex;
-  flex-wrap: wrap;
   margin: 0 0.8rem;
   margin-top: 2rem;
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   background: transparent;
   border: solid 0.2rem #00b7ff;
   border-radius: 50%;
@@ -956,7 +956,7 @@ body .footer .footer-iconTop a i {
 }
 @keyframes homecursortext {
   0%, 10%, 100% {
-    width: 0;
+    width: 5%;
   }
   65%, 78%, 85% {
     width: 100%;
@@ -978,21 +978,50 @@ body .footer .footer-iconTop a i {
 }
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 @media (max-width: 991px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
   body .header {
     padding: 0 4%;
   }
   body .Home {
-    padding: 2rem 4%;
+    padding: 15rem 4%;
+    flex-direction: column-reverse;
+  }
+  body .Home .ImgF {
+    margin-top: 5rem;
+  }
+  body .Home .ImgF .Foto {
+    width: 34rem;
+    height: 34rem;
+  }
+  body .Home .ImgF .Foto img {
+    width: 30rem;
+    height: 30rem;
+  }
+  body .Home .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Home .home-content .text-animate {
+    display: flex;
+    justify-content: center;
+  }
+  body .Home .home-content p {
+    text-align: center;
+  }
+  body .Home .home-rds {
+    gap: 5rem;
+    bottom: -40%;
+    justify-content: center;
   }
   body .footer {
-    padding: 2rem 4%;
+    padding: 0 4%;
   }
 }
 @media (max-width: 768px) {
@@ -1000,86 +1029,37 @@ body .footer .footer-iconTop a i {
     display: block;
   }
   body .header .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0 4%;
-    background: #0c1621;
-    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0), 0.2;
-  }
-  body .header .navbar a {
-    width: 100%;
     display: none;
-    font-size: 2rem;
-    margin: 3rem 0;
   }
 }
 @media (max-width: 520px) {
   html {
-    font-size: 50%;
+    font-size: 39%;
   }
   body .Home .home-content h1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  body .Home .home-content .home-rds a {
-    width: 38px;
-    height: 38px;
+  body .Home .home-rds a {
+    width: 8rem;
+    height: 8rem;
+  }
+  body .Home .home-rds a i {
+    font-size: 4rem;
   }
 }
 @media (max-width: 462px) {
-  body .Home .home-content h1 {
-    font-size: 5rem;
-  }
-  body .Home .home-content .text-animate h3 {
-    font-size: 3.5rem;
+  html {
+    font-size: 37%;
   }
   body .Contact form .input-box .input-field {
     width: 100%;
   }
   body .footer {
-    display: flex;
     flex-direction: column-reverse;
   }
   body .footer p {
-    margin-top: 2rem;
-    text-align: center;
-  }
-}
-@media (max-width: 371px) {
-  body .Home {
-    padding-bottom: 15rem;
-    justify-content: center;
-    position: relative;
-  }
-  body .Home .Foto {
-    position: relative; /* Cambiado a relativo para ajustar al flujo normal del documento */
-    margin-top: 40%;
-    margin-bottom: 10%; /* Ajusta la distancia desde la parte superior según sea necesario */
-    left: 50%;
-    width: 30rem;
-    height: 30rem;
-    transform: translateX(-50%);
-  }
-  body .Home .Foto img {
-    width: 25rem;
-    height: 25rem;
-  }
-  body .Home .home-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-  }
-  body .Home .home-rds {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    bottom: -20%;
-  }
-  body .Home .home-rds a {
-    margin: 0 1rem;
+    padding: 2rem;
   }
 }/*# sourceMappingURL=Styles.css.map */
