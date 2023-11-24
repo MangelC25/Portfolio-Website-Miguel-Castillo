@@ -62,7 +62,8 @@ body {
       cursor: pointer;
       display: none;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $main-color;
         text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
           0 0 30px $main-color;
@@ -80,7 +81,8 @@ body {
         transition: 0.3s;
         transition: text-shadow 0.3s ease;
 
-        &:hover {
+        &:hover,
+        &:active {
           color: $main-color;
           text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
             0 0 30px $main-color;
@@ -235,7 +237,8 @@ body {
         transition: 0.3s;
         transition: box-shadow 0.3s ease;
 
-        &:hover {
+        &:hover,
+        &:active {
           box-shadow: 0 0 5rem $main-color;
           color: $text-color;
           background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -489,21 +492,19 @@ body {
 
         .owl-carousel-2 {
           display: flex;
-          width: 100%;
           height: 25rem;
-          
 
           .item {
             display: flex;
             justify-content: center;
-            
           }
 
           #HTML {
             i {
               color: #e44d26;
             }
-            &:hover {
+            &:hover,
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #e44d26;
@@ -525,7 +526,8 @@ body {
             i {
               color: #2d92cd;
             }
-            &:hover{
+            &:hover,
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #2d92cd;
@@ -547,7 +549,8 @@ body {
             i {
               color: #f0c02b;
             }
-            &:hover{
+            &:hover,
+            &:active {
               .icon {
                 cursor: pointer;
                 background-color: #f0c02b;
@@ -567,7 +570,8 @@ body {
 
           #C {
             filter: grayscale(50%);
-            &:hover {
+            &:hover,
+            &:active {
               filter: grayscale(0%);
               .icon {
                 cursor: pointer;
@@ -585,7 +589,8 @@ body {
 
           #JAVA {
             filter: grayscale(50%);
-            &:hover {
+            &:hover,
+            &:active {
               filter: grayscale(0%);
               .icon {
                 cursor: pointer;
@@ -613,7 +618,8 @@ body {
           i {
             color: white;
           }
-          &:hover {
+          &:hover,
+          &:active {
             .icon {
               cursor: pointer;
               background-color: #702df5;
@@ -640,7 +646,8 @@ body {
           i {
             color: #cd669a;
           }
-          &:hover{
+          &:hover,
+          &:active {
             .icon {
               cursor: pointer;
               background-color: #cd669a;
@@ -702,7 +709,6 @@ body {
         flex-wrap: wrap;
 
         .item {
-          width: 100%;
           display: flex;
           justify-content: center;
         }
@@ -833,7 +839,8 @@ body {
                     font-size: 2.5rem;
                   }
 
-                  &:hover {
+                  &:hover,
+                  &:active {
                     box-shadow: 0 0 1rem 0.5rem $main-color;
                     color: $text-color;
                   }
@@ -842,7 +849,8 @@ body {
             }
           }
 
-          &:hover {
+          &:hover,
+          &:active {
             box-shadow: 0 0 1rem 0.5rem $main-color;
             transform: scale(1.05);
             cursor: pointer;
@@ -900,7 +908,8 @@ body {
             color: $main-color;
             text-decoration: none;
 
-            &:hover{
+            &:hover,
+            &:active {
               box-shadow: 0 0 3rem $main-color;
               color: $text-color;
               background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -1047,7 +1056,8 @@ body {
           transition: 0.3s;
           transition: box-shadow 0.3s ease;
 
-          &:hover {
+          &:hover,
+          &:active {
             box-shadow: 0 0 2.5rem $main-color;
             color: $text-color;
             background: linear-gradient(to bottom, $main-color, #009cd9);
@@ -1096,7 +1106,8 @@ body {
           z-index: -1;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           &::before {
             width: 100%;
           }
@@ -1157,12 +1168,4 @@ body {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
-
-@media (max-width: 1200){
-  html{
-    font-size: 55%;
-  }
-}
-
-
 

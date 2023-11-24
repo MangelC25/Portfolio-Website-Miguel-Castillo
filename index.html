@@ -13,9 +13,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -45,7 +44,7 @@
       <span class="circle-spin2"></span>
     </div>
     <div class="home-content">
-      <h1 id="I">Hi, I'm <span >Miguel Castillo</span> </h1>
+      <h1 id="I">Hi, I'm <span>Miguel Castillo</span> </h1>
       <div class="text-animate">
         <h3>Front-End Developer</h3>
       </div>
@@ -435,8 +434,8 @@
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
 
 
 <script>
@@ -468,12 +467,20 @@
     $('.owl-carousel-2').owlCarousel({
       loop: false,
       nav: false,
+      items: 5,
+      margin: 10,
+      responsiveClass: true,
       responsive: {
-        0: {
-          center: true,
+        320: {
           items: 1
         },
-        600: {
+        375: {
+          items: 1
+        },
+        425: {
+          items: 1
+        },
+        768: {
           items: 3
         },
         1000: {
