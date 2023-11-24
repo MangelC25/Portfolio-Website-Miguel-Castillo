@@ -29,7 +29,7 @@
     </div>
 
     <nav class="navbar">
-      <a href="#Home" class="active">Home</a>
+      <a href="#Home">Home</a>
       <a href="#About Me">About Me</a>
       <a href="#Skills">Skills</a>
       <a href="#Projects">Projects</a>
@@ -77,8 +77,8 @@
               <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
                 <div class="image-container">
                   <img src="../img/1288491.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
-                  <span class="circle-spin">s</span>
-                  <span class="circle-spin2">s</span>
+                  <span class="circle-spin"></span>
+                  <span class="circle-spin2"></span>
                 </div>
                 <div class="text-container" id="Description">
                   <div class="card-body border border-0 h">
@@ -202,7 +202,7 @@
     <div>
       <h1 id="MY">My <span>Skills</span></h1>
       <div class="skill-container">
-        <h2 id="ln">Lenguages</h2>
+        <h3 id="ln">Lenguages</h3>
         <div class="lenguages">
           <div class="owl-carousel owl-carousel-2">
             <div class="item">
@@ -268,7 +268,7 @@
           </div>
         </div>
 
-        <h2 id="FW">FRAMEWORKS</h2>
+        <h3 id="FW">FRAMEWORKS</h3>
         <div class="frameworks">
 
           <div class="card" id="BOOTSTRAP">
@@ -282,7 +282,7 @@
             </div>
           </div>
         </div>
-        <h2 id="PR">CSS PREPOCESSOR</h2>
+        <h3 id="PR">CSS PREPOCESSOR</h3>
         <div class="PREPOCESSOR">
           <div class="card" id="SASS">
             <div class="icon">
@@ -447,7 +447,6 @@
       mouseDrag: false,
       responsive: {
         0: {
-
           items: 1
         },
         600: {
@@ -471,16 +470,10 @@
       margin: 10,
       responsiveClass: true,
       responsive: {
-        320: {
+        0: {
           items: 1
         },
-        375: {
-          items: 1
-        },
-        425: {
-          items: 1
-        },
-        768: {
+        600: {
           items: 3
         },
         1000: {

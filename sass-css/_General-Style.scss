@@ -72,17 +72,18 @@ body {
 
     .navbar {
       animation: $Animation1;
+
       a {
+        display: flex;
         text-decoration: none;
         font-size: 2rem;
         color: $text-color;
-        font-weight: 500;
+        font-weight: 700;
         margin-left: 3rem;
         transition: 0.3s;
         transition: text-shadow 0.3s ease;
 
-        &:hover,
-        &:active {
+        &:hover {
           color: $main-color;
           text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
             0 0 30px $main-color;
@@ -98,21 +99,21 @@ body {
   }
 
   .Home {
+    position: relative;
     min-height: 100vh;
     background: $bg-degradado;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 0 10%;
-    position: relative;
 
     .Foto {
       display: flex;
       align-items: center;
       justify-content: center;
       position: absolute;
-      top: 27%;
-      left: 64%;
+      top: 25%;
+      left: 62%;
       margin: 0;
       width: 40rem;
       height: 40rem;
@@ -128,10 +129,9 @@ body {
       img {
         box-shadow: 0 0 10px 5px $main-color;
         border-radius: 50%;
-        width: 360px;
-        height: 360px;
+        width: 36rem;
+        height: 36rem;
         transition: 0.5s;
-        
       }
 
       .circle-spin {
@@ -166,10 +166,11 @@ body {
     }
 
     .home-content {
+      width: 100%;
       max-width: 70rem;
 
       #I {
-        font-size: 5.6rem;
+        font-size: 5rem;
         font-weight: 700;
         line-height: 1.5;
       }
@@ -248,11 +249,10 @@ body {
 
     .home-rds {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       position: absolute;
-      bottom: 4rem;
-      width: 20rem;
+      bottom: 5%;
+      width: 100%;
+      gap: 2rem;
 
       a {
         position: relative;
@@ -330,7 +330,7 @@ body {
           max-width: 100rem;
 
           h1 {
-            font-size: 24pt;
+            font-size: 4rem;
           }
 
           .image-container {
@@ -341,8 +341,8 @@ body {
             img {
               box-shadow: 0 0 10px 5px $main-color;
               border-radius: 50%;
-              max-width: 225px;
-              height: 225px;
+              max-width: 22.5rem;
+              height: 22.5rem;
               transition: 0.5s;
               margin: 2rem 0;
             }
@@ -431,7 +431,7 @@ body {
 
       #ln {
         padding: 2rem;
-        font-size: 22pt;
+        font-size: 3rem;
         margin: auto;
         margin-top: 2rem;
       }
@@ -439,7 +439,7 @@ body {
       #FW,
       #PR {
         padding: 2rem;
-        font-size: 22pt;
+        font-size: 3rem;
         margin: auto;
       }
 
@@ -462,7 +462,7 @@ body {
           z-index: 1;
 
           i {
-            font-size: 130px;
+            font-size: 13rem;
           }
 
           img {
@@ -479,7 +479,7 @@ body {
 
           h5 {
             color: $text-color;
-            font-size: 17pt;
+            font-size: 2rem;
             font-weight: bold;
             margin-top: 1rem;
           }
@@ -762,9 +762,14 @@ body {
                 }
               }
 
+              .card-title {
+                font-size: 2.5rem;
+              }
+
               .card-text {
                 opacity: 0;
                 transition: opacity 1s ease-in-out;
+                font-size: 1rem;
                 text-align: justify;
               }
 
@@ -1076,7 +1081,7 @@ body {
 
     .footer-text {
       p {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -1169,3 +1174,155 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 49%;
+  }
+
+  body {
+    .header {
+      padding: 0 4%;
+    }
+
+    .Home {
+      padding: 2rem 5%;
+    }
+
+    .footer {
+      padding: 2rem 4%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .header {
+      #menu-icon {
+        display: block;
+      }
+
+      .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0 4%;
+        background: $bg-navbar;
+        box-shadow: 0 0.5rem 1rem rgb(0, 0, 0), 0.2;
+
+        a {
+          width: 100%;
+          display: none;
+          font-size: 2rem;
+          margin: 3rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    .Home {
+      .home-content {
+        h1 {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .home-rds {
+          a {
+            width: 38px;
+            height: 38px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 462px) {
+  body {
+    .Home {
+      .home-content {
+        h1 {
+          font-size: 5.2rem;
+        }
+      }
+    }
+
+    .Contact {
+      form {
+        .input-box {
+          .input-field {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column-reverse;
+
+      p {
+        margin-top: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 371px) {
+  body {
+    .Home {
+      padding-bottom: 15rem;
+      justify-content: center;
+      position: relative;
+
+      .Foto {
+        position: relative; /* Cambiado a relativo para ajustar al flujo normal del documento */
+        margin-top: 40%;
+        margin-bottom: 10%; /* Ajusta la distancia desde la parte superior según sea necesario */
+        left: 40%; 
+        width: 35rem;
+        height: 35rem;
+        transform: translateX(-50%);
+  
+        img {
+          width: 30rem;
+          height: 30rem;
+        }
+  
+      }
+
+      .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+      }
+
+      .home-rds {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        bottom: -20%; // Alinea el texto al centro si es necesario
+
+        a {
+          margin: 0 1rem; // Ajusta el margen entre los enlaces según sea necesario
+        }
+      }
+    }
+  }
+}
