@@ -719,8 +719,9 @@ body {
         .card {
           margin: 2rem;
           color: $text-color;
-          background-image: url("../img/1288491.jpg");
-          background-size: cover;
+          background-image: url("../img/ProjectPortfolio.png");
+          background-size: 31rem 43rem;
+          background-repeat: no-repeat;
           background-position: center;
           padding: 16rem 0 0;
           border: none;
@@ -1151,7 +1152,7 @@ body {
   0%,
   10%,
   100% {
-    width: 5%;
+    width: 0%;
   }
   65%,
   78%,
