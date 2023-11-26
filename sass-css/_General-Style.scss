@@ -44,7 +44,6 @@ body {
     width: 100%;
     padding: 0 9%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -57,50 +56,47 @@ body {
       }
     }
 
-    #menu-icon {
-      font-size: 3.6rem;
-      color: $text-color;
-      cursor: pointer;
+    .navbar-toggler {
+      background-color: transparent;
       display: none;
-
-      &:hover,
-      &:active {
-        color: $main-color;
-        text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-          0 0 30px $main-color;
-      }
     }
 
     .navbar {
       animation: $Animation1;
-      gap: 3rem;
 
-      a {
-        display: flex;
-        text-decoration: none;
-        font-size: 2rem;
-        color: $text-color;
-        font-weight: 700;
-        transition: 0.3s;
-        transition: text-shadow 0.3s ease;
+      #navbar {
+        .navbar-nav {
+          gap: 3rem;
+          .nav-item {
+            .nav-link {
+            display: flex;
+            text-decoration: none;
+            font-size: 2rem;
+            color: $text-color;
+            font-weight: 700;
+            transition: 0.3s;
+            transition: text-shadow 0.3s ease;
 
-        &:hover {
-          color: $main-color;
-          text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-            0 0 30px $main-color;
+            &:hover {
+              color: $main-color;
+              text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
+                0 0 3rem $main-color;
+            }
+
+            .active {
+              color: $main-color;
+              text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                0 0 30px $main-color;
+            }
+          }
         }
-      }
-
-      .active {
-        color: $main-color;
-        text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-          0 0 30px $main-color;
+        }
       }
     }
   }
 
   .Home {
-    min-height: 100vh;
+    min-height: 70rem;
     background: $bg-degradado;
     display: flex;
     align-items: center;
@@ -1137,23 +1133,31 @@ body {
 }
 
 @keyframes homeBgtext {
-  0%, 10%, 100% {
+  0%,
+  10%,
+  100% {
     background-position: -50rem 0;
   }
-  65%, 85% {
+  65%,
+  85% {
     background-position: 0 0;
   }
 }
 
 @keyframes homecursortext {
-  0%, 15.6%, 100% {
+  0%,
+  17%,
+  100% {
     width: 0%;
   }
-  65%, 78%, 85% {
+  65%,
+  78%,
+  85% {
     width: 100%;
     opacity: 1;
   }
-  75%, 81% {
+  75%,
+  81% {
     opacity: 0;
   }
 }
@@ -1233,25 +1237,57 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    .header {
-      #menu-icon {
-        display: block;
-      }
-
-      .navbar {
-        display: none;
-      }
-    }
-  }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 576px) {
   html {
     font-size: 39%;
   }
 
   body {
+    .header {
+      .navbar-toggler {
+        display: block;
+        position: relative;
+      }
+
+      .navbar {
+        position: absolute;
+        top: 90%;
+        left: 0;
+
+        #navbar {
+          width: 100vw;
+          height: 100%;
+          background-color: #0c16217d;
+          backdrop-filter: blur(5px);
+          .navbar-nav {
+            padding: 5rem 4%;
+            .nav-item {
+              .nav-link {
+                transition: 0.3s;
+                transition: text-shadow 0.3s ease;
+
+                &:hover {
+                  color: $main-color;
+                  text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
+                    0 0 3rem $main-color;
+                }
+
+                
+              }
+              
+              .active {
+                  color: $main-color;
+                  text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                    0 0 30px $main-color;
+                }
+            }
+          }
+        }
+      }
+    }
+
     .Home {
       .home-content {
         h1 {
@@ -1273,11 +1309,6 @@ body {
       }
     }
   }
-
-
-  
-
-  
 }
 
 @media (max-width: 462px) {
@@ -1295,13 +1326,12 @@ body {
       }
     }
 
-    .footer{
+    .footer {
       flex-direction: column-reverse;
 
-      p{
+      p {
         padding: 2rem;
       }
     }
   }
 }
-
