@@ -956,7 +956,7 @@ body .footer .footer-iconTop a i {
   }
 }
 @keyframes homecursortext {
-  0%, 10%, 100% {
+  0%, 15.6%, 100% {
     width: 0%;
   }
   65%, 78%, 85% {
