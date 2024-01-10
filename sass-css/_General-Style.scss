@@ -1336,8 +1336,17 @@ body {
     font-size: 37%;
   }
   body {
-
-
+    .About {
+      .about-content {
+      .carousel-control-prev{
+       left: -5rem;
+              }
+              .carousel-control-next{
+right: -5rem;
+              }
+            }
+      }
+        
     .Contact {
       form {
         .input-box {

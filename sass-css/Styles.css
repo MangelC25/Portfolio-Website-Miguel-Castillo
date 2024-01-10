@@ -1088,6 +1088,12 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 37%;
   }
+  body .About .about-content .carousel-control-prev {
+    left: -5rem;
+  }
+  body .About .about-content .carousel-control-next {
+    right: -5rem;
+  }
   body .Contact form .input-box .input-field {
     width: 100%;
   }
