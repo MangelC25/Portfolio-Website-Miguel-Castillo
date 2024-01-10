@@ -235,11 +235,9 @@ body .Home .home-rds a:hover {
 }
 body .About {
   position: relative;
-  background: linear-gradient(to top, #295c88, #0e2336);
+  background: linear-gradient(to top, #295c88, #0C1E2E);
   position: relative;
   padding: 0 10%;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
   text-align: center;
 }
 body .About .heading {
@@ -343,8 +341,7 @@ body .About .about-content::before {
 body .SKills {
   position: relative;
   padding: 0 10%;
-  padding-top: 13rem;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
   background: linear-gradient(to top, rgb(113, 113, 113), black);
 }
 body .SKills #MY {
@@ -576,8 +573,6 @@ body .Projects {
   position: relative;
   background: linear-gradient(to top, #295c88, #0e2336);
   padding: 0 10%;
-  padding-top: 12rem;
-  padding-bottom: 5rem;
 }
 body .Projects #MY {
   text-align: center;
@@ -786,8 +781,8 @@ body .Contact {
   position: relative;
   background: linear-gradient(to bottom, #295c88, #0e2336);
   padding: 0 10%;
-  padding-top: 12rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 body .Contact #contact {
   text-align: center;
@@ -1029,6 +1024,10 @@ body .footer .footer-iconTop a i {
     gap: 5rem;
     bottom: -40%;
     justify-content: center;
+  }
+  body .About {
+    padding: 12rem;
+    background: linear-gradient(to top, #295c88, #0E2336);
   }
   body .footer {
     padding: 0 4%;
