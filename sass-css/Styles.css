@@ -74,7 +74,7 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
 body .Home {
-  min-height: 70rem;
+  height: 70rem;
   background: linear-gradient(to top, #0e2336, black);
   display: flex;
   align-items: center;
@@ -238,7 +238,7 @@ body .About {
   background: linear-gradient(to top, #295c88, #0e2336);
   position: relative;
   padding: 0 10%;
-  padding-top: 13rem;
+  padding-top: 5rem;
   padding-bottom: 10rem;
   text-align: center;
 }
@@ -324,6 +324,10 @@ body .About .about-content #carouselExample .card hr {
   border: none;
   border-bottom: solid 2px #00b7ff;
   border-radius: 15px;
+}
+body .About .about-content #carouselExample .carousel-control-prev .carousel-control-prev-icon, body .About .about-content #carouselExample .carousel-control-prev .carousel-control-next-icon, body .About .about-content #carouselExample .carousel-control-next .carousel-control-prev-icon, body .About .about-content #carouselExample .carousel-control-next .carousel-control-next-icon {
+  width: 4rem;
+  height: 4rem;
 }
 body .About .about-content::before {
   content: "";
@@ -415,14 +419,15 @@ body .SKills .skill-container .card .Stitle h5 {
 body .SKills .skill-container .lenguages {
   display: flex;
   flex-wrap: wrap;
-}
-body .SKills .skill-container .lenguages .owl-carousel-2 {
-  display: flex;
-  height: 25rem;
+  margin-bottom: 1.5rem;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 .item {
   display: flex;
   justify-content: center;
+  height: 23rem;
+}
+body .SKills .skill-container .lenguages .owl-carousel-2 #HTML {
+  height: 15rem;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #HTML i {
   color: #e44d26;
@@ -440,6 +445,9 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .Stitle, bo
   top: 100%;
   opacity: 1;
 }
+body .SKills .skill-container .lenguages .owl-carousel-2 #CSS {
+  height: 15rem;
+}
 body .SKills .skill-container .lenguages .owl-carousel-2 #CSS i {
   color: #2d92cd;
 }
@@ -455,6 +463,9 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon i, bod
 body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:active .Stitle {
   top: 100%;
   opacity: 1;
+}
+body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT {
+  height: 15rem;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT i {
   color: #f0c02b;
@@ -473,6 +484,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .Stit
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #C {
+  height: 15rem;
   filter: grayscale(50%);
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active {
@@ -489,6 +501,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle, body 
   opacity: 1;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA {
+  height: 15rem;
   filter: grayscale(50%);
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:active {
@@ -985,6 +998,7 @@ body .footer .footer-iconTop a i {
     padding: 0 4%;
   }
   body .Home {
+    height: 110rem;
     padding: 15rem 4%;
     flex-direction: column-reverse;
   }
@@ -1054,6 +1068,9 @@ body .footer .footer-iconTop a i {
   body .header .navbar #navbar .navbar-nav .nav-item .active {
     color: #00b7ff;
     text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
+  }
+  body .Home {
+    height: 120rem;
   }
   body .Home .home-content h1 {
     display: flex;

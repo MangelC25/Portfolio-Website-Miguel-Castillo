@@ -96,7 +96,7 @@ body {
   }
 
   .Home {
-    min-height: 70rem;
+    height: 70rem;
     background: $bg-degradado;
     display: flex;
     align-items: center;
@@ -284,7 +284,7 @@ body {
     background: linear-gradient(to top, $bg-secundary, $bg-primary);
     position: relative;
     padding: 0 10%;
-    padding-top: 13rem;
+    padding-top: 5rem;
     padding-bottom: 10rem;
     text-align: center;
 
@@ -381,6 +381,13 @@ body {
             border: none;
             border-bottom: solid 2px $main-color;
             border-radius: 15px;
+          }
+        }
+
+        .carousel-control-prev,.carousel-control-next{
+          .carousel-control-prev-icon,.carousel-control-next-icon{
+            width: 4rem;
+            height: 4rem;
           }
         }
       }
@@ -488,17 +495,18 @@ body {
       .lenguages {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 1.5rem;
 
         .owl-carousel-2 {
-          display: flex;
-          height: 25rem;
 
           .item {
             display: flex;
             justify-content: center;
+            height: 23rem;
           }
 
           #HTML {
+            height: 15rem;
             i {
               color: #e44d26;
             }
@@ -522,6 +530,7 @@ body {
           }
 
           #CSS {
+            height: 15rem;
             i {
               color: #2d92cd;
             }
@@ -545,6 +554,7 @@ body {
           }
 
           #JAVASCRIPT {
+            height: 15rem;
             i {
               color: #f0c02b;
             }
@@ -568,6 +578,7 @@ body {
           }
 
           #C {
+            height: 15rem;
             filter: grayscale(50%);
             &:hover,
             &:active {
@@ -587,6 +598,7 @@ body {
           }
 
           #JAVA {
+            height: 15rem;
             filter: grayscale(50%);
             &:hover,
             &:active {
@@ -1191,6 +1203,8 @@ body {
     }
 
     .Home {
+      height: 110rem;
+
       padding: 15rem 4%;
       flex-direction: column-reverse;
 
@@ -1289,6 +1303,9 @@ body {
     }
 
     .Home {
+
+        height: 120rem;
+
       .home-content {
         h1 {
           display: flex;
@@ -1316,6 +1333,8 @@ body {
     font-size: 37%;
   }
   body {
+
+
     .Contact {
       form {
         .input-box {
