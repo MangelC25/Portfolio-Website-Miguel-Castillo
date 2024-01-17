@@ -1228,7 +1228,7 @@ body .footer .footer-iconTop a i {
     left: 12rem;
   }
   body .Home .home-content p {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   body .About {
     padding-left: 4%;
@@ -1247,9 +1247,6 @@ body .footer .footer-iconTop a i {
   }
   body .header #leng {
     left: 10rem;
-  }
-  body .Home .home-content p {
-    font-size: 2.8rem;
   }
   body .Home .home-content .btn-box {
     width: 45rem;
