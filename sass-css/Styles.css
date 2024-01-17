@@ -1219,10 +1219,13 @@ body .footer .footer-iconTop a i {
 }
 @media (max-width: 375px) {
   html {
-    font-size: 35%;
+    font-size: 30%;
   }
   body .header #leng {
     left: 12rem;
+  }
+  body .Home .home-content p {
+    font-size: 2rem;
   }
   body .About {
     padding-left: 4%;
@@ -1232,7 +1235,7 @@ body .footer .footer-iconTop a i {
     max-width: 100rem;
   }
   body .About .about-content #carouselExample .card .card-text {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 @media (max-width: 320px) {
