@@ -709,7 +709,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   border-radius: 0.5rem;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpJSON {
-  background-color: #4E4E4E;
+  background-color: #4e4e4e;
   border-radius: 0.5rem;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
@@ -1017,6 +1017,16 @@ body .footer .footer-iconTop a i {
   body .header #leng {
     left: 13rem;
   }
+  body .About {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 1440px) {
   html {
@@ -1043,14 +1053,11 @@ body .footer .footer-iconTop a i {
   }
 }
 @media (max-width: 991px) {
-  html {
-    font-size: 40%;
-  }
   body .header {
     padding: 0 4%;
   }
   body .header #leng {
-    left: 12rem;
+    left: 6rem;
   }
   body .Home {
     height: 110rem;
@@ -1080,14 +1087,34 @@ body .footer .footer-iconTop a i {
   body .Home .home-content p {
     text-align: center;
   }
+  body .Home .btn-box {
+    width: 45rem;
+  }
+  body .Home .btn-box .btn {
+    width: 20rem;
+    font-size: 2.25rem;
+  }
   body .Home .home-rds {
     gap: 5rem;
     bottom: -40%;
     justify-content: center;
   }
+  body .Home .home-rds a {
+    width: 6rem;
+    height: 6rem;
+  }
+  body .Home .home-rds a i {
+    font-size: 4rem;
+  }
   body .About {
-    padding: 12rem;
+    padding: 12rem 2rem;
     background: linear-gradient(to top, #295c88, #0e2336);
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 2rem;
   }
   body .footer {
     padding: 0 4%;
@@ -1131,6 +1158,16 @@ body .footer .footer-iconTop a i {
     color: #00b7ff;
     text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
   }
+  body .About {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 576px) {
   html {
@@ -1152,6 +1189,16 @@ body .footer .footer-iconTop a i {
     flex-direction: column;
     align-items: center;
   }
+  body .Home .home-content p {
+    font-size: 2rem;
+  }
+  body .Home .home-content .btn-box {
+    width: 45rem;
+  }
+  body .Home .home-content .btn-box .btn {
+    width: 20rem;
+    font-size: 2.25rem;
+  }
   body .Home .home-rds a {
     width: 8rem;
     height: 8rem;
@@ -1159,15 +1206,42 @@ body .footer .footer-iconTop a i {
   body .Home .home-rds a i {
     font-size: 4rem;
   }
+  body .About {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 375px) {
   html {
-    font-size: 33%;
+    font-size: 35%;
+  }
+  body .header #leng {
+    left: 12rem;
+  }
+  body .About {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 2rem;
   }
 }
 @media (max-width: 320px) {
-  html {
-    font-size: 30%;
+  body .header #leng {
+    left: 10rem;
+  }
+  body .About {
+    padding-left: 6%;
+    padding-right: 6%;
   }
   body .About .about-content .carousel-control-prev {
     left: -5rem;

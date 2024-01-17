@@ -441,8 +441,7 @@ body {
         font-family: "Kenia", sans-serif;
       }
 
-      
-      #S{
+      #S {
         color: $main-color;
       }
     }
@@ -727,7 +726,7 @@ body {
         font-family: "Kenia", sans-serif;
       }
 
-      #D{
+      #D {
         color: $main-color;
       }
     }
@@ -850,7 +849,7 @@ body {
                   border-radius: 0.5rem;
                 }
                 #SpJSON {
-                  background-color: #4E4E4E;
+                  background-color: #4e4e4e;
                   border-radius: 0.5rem;
                 }
               }
@@ -981,7 +980,7 @@ body {
         font-family: "Kenia", sans-serif;
       }
 
-      #C{
+      #C {
         color: $main-color;
       }
     }
@@ -1225,9 +1224,25 @@ body {
 
   body {
     .header {
-
       #leng {
         left: 13rem;
+      }
+    }
+
+    .About {
+      padding-left: 2%;
+      padding-right: 2%;
+
+      .about-content {
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 2rem;
+            }
+          }
+        }
       }
     }
   }
@@ -1240,11 +1255,12 @@ body {
 
   body {
     .header {
-
       #leng {
         left: 12rem;
       }
     }
+
+    
   }
 }
 
@@ -1255,7 +1271,6 @@ body {
 
   body {
     .header {
-
       #leng {
         left: 14rem;
       }
@@ -1270,7 +1285,6 @@ body {
 
   body {
     .header {
-
       #leng {
         left: 13rem;
       }
@@ -1279,22 +1293,17 @@ body {
 }
 
 @media (max-width: 991px) {
-  html {
-    font-size: 40%;
-  }
-
   body {
     .header {
       padding: 0 4%;
 
       #leng {
-        left: 12rem;
+        left: 6rem;
       }
     }
 
     .Home {
       height: 110rem;
-
       padding: 15rem 4%;
       flex-direction: column-reverse;
 
@@ -1314,7 +1323,6 @@ body {
       .home-content {
         display: flex;
         flex-direction: column;
-
         align-items: center;
 
         .text-animate {
@@ -1327,16 +1335,44 @@ body {
         }
       }
 
+      .btn-box {
+        width: 45rem;
+        .btn {
+          width: 20rem;
+          font-size: 2.25rem;
+        }
+      }
+
       .home-rds {
         gap: 5rem;
         bottom: -40%;
         justify-content: center;
+        a {
+          width: 6rem;
+          height: 6rem;
+
+          i {
+            font-size: 4rem;
+          }
+        }
       }
     }
 
     .About {
-      padding: 12rem;
+      padding: 12rem 2rem;
       background: linear-gradient(to top, $bg-secundary, #0e2336);
+
+      .about-content {
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
     }
 
     .footer {
@@ -1395,20 +1431,33 @@ body {
         }
       }
     }
-  }
 
+    .About {
+      padding-left: 2%;
+      padding-right: 2%;
+
+      .about-content {
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
   html {
     font-size: 42%;
   }
-
-
 }
 
 @media (max-width: 425px) {
-
   html {
     font-size: 40%;
   }
@@ -1429,6 +1478,18 @@ body {
           flex-direction: column;
           align-items: center;
         }
+
+        p {
+          font-size: 2rem;
+        }
+
+        .btn-box {
+          width: 45rem;
+          .btn {
+            width: 20rem;
+            font-size: 2.25rem;
+          }
+        }
       }
 
       .home-rds {
@@ -1442,21 +1503,67 @@ body {
         }
       }
     }
+
+    .About {
+      padding-left: 1.5%;
+      padding-right: 1.5%;
+
+      .about-content {
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 375px) {
   html {
-    font-size: 33%;
+    font-size: 35%;
+  }
+
+  body {
+    .header {
+      #leng {
+        left: 12rem;
+      }
+    }
+    .About {
+      padding-left: 4%;
+      padding-right: 4%;
+
+      .about-content {
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 320px) {
-  html {
-    font-size: 30%;
-  }
   body {
+    .header {
+      #leng {
+        left: 10rem;
+      }
+    }
+
     .About {
+      padding-left: 6%;
+      padding-right: 6%;
       .about-content {
         .carousel-control-prev {
           left: -5rem;
