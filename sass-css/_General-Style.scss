@@ -31,12 +31,10 @@ html {
 
 section {
   width: 100%;
+  color: $text-color;
 }
 
 body {
-  background-color: $bg-primary !important;
-  color: $text-color !important;
-
   .header {
     position: fixed;
     top: 0;
@@ -56,6 +54,24 @@ body {
       }
     }
 
+    #leng {
+      position: relative;
+      left: 15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $text-color;
+      background-color: transparent;
+
+      img {
+        width: 4rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
+    }
+
     .navbar-toggler {
       background-color: transparent;
       display: none;
@@ -69,34 +85,35 @@ body {
           gap: 3rem;
           .nav-item {
             .nav-link {
-            display: flex;
-            text-decoration: none;
-            font-size: 2rem;
-            color: $text-color;
-            font-weight: 700;
-            transition: 0.3s;
-            transition: text-shadow 0.3s ease;
+              display: flex;
+              text-decoration: none;
+              font-size: 2rem;
+              color: $text-color;
+              font-weight: 700;
+              transition: 0.3s;
+              transition: text-shadow 0.3s ease;
 
-            &:hover {
-              color: $main-color;
-              text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
-                0 0 3rem $main-color;
-            }
+              &:hover {
+                color: $main-color;
+                text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
+                  0 0 3rem $main-color;
+              }
 
-            .active {
-              color: $main-color;
-              text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-                0 0 30px $main-color;
+              .active {
+                color: $main-color;
+                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                  0 0 30px $main-color;
+              }
             }
           }
-        }
         }
       }
     }
   }
 
   .Home {
-    height: 70rem;
+    color: $text-color;
+    height: 68rem;
     background: $bg-degradado;
     display: flex;
     align-items: center;
@@ -188,7 +205,7 @@ body {
           background-position: 0 0;
           text-shadow: 0 0 15px $main-color;
           animation: homeBgtext 5s linear infinite;
-          animation-delay: 2s;
+          animation-delay: 2.05s;
 
           &::before {
             content: "";
@@ -281,11 +298,10 @@ body {
 
   .About {
     position: relative;
-    background: linear-gradient(to top, $bg-secundary, #0C1E2E);
+    background: linear-gradient(to top, $bg-secundary, #0c1e2e);
     position: relative;
     padding: 0 10%;
     text-align: center;
-
 
     .heading {
       font-family: "Kenia", sans-serif;
@@ -293,6 +309,9 @@ body {
 
       span {
         font-family: "Kenia", sans-serif;
+      }
+
+      #M {
         color: $main-color;
       }
     }
@@ -383,8 +402,10 @@ body {
           }
         }
 
-        .carousel-control-prev,.carousel-control-next{
-          .carousel-control-prev-icon,.carousel-control-next-icon{
+        .carousel-control-prev,
+        .carousel-control-next {
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
             width: 4rem;
             height: 4rem;
           }
@@ -403,7 +424,6 @@ body {
         border-top: 100px solid transparent;
       }
     }
-  
   }
 
   .SKills {
@@ -419,6 +439,10 @@ body {
 
       span {
         font-family: "Kenia", sans-serif;
+      }
+
+      
+      #S{
         color: $main-color;
       }
     }
@@ -497,7 +521,6 @@ body {
         margin-bottom: 1.5rem;
 
         .owl-carousel-2 {
-
           .item {
             display: flex;
             justify-content: center;
@@ -694,7 +717,6 @@ body {
     position: relative;
     background: linear-gradient(to top, $bg-secundary, $bg-primary);
     padding: 0 10%;
-    
 
     #MY {
       text-align: center;
@@ -703,6 +725,9 @@ body {
 
       span {
         font-family: "Kenia", sans-serif;
+      }
+
+      #D{
         color: $main-color;
       }
     }
@@ -732,7 +757,7 @@ body {
           padding: 16rem 0 0;
           border: none;
           width: 100%;
-          height: 42rem;
+          height: 43rem;
           max-width: 50ch;
           border-radius: 1rem;
           overflow: hidden;
@@ -748,7 +773,7 @@ body {
               rgba(0, 0, 0, 0.4)
             );
 
-            transform: translateY(84%);
+            transform: translateY(85%);
             transition: transform 0.5s ease-in-out;
             height: 100vh;
 
@@ -822,6 +847,10 @@ body {
                 }
                 #SpSASS {
                   background-color: #cd669a;
+                  border-radius: 0.5rem;
+                }
+                #SpJSON {
+                  background-color: #4E4E4E;
                   border-radius: 0.5rem;
                 }
               }
@@ -950,6 +979,9 @@ body {
 
       span {
         font-family: "Kenia", sans-serif;
+      }
+
+      #C{
         color: $main-color;
       }
     }
@@ -1083,6 +1115,8 @@ body {
   }
 
   .footer {
+    color: $text-color;
+    background-color: $bg-primary;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1184,20 +1218,78 @@ body {
   }
 }
 
+@media (max-width: 2560px) {
+  html {
+    font-size: 115%;
+  }
+
+  body {
+    .header {
+
+      #leng {
+        left: 13rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 65%;
+  }
+
+  body {
+    .header {
+
+      #leng {
+        left: 12rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 61%;
+  }
+
+  body {
+    .header {
+
+      #leng {
+        left: 14rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   html {
-    font-size: 50%;
+    font-size: 46%;
+  }
+
+  body {
+    .header {
+
+      #leng {
+        left: 13rem;
+      }
+    }
   }
 }
 
 @media (max-width: 991px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
 
   body {
     .header {
       padding: 0 4%;
+
+      #leng {
+        left: 12rem;
+      }
     }
 
     .Home {
@@ -1242,9 +1334,9 @@ body {
       }
     }
 
-    .About{
+    .About {
       padding: 12rem;
-      background: linear-gradient(to top, $bg-secundary, #0E2336);
+      background: linear-gradient(to top, $bg-secundary, #0e2336);
     }
 
     .footer {
@@ -1254,15 +1346,16 @@ body {
 }
 
 @media (max-width: 768px) {
-}
-
-@media (max-width: 576px) {
   html {
-    font-size: 39%;
+    font-size: 50%;
   }
 
   body {
     .header {
+      #leng {
+        left: 25rem;
+      }
+
       .navbar-toggler {
         display: block;
         position: relative;
@@ -1290,24 +1383,45 @@ body {
                   text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
                     0 0 3rem $main-color;
                 }
-
-                
               }
-              
+
               .active {
-                  color: $main-color;
-                  text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-                    0 0 30px $main-color;
-                }
+                color: $main-color;
+                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                  0 0 30px $main-color;
+              }
             }
           }
         }
       }
     }
+  }
+
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 42%;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+
+  html {
+    font-size: 40%;
+  }
+
+  body {
+    .header {
+      #leng {
+        left: 12rem;
+      }
+    }
 
     .Home {
-
-        height: 120rem;
+      height: 110rem;
 
       .home-content {
         h1 {
@@ -1331,22 +1445,28 @@ body {
   }
 }
 
-@media (max-width: 462px) {
+@media (max-width: 375px) {
   html {
-    font-size: 37%;
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 30%;
   }
   body {
     .About {
       .about-content {
-      .carousel-control-prev{
-       left: -5rem;
-              }
-              .carousel-control-next{
-right: -5rem;
-              }
-            }
+        .carousel-control-prev {
+          left: -5rem;
+        }
+        .carousel-control-next {
+          right: -5rem;
+        }
       }
-        
+    }
+
     .Contact {
       form {
         .input-box {

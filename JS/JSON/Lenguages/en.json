@@ -1,0 +1,43 @@
+{
+  "profile": {
+    "description": "Welcome to my digital corner! Here, creativity merges with the magic of code. Explore how I transform ideas into captivating visual experiences. Join me on this journey through the fascinating world of digital development!",
+    "name": "Hi, I'm Miguel Castillo",
+    "rol": "Front-End Developer",
+    "CV": "Download CV",
+    "talk": "Let's Talk"
+  },
+  "AboutMe": {
+    "About": "About ",
+    "Me": "Me",
+    "Iam": "Who I Am",
+    "description1": "I am a passionate developer with an insatiable appetite for technology and innovation. My goal is to turn concepts into flawless digital experiences that make life more exciting. As a technology explorer, I'm ready to push boundaries and captivate your imagination.",
+    "Education-&-Skills": "Education & Skills",
+    "description2": "I graduated in Systems Engineering from the University of Cundinamarca in 2023. During my studies, I acquired specialized skills in software development, database design, cybersecurity, and problem-solving. My solid education and continuous focus on learning have prepared me to face technological challenges with innovative solutions.",
+    "Passions-and-Hobbies": "Passions and Hobbies",
+    "description3": "Passionate about video games and innovative technologies, my fascination revolves around creating virtual worlds and immersion in the metaverse. My love for immersive experiences has inspired me to dream of founding a company dedicated to developing virtual environments. I envision a future where I can offer immersive and groundbreaking experiences, combining my passion for gaming and immersive technology.",
+    "Professional-Skills-and-Competencies": "Professional Skills and Competencies",
+    "description4": "I stand out with a combination of technical and personal skills. I have a strong ability to work in teams, developing projects in collaborative environments. My self-directed learning has allowed me to tackle new challenges and continuously acquire knowledge. I possess effective communication skills that facilitate interaction and collaboration in different work settings."
+  },
+  "Skills":{
+    "My": "My",
+    "skill": "Skills",
+    "Plenguage" : "LENGUAGES",
+    "Prepro": "CSS PREPOCESSOR"
+  },
+  "Projects": {
+    "My": "My",
+    "Project": "Projects",
+    "description": "Explore my portfolio website, a showcase of creativity and technical skills. Designed with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes JavaScript for interactive features.",
+    "vmore" : "View More Projects"
+  },
+  "Contact":{
+    "contac": "Contact",
+    "Me": "Me",
+    "Pfullname": "Full Name",
+    "PEmail": "Email Address",
+    "PNumber": "Mobile Number",
+    "PEmailsub": "Email Subject",
+    "Message": "Your Message",
+    "bsubmit": "Submit"
+  }
+}

@@ -22,12 +22,9 @@ html {
 
 section {
   width: 100%;
+  color: white;
 }
 
-body {
-  background-color: #0e2336 !important;
-  color: white !important;
-}
 body .header {
   position: fixed;
   top: 0;
@@ -45,6 +42,21 @@ body .header .logo {
 }
 body .header .logo img {
   width: 20rem;
+}
+body .header #leng {
+  position: relative;
+  left: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+}
+body .header #leng img {
+  width: 4rem;
+}
+body .header #leng span {
+  font-size: 2rem;
 }
 body .header .navbar-toggler {
   background-color: transparent;
@@ -74,7 +86,8 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
 body .Home {
-  height: 70rem;
+  color: white;
+  height: 68rem;
   background: linear-gradient(to top, #0e2336, black);
   display: flex;
   align-items: center;
@@ -156,7 +169,7 @@ body .Home .home-content .text-animate h3 {
   background-position: 0 0;
   text-shadow: 0 0 15px #00b7ff;
   animation: homeBgtext 5s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 2.05s;
 }
 body .Home .home-content .text-animate h3::before {
   content: "";
@@ -235,7 +248,7 @@ body .Home .home-rds a:hover {
 }
 body .About {
   position: relative;
-  background: linear-gradient(to top, #295c88, #0C1E2E);
+  background: linear-gradient(to top, #295c88, #0c1e2e);
   position: relative;
   padding: 0 10%;
   text-align: center;
@@ -246,6 +259,8 @@ body .About .heading {
 }
 body .About .heading span {
   font-family: "Kenia", sans-serif;
+}
+body .About .heading #M {
   color: #00b7ff;
 }
 body .About .about-content {
@@ -323,7 +338,10 @@ body .About .about-content #carouselExample .card hr {
   border-bottom: solid 2px #00b7ff;
   border-radius: 15px;
 }
-body .About .about-content #carouselExample .carousel-control-prev .carousel-control-prev-icon, body .About .about-content #carouselExample .carousel-control-prev .carousel-control-next-icon, body .About .about-content #carouselExample .carousel-control-next .carousel-control-prev-icon, body .About .about-content #carouselExample .carousel-control-next .carousel-control-next-icon {
+body .About .about-content #carouselExample .carousel-control-prev .carousel-control-prev-icon,
+body .About .about-content #carouselExample .carousel-control-prev .carousel-control-next-icon,
+body .About .about-content #carouselExample .carousel-control-next .carousel-control-prev-icon,
+body .About .about-content #carouselExample .carousel-control-next .carousel-control-next-icon {
   width: 4rem;
   height: 4rem;
 }
@@ -351,6 +369,8 @@ body .SKills #MY {
 }
 body .SKills #MY span {
   font-family: "Kenia", sans-serif;
+}
+body .SKills #MY #S {
   color: #00b7ff;
 }
 body .SKills .skill-container {
@@ -581,6 +601,8 @@ body .Projects #MY {
 }
 body .Projects #MY span {
   font-family: "Kenia", sans-serif;
+}
+body .Projects #MY #D {
   color: #00b7ff;
 }
 body .Projects .projects-container {
@@ -607,7 +629,7 @@ body .Projects .projects-container .owl-carousel-1 .card {
   padding: 16rem 0 0;
   border: none;
   width: 100%;
-  height: 42rem;
+  height: 43rem;
   max-width: 50ch;
   border-radius: 1rem;
   overflow: hidden;
@@ -616,7 +638,7 @@ body .Projects .projects-container .owl-carousel-1 .card {
 body .Projects .projects-container .owl-carousel-1 .card .card-container {
   border-radius: 1rem;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
-  transform: translateY(84%);
+  transform: translateY(85%);
   transition: transform 0.5s ease-in-out;
   height: 100vh;
 }
@@ -684,6 +706,10 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpSASS {
   background-color: #cd669a;
+  border-radius: 0.5rem;
+}
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpJSON {
+  background-color: #4E4E4E;
   border-radius: 0.5rem;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
@@ -791,6 +817,8 @@ body .Contact #contact {
 }
 body .Contact #contact span {
   font-family: "Kenia", sans-serif;
+}
+body .Contact #contact #C {
   color: #00b7ff;
 }
 body .Contact form {
@@ -905,6 +933,8 @@ body .Contact form .btn-box .btn:hover, body .Contact form .btn-box .btn:active 
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
 body .footer {
+  color: white;
+  background-color: #0e2336;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -980,17 +1010,47 @@ body .footer .footer-iconTop a i {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
+@media (max-width: 2560px) {
+  html {
+    font-size: 115%;
+  }
+  body .header #leng {
+    left: 13rem;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 65%;
+  }
+  body .header #leng {
+    left: 12rem;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 61%;
+  }
+  body .header #leng {
+    left: 14rem;
+  }
+}
 @media (max-width: 1200px) {
   html {
-    font-size: 50%;
+    font-size: 46%;
+  }
+  body .header #leng {
+    left: 13rem;
   }
 }
 @media (max-width: 991px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
   body .header {
     padding: 0 4%;
+  }
+  body .header #leng {
+    left: 12rem;
   }
   body .Home {
     height: 110rem;
@@ -1027,15 +1087,18 @@ body .footer .footer-iconTop a i {
   }
   body .About {
     padding: 12rem;
-    background: linear-gradient(to top, #295c88, #0E2336);
+    background: linear-gradient(to top, #295c88, #0e2336);
   }
   body .footer {
     padding: 0 4%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   html {
-    font-size: 39%;
+    font-size: 50%;
+  }
+  body .header #leng {
+    left: 25rem;
   }
   body .header .navbar-toggler {
     display: block;
@@ -1068,8 +1131,21 @@ body .footer .footer-iconTop a i {
     color: #00b7ff;
     text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
   }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 42%;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
+  body .header #leng {
+    left: 12rem;
+  }
   body .Home {
-    height: 120rem;
+    height: 110rem;
   }
   body .Home .home-content h1 {
     display: flex;
@@ -1084,9 +1160,14 @@ body .footer .footer-iconTop a i {
     font-size: 4rem;
   }
 }
-@media (max-width: 462px) {
+@media (max-width: 375px) {
   html {
-    font-size: 37%;
+    font-size: 35%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 30%;
   }
   body .About .about-content .carousel-control-prev {
     left: -5rem;

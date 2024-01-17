@@ -1,0 +1,43 @@
+{
+  "profile": {
+    "description": "¡Bienvenido a mi rincón digital! Aquí, la creatividad se fusiona con la magia del código. Explora cómo transformo ideas en experiencias visuales cautivadoras. ¡Acompáñame en este viaje a través del fascinante mundo del desarrollo digital!",
+    "name": "Hola, Soy Miguel castillo",
+    "rol": "Desarrollador Front-End",
+    "CV": "Descargar CV",
+    "talk": "Contactame"
+  },
+  "AboutMe": {
+    "About": "Acerca de ", 
+    "Me": "Mi",
+    "Iam": "¿Quien soy?",
+    "description1": "Soy un desarrollador apasionado con un apetito insaciable por la tecnología e innovación. Mi objetivo es convertir conceptos en experiencias digitales impecables que hagan la vida más emocionante. Como explorador tecnológico, estoy listo para desafiar límites y cautivar tu imaginación.",
+    "Education-&-Skills": "Eduacion y Habilidades",
+    "description2": "Me gradué en Ingeniería de Sistemas de la Universidad de Cundinamarca en 2023. Durante mis estudios, adquirí habilidades especializadas en desarrollo de software, diseño de bases de datos, ciberseguridad y resolución de problemas. Mi sólida formación y enfoque continuo en el aprendizaje me han preparado para enfrentar desafíos tecnológicos con soluciones innovadoras.",
+    "Passions-and-Hobbies": "Pasiones y Hobbies",
+    "description3": "Apasionado por los videojuegos y las tecnologías innovadoras, mi fascinación gira en torno a la creación de mundos virtuales y la inmersión en el metaverso. Mi amor por las experiencias inmersivas me ha inspirado a soñar con fundar una empresa dedicada al desarrollo de entornos virtuales. Visualizo un futuro donde pueda ofrecer experiencias inmersivas y revolucionarias, combinando mi pasión por los videojuegos y la tecnología inmersiva.",
+    "Professional-Skills-and-Competencies": "Habilidades y Competencias Profecionales",
+    "description4": "Destaco por una combinación de habilidades técnicas y personales. Tengo una fuerte capacidad para trabajar en equipos, desarrollando proyectos en entornos colaborativos. Mi aprendizaje autodirigido me ha permitido abordar nuevos desafíos y adquirir conocimientos de manera continua. Poseo habilidades efectivas de comunicación que facilitan la interacción y colaboración en diversos entornos laborales."
+  },
+  "Skills":{
+    "My": "Mis",
+    "skill": "Habilidades",
+    "Plenguage" : "LENGUAJES",
+    "Prepro": "PREPROCESADORES CSS"
+  },
+  "Projects": {
+    "My": "Mis",
+    "Project": "Proyectos",
+    "description": "Explora mi sitio web de portafolio, una muestra de creatividad y habilidades técnicas. Diseñado con HTML, CSS, Bootstrap y SASS, este proyecto destaca por su atractivo moderno. Utiliza JavaScript para funciones interactivas.",
+    "vmore" : "Ver mas Proyectos" 
+  },
+  "Contact":{
+    "contac": "Contactate",
+    "Me": "Conmigo",
+    "Pfullname": "Nombre Completo",
+    "PEmail": "Agregar Correo Electronico",
+    "PNumber": "Número de Contacto",
+    "PEmailsub": "Asunto del correo",
+    "Message": "Escribe tu Mensaje",
+    "bsubmit": "Enviar"
+  }
+}

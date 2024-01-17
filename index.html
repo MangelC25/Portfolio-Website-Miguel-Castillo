@@ -25,16 +25,18 @@
     <a href="/" class="logo navbar-brand">
       <img src="../img/Logo.png" alt="logo" />
     </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon navbar-dark fs-1 hove"></span>
-      </button>
+    <button type="button" id="leng" data-language="es">
+      <img src="img/lenguage/English.png" alt="lenguage" id="lenguage">
+      <span id="ACR">EN</span>
+    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon navbar-dark fs-1 hove"></span>
+    </button>
 
-    <nav class="navbar navbar-expand-sm">
+    <nav class="navbar navbar-expand-md">
 
-
-
-      <div class="collapse navbar-collapse" id="navbar">
+      <div class="collapse navbar-collapse" id="navbar" data-section="navb">
 
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
@@ -53,20 +55,21 @@
 
     <div class="home-content">
 
-      <h1 id="I">Hi, I'm <span>Miguel Castillo</span> </h1>
+      <h1 id="I" data-section="profile" data-value="name"><span>Hi, I'm Miguel Castillo</span> </h1>
       <div class="text-animate">
-        <h3>Front-End Developer</h3>
+        <h3 data-section="profile" data-value="rol" id="rol">Front-End Developer</h3>
       </div>
-      <p>
+      <p data-section="profile" data-value="description">
         Welcome to my digital corner! Here, creativity merges with the magic
         of code. Explore how I transform ideas into captivating visual
         experiences. Join me on this journey through the fascinating world of
         digital development!
       </p>
       <div class="btn-box">
-        <a href="src/MIGUEL ÁNGEL CASTILLO PINZÓN CV.pdf" class="btn" download="Hoja de vida Miguel Castillo.pdf">Download
+        <a href="src/MIGUEL ÁNGEL CASTILLO PINZÓN CV.pdf" class="btn" download="Hoja de vida Miguel Castillo.pdf"
+          data-section="profile" data-value="CV">Download
           CV</a>
-        <a href="#Contact" class="btn">Let's Talk</a>
+        <a href="#Contact" class="btn" data-section="profile" data-value="talk">Let's Talk</a>
       </div>
       <div class="home-rds">
         <a href="https://www.facebook.com/miguelangel.castillopinzon" class="bx-facebox"><i
@@ -89,149 +92,154 @@
 
   <section class="About" id="About Me">
     <div style="padding-top: 12rem; margin-top: -10rem; padding-bottom: 2rem; ">
-    <h2 class="heading">About <span>Me</span></h2>
-    <div class="about-content">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div id="Acontenedor">
-              <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
-                <div class="image-container">
-                  <img src="img/AboutMe.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
-                  <span class="circle-spin"></span>
-                  <span class="circle-spin2"></span>
+      <h2 class="heading">
+        <span data-section="AboutMe" data-value="About" id="A">About </span>
+        <span data-section="AboutMe" data-value="Me" id="M">Me</span>
+      </h2>
+      <div class="about-content">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="Acontenedor">
+                <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
+                  <div class="image-container">
+                    <img src="img/AboutMe.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
+                    <span class="circle-spin"></span>
+                    <span class="circle-spin2"></span>
+                  </div>
+                  <div class="text-container" id="Description">
+                    <div class="card-body border border-0 h">
+                      <h1 class="card-title fw-bold mb-4 text-center my-4" data-section="AboutMe" data-value="Iam">
+                        Who I Am?
+                      </h1>
+                      <hr />
+                      <p class="card-text my-4 fs-3" data-section="AboutMe" data-value="description1">
+                        I am a passionate developer with an insatiable appetite
+                        for technology and innovation. My goal is to turn concepts
+                        into flawless digital experiences that make life more
+                        exciting. As a technology explorer, I'm ready to push
+                        boundaries and captivate your imagination.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-container" id="Description">
-                  <div class="card-body border border-0 h">
-                    <h1 class="card-title fw-bold mb-4 text-center my-4">
-                      Who I Am?
-                    </h1>
-                    <hr />
-                    <p class="card-text my-4 fs-3">
-                      I am a passionate developer with an insatiable appetite
-                      for technology and innovation. My goal is to turn concepts
-                      into flawless digital experiences that make life more
-                      exciting. As a technology explorer, I'm ready to push
-                      boundaries and captivate your imagination. Welcome to my
-                      digital corner where creativity and technology come
-                      together to amaze you!.
-                    </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="Acontenedor">
+                <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
+                  <div class="image-container">
+                    <img src="img/Education.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
+                    <span class="circle-spin"></span>
+                    <span class="circle-spin2"></span>
+                  </div>
+                  <div class="text-container" id="Description">
+                    <div class="card-body border border-0">
+                      <h1 class="card-title fw-bold mb-4 text-center my-4" data-section="AboutMe"
+                        data-value="Education-&-Skills">
+                        Education & Skills
+                      </h1>
+                      <hr />
+                      <p class="card-text my-4 fs-3" data-section="AboutMe" data-value="description2">
+                        I graduated in Systems Engineering from the University of Cundinamarca in 2023. During my
+                        studies, I acquired specialized skills in software development, database design, cybersecurity,
+                        and problem-solving. My solid education and continuous focus on learning have prepared me to
+                        face technological challenges with innovative solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="Acontenedor">
+                <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
+                  <div class="image-container">
+                    <img src="img/Passions.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
+                    <span class="circle-spin"></span>
+                    <span class="circle-spin2"></span>
+                  </div>
+                  <div class="text-container" id="Description">
+                    <div class="card-body border border-0">
+                      <h1 class="card-title fw-bold mb-4 text-center my-4" data-section="AboutMe"
+                        data-value="Passions-and-Hobbies">
+                        Passions and Hobbies
+                      </h1>
+                      <hr />
+                      <p class="card-text my-4 fs-3" data-section="AboutMe" data-value="description3">
+                        Passionate about video games and innovative technologies,
+                        my fascination revolves around creating virtual worlds and
+                        immersion in the metaverse. My love for immersive
+                        experiences has inspired me to dream of founding a company
+                        dedicated to developing virtual environments. I envision a
+                        future where I can offer immersive and groundbreaking
+                        experiences, combining my passion for gaming and immersive
+                        technology.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="Acontenedor">
+                <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
+                  <div class="image-container">
+                    <img src="img/Competences.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
+                    <span class="circle-spin"></span>
+                    <span class="circle-spin2"></span>
+                  </div>
+                  <div class="text-container" id="Description">
+                    <div class="card-body border border-0">
+                      <h1 class="card-title fw-bold mb-4 text-center my-4" data-section="AboutMe"
+                        data-value="Professional-Skills-and-Competencies">
+                        Professional Skills and Competencies
+                      </h1>
+                      <hr />
+                      <p class="card-text my-4 fs-3" data-section="AboutMe" data-value="description4">
+                        I stand out with a combination of technical and personal
+                        skills. I have a strong ability to work in teams,
+                        developing projects in collaborative environments. My
+                        self-directed learning has allowed me to tackle new
+                        challenges and continuously acquire knowledge. I possess
+                        effective communication skills that facilitate interaction
+                        and collaboration in different work settings.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div id="Acontenedor">
-              <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
-                <div class="image-container">
-                  <img src="img/Education.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
-                  <span class="circle-spin"></span>
-                  <span class="circle-spin2"></span>
-                </div>
-                <div class="text-container" id="Description">
-                  <div class="card-body border border-0">
-                    <h1 class="card-title fw-bold mb-4 text-center my-4">
-                      Education & Skills
-                    </h1>
-                    <hr />
-                    <p class="card-text my-4 fs-3">
-                      I graduated with distinction in Systems Engineering from
-                      the University of Cundinamarca in 2023. During my studies,
-                      I acquired specialized skills in software development,
-                      database design, cybersecurity, and problem-solving. My
-                      solid education and continuous focus on learning have
-                      prepared me to face technological challenges with
-                      innovative solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
-          <div class="carousel-item">
-            <div id="Acontenedor">
-              <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
-                <div class="image-container">
-                  <img src="img/Passions.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
-                  <span class="circle-spin"></span>
-                  <span class="circle-spin2"></span>
-                </div>
-                <div class="text-container" id="Description">
-                  <div class="card-body border border-0">
-                    <h1 class="card-title fw-bold mb-4 text-center my-4">
-                      Passions and Hobbies
-                    </h1>
-                    <hr />
-                    <p class="card-text my-4 fs-3">
-                      Passionate about video games and innovative technologies,
-                      my fascination revolves around creating virtual worlds and
-                      immersion in the metaverse. My love for immersive
-                      experiences has inspired me to dream of founding a company
-                      dedicated to developing virtual environments. I envision a
-                      future where I can offer immersive and groundbreaking
-                      experiences, combining my passion for gaming and immersive
-                      technology.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div id="Acontenedor">
-              <div class="card text-center border border-0 bg-transparent py-4 text-white align-items-center">
-                <div class="image-container">
-                  <img src="img/Competences.jpg" class="card-img img-fluid" alt="image1" id="imagen" />
-                  <span class="circle-spin"></span>
-                  <span class="circle-spin2"></span>
-                </div>
-                <div class="text-container" id="Description">
-                  <div class="card-body border border-0">
-                    <h1 class="card-title fw-bold mb-4 text-center my-4">
-                      Professional Skills and Competencies
-                    </h1>
-                    <hr />
-                    <p class="card-text my-4 fs-3">
-                      I stand out with a combination of technical and personal
-                      skills. I have a strong ability to work in teams,
-                      developing projects in collaborative environments. My
-                      self-directed learning has allowed me to tackle new
-                      challenges and continuously acquire knowledge. I possess
-                      effective communication skills that facilitate interaction
-                      and collaboration in different work settings.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-      
       </div>
     </div>
-  </div>
   </section>
 
   <section class="SKills" id="Skills">
     <div style="padding-top: 12rem;">
-      <h1 id="MY">My <span>Skills</span></h1>
+      <h1 id="MY">
+        <span data-section="Skills" data-value="My">My </span>
+        <span data-section="Skills" data-value="skill" id="S">Skills</span>
+      </h1>
       <div class="skill-container">
-        <h3 id="ln">Lenguages</h3>
+        <h3 id="ln" data-section="Skills" data-value="Plenguage">LENGUAGES</h3>
         <div class="lenguages">
           <div class="owl-carousel owl-carousel-2 owl-theme owl-loaded owl-drag">
             <div class="item">
@@ -294,7 +302,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
 
@@ -312,7 +320,7 @@
             </div>
           </div>
         </div>
-        <h3 id="PR">CSS PREPOCESSOR</h3>
+        <h3 id="PR" data-section="Skills" data-value="Prepro">CSS PREPOCESSOR</h3>
         <div class="PREPOCESSOR">
           <div class="card" id="SASS">
             <div class="icon">
@@ -332,75 +340,83 @@
 
   <section class="Projects" id="Projects">
     <div style="padding-top: 13rem;">
-    <h1 id="MY">My <span>Projects</span></h1>
-    <div class="projects-container">
+      <h1 id="MY">
+        <span data-section="Projects" data-value="My">My</span> 
+        <span data-section="Projects" data-value="Project" id="D">Projects</span>
+      </h1>
+      <div class="projects-container">
 
-      <div class="owl-carousel owl-carousel-1 owl-loaded owl-drag">
-        <div class="item">
-          <div class="card">
-            <div class="card-container">
-              <div class="card-body">
+        <div class="owl-carousel owl-carousel-1 owl-loaded owl-drag">
+          <div class="item">
+            <div class="card">
+              <div class="card-container">
+                <div class="card-body">
 
-                <h1 class="card-title">Portfolio Web 1</h1>
-                <p class="card-text">Explore my portfolio website, a showcase of creativity and technical skills.
-                  Designed
-                  with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes <span
-                    class="tech-used">JavaScript</span> for interactive features.</p>
-                <div id="Spans">
-                  <span id="SpHTML"><i class='bx bxl-html5'></i>HTML</span>
-                  <span id="SpCSS"><i class='bx bxl-css3'></i>CSS</span>
-                  <span id="SpBootstrap"><i class='bx bxl-bootstrap'></i>Bootstrap</span>
-                  <span id="SpSASS"><i class='bx bxl-sass'></i>SASS</span>
-                </div>
-                <div id="Enlaces">
-                  <a href="https://miguelcastilloengineer.vercel.app/" class="bx-Link"><i class='bx bx-link'></i></a>
-                  <a href="https://github.com/MangelC25/Portfolio-Website-Miguel-Castillo.git" class="bx-Git"
-                    target="_blank"><i class="bi bi-github"></i></a>
+                  <h1 class="card-title">Portfolio Web Personal</h1>
+                  <p class="card-text" data-section="Projects" data-value="description">Explore my portfolio website, a showcase of creativity and technical skills.
+                    Designed
+                    with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes
+                    JavaScript for interactive features.</p>
+                  <div id="Spans">
+                    <span id="SpHTML"><i class='bx bxl-html5'></i>HTML</span>
+                    <span id="SpCSS"><i class='bx bxl-css3'></i>CSS</span>
+                    <span id="SpBootstrap"><i class='bx bxl-bootstrap'></i>Bootstrap</span>
+                    <span id="SpSASS"><i class='bx bxl-sass'></i>SASS</span>
+                    <span id="SpJavascript"><i class='bx bxl-javascript'></i>JavaScript</span>
+                    <span id="SpJSON"><i class='bx bxs-file-json'></i>JSON</span>
+                  </div>
+                  <div id="Enlaces">
+                    <a href="https://miguelcastilloengineer.vercel.app/" class="bx-Link"><i class='bx bx-link'></i></a>
+                    <a href="https://github.com/MangelC25/Portfolio-Website-Miguel-Castillo.git" class="bx-Git"
+                      target="_blank"><i class="bi bi-github"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+        </div>
+        <div class="viewm">
+          <button type="button" class="btn" id="viewmp"><a href="#" data-section="Projects" data-value="vmore">View More Projects</a></button>
         </div>
 
-        
       </div>
-      <div class="viewm">
-        <button type="button" class="btn" id="viewmp"><a href="#">View More Projects</a></button>
-      </div>
-
     </div>
-  </div>
   </section>
 
   <section class="Contact" id="Contact">
-    <h1 id="contact">Contact <span>Me</span></h1>
+    <h1 id="contact">
+      <span data-section="Contact" data-value="contac">Contact</span> 
+      <span data-section="Contact" data-value="Me" id="C">Me</span>
+    </h1>
     <form action="https://formspree.io/f/xoqoovka" method="post">
       <div class="input-box">
         <div class="input-field">
-          <input name="Name" type="text" placeholder="Full Name" required>
+          <input name="Name" type="text" data-section="Contact" data-value="Pfullname" placeholder="Full Name" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input name="Email" type="text" placeholder="Email Address" required>
+          <input name="Email" type="text" data-section="Contact" data-value="PEmail" placeholder="Email Address" required>
           <span class="focus"></span>
         </div>
       </div>
       <div class="input-box">
         <div class="input-field">
-          <input name="Number" type="text" placeholder="Mobile Number" required>
+          <input name="Number" type="text" data-section="Contact" data-value="PNumber" placeholder="Mobile Number" required>
           <span class="focus"></span>
         </div>
         <div class="input-field">
-          <input name="Subject" type="text" placeholder="Email Subject" required>
+          <input name="Subject" type="text" data-section="Contact" data-value="PEmailsub" placeholder="Email Subject" required>
           <span class="focus"></span>
         </div>
       </div>
       <div class="textarea-field">
-        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <textarea name="Message" id="Message" cols="30" rows="10" data-section="Contact" data-value="Message" placeholder="Your Message" required></textarea>
         <span class="focus"></span>
       </div>
       <div class="btn-box btns">
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn" data-section="Contact" data-value="bsubmit">Submit</button>
       </div>
     </form>
   </section>
@@ -414,6 +430,8 @@
     </div>
   </footer>
 </body>
+
+<script src="JS/Multilenguage.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -448,9 +466,9 @@
     $('.owl-carousel-2').owlCarousel({
       dots: true,
       animateOut: 'fadeOut',
-      autoplay:true,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
       items: 5,
       margin: 10,
       responsiveClass: true,
