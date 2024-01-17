@@ -1477,6 +1477,7 @@ body {
           display: flex;
           flex-direction: column;
           align-items: center;
+
         }
 
         p {
@@ -1520,7 +1521,11 @@ body {
         }
       }
     }
+
+    .SKills {
+      padding-bottom: 12rem;
   }
+}
 }
 
 @media (max-width: 375px) {
@@ -1564,6 +1569,9 @@ body {
 
 @media (max-width: 320px) {
 
+  html {
+    font-size: 25%;
+  }
 
   body {
     .header {
@@ -1572,6 +1580,32 @@ body {
       }
     }
     
+    .Home {
+      .home-content {
+        p {
+          font-size: 2.8rem;
+        }
+
+        .btn-box {
+          width: 45rem;
+          .btn {
+            width: 22rem;
+            font-size: 2.4rem;
+          }
+        }
+      }
+
+      .home-rds {
+        a {
+          width: 10rem;
+          height: 10rem;
+
+          i {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
 
     .About {
       padding-left: 6%;
@@ -1582,6 +1616,16 @@ body {
         }
         .carousel-control-next {
           right: -5rem;
+        }
+
+        #carouselExample {
+          .card {
+            max-width: 100rem;
+
+            .card-text {
+              font-size: 2.5rem;
+            }
+          }
         }
       }
     }
@@ -1605,3 +1649,5 @@ body {
     }
   }
 }
+
+

@@ -1216,6 +1216,9 @@ body .footer .footer-iconTop a i {
   body .About .about-content #carouselExample .card .card-text {
     font-size: 1.8rem;
   }
+  body .SKills {
+    padding-bottom: 12rem;
+  }
 }
 @media (max-width: 375px) {
   html {
@@ -1239,8 +1242,28 @@ body .footer .footer-iconTop a i {
   }
 }
 @media (max-width: 320px) {
+  html {
+    font-size: 25%;
+  }
   body .header #leng {
     left: 10rem;
+  }
+  body .Home .home-content p {
+    font-size: 2.8rem;
+  }
+  body .Home .home-content .btn-box {
+    width: 45rem;
+  }
+  body .Home .home-content .btn-box .btn {
+    width: 22rem;
+    font-size: 2.4rem;
+  }
+  body .Home .home-rds a {
+    width: 10rem;
+    height: 10rem;
+  }
+  body .Home .home-rds a i {
+    font-size: 5rem;
   }
   body .About {
     padding-left: 6%;
@@ -1251,6 +1274,12 @@ body .footer .footer-iconTop a i {
   }
   body .About .about-content .carousel-control-next {
     right: -5rem;
+  }
+  body .About .about-content #carouselExample .card {
+    max-width: 100rem;
+  }
+  body .About .about-content #carouselExample .card .card-text {
+    font-size: 2.5rem;
   }
   body .Contact form .input-box .input-field {
     width: 100%;
