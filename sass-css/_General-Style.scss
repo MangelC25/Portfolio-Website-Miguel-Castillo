@@ -6,15 +6,28 @@
 $bg-navbar: #0c1621;
 $bg-primary: #0e2336;
 $bg-secundary: #295c88;
-$text-color: white;
+$text-color: #ffffff;
 $main-color: #00b7ff;
-$bg-degradado: linear-gradient(to top, $bg-primary, black);
+$bg-degradado: linear-gradient(to top, $bg-primary, rgb(0, 0, 0));
 $Animation1: Dtop 1.5s ease-in-out;
 
 $bg-navbar-light: #248eff;
-$bg-primary-light: hsl(208, 100%, 63%); 
+$bg-primary-light: #42a7ff; 
 $bg-secundary-light: #ffffff;
 
+:root {
+  --bg-navbar: #{$bg-navbar};
+  --bg-primary: #{$bg-primary};
+  --bg-secundary: #{$bg-secundary};
+  --text-color: #{$text-color};
+  --main-color: #{$main-color};
+  --bg-degradado: #{$bg-degradado};
+  --Animation1: #{$Animation1};
+
+  --bg-navbar-light: #{$bg-navbar-light};
+  --bg-primary-light: #{$bg-primary-light};
+  --bg-secundary-light: #{$bg-secundary-light};
+}
 
 * {
   margin: 0;
@@ -50,7 +63,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: $bg-navbar;
+    background-color: var(--bg-navbar);;
 
     .logo {
       animation: $Animation1;
@@ -60,8 +73,8 @@ body {
     }
 
     #leng {
-      position: relative;
-      left: 15rem;
+      position: absolute;
+      left: 58rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -77,6 +90,20 @@ body {
       }
     }
 
+    #Btheme {
+      position: absolute;
+      left: 50rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $text-color;
+      background-color: transparent;
+
+      img{
+        width: 5rem;
+      }
+    }
+
     .navbar-toggler {
       background-color: transparent;
       display: none;
@@ -89,6 +116,7 @@ body {
         .navbar-nav {
           gap: 3rem;
           .nav-item {
+            padding: 0 0.5rem;
             .nav-link {
               display: flex;
               text-decoration: none;
@@ -108,12 +136,15 @@ body {
                 color: $main-color;
                 text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
                   0 0 30px $main-color;
+              
               }
             }
           }
         }
       }
     }
+
+    
   }
 
   .Home {
@@ -1230,7 +1261,7 @@ body {
   body {
     .header {
       #leng {
-        left: 13rem;
+        
       }
     }
 
@@ -1261,7 +1292,7 @@ body {
   body {
     .header {
       #leng {
-        left: 12rem;
+        
       }
     }
 
@@ -1277,7 +1308,7 @@ body {
   body {
     .header {
       #leng {
-        left: 14rem;
+        
       }
     }
   }
@@ -1291,7 +1322,7 @@ body {
   body {
     .header {
       #leng {
-        left: 13rem;
+        
       }
     }
   }
@@ -1303,7 +1334,11 @@ body {
       padding: 0 4%;
 
       #leng {
-        left: 6rem;
+        left: 34rem;
+      }
+
+      #Btheme{
+        left: 27rem;
       }
     }
 
@@ -1394,7 +1429,11 @@ body {
   body {
     .header {
       #leng {
-        left: 25rem;
+        left: 77rem;
+      }
+
+      #Btheme{
+        left: 68rem;
       }
 
       .navbar-toggler {
@@ -1460,6 +1499,18 @@ body {
   html {
     font-size: 42%;
   }
+
+  body {
+    .header {
+      #leng {
+        left: 50rem;
+      }
+
+      #Btheme{
+        left: 42rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -1470,7 +1521,7 @@ body {
   body {
     .header {
       #leng {
-        left: 12rem;
+        
       }
     }
 
@@ -1541,7 +1592,11 @@ body {
   body {
     .header {
       #leng {
-        left: 12rem;
+        left: 60rem;
+      }
+
+      #Btheme{
+        left: 51rem;
       }
     }
 
@@ -1581,7 +1636,11 @@ body {
   body {
     .header {
       #leng {
-        left: 10rem;
+        left: 62rem;
+      }
+
+      #Btheme{
+        left: 5rem;
       }
     }
     

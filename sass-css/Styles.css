@@ -2,6 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kenia&family=Oswald:wght@200;400;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&family=Ubuntu:wght@300;400;500;700&display=swap");
 /*Variables*/
+:root {
+  --bg-navbar: #0c1621;
+  --bg-primary: #0e2336;
+  --bg-secundary: #295c88;
+  --text-color: #ffffff;
+  --main-color: #00b7ff;
+  --bg-degradado: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
+  --Animation1: Dtop 1.5s ease-in-out;
+  --bg-navbar-light: #248eff;
+  --bg-primary-light: #42a7ff;
+  --bg-secundary-light: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +35,7 @@ html {
 
 section {
   width: 100%;
-  color: white;
+  color: #ffffff;
 }
 
 body .header {
@@ -35,7 +48,7 @@ body .header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: #0c1621;
+  background-color: var(--bg-navbar);
 }
 body .header .logo {
   animation: Dtop 1.5s ease-in-out;
@@ -44,12 +57,12 @@ body .header .logo img {
   width: 20rem;
 }
 body .header #leng {
-  position: relative;
-  left: 15rem;
+  position: absolute;
+  left: 58rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #ffffff;
   background-color: transparent;
 }
 body .header #leng img {
@@ -57,6 +70,18 @@ body .header #leng img {
 }
 body .header #leng span {
   font-size: 2rem;
+}
+body .header #Btheme {
+  position: absolute;
+  left: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: transparent;
+}
+body .header #Btheme img {
+  width: 5rem;
 }
 body .header .navbar-toggler {
   background-color: transparent;
@@ -68,11 +93,14 @@ body .header .navbar {
 body .header .navbar #navbar .navbar-nav {
   gap: 3rem;
 }
+body .header .navbar #navbar .navbar-nav .nav-item {
+  padding: 0 0.5rem;
+}
 body .header .navbar #navbar .navbar-nav .nav-item .nav-link {
   display: flex;
   text-decoration: none;
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   transition: 0.3s;
   transition: text-shadow 0.3s ease;
@@ -86,9 +114,9 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
 body .Home {
-  color: white;
+  color: #ffffff;
   height: 68rem;
-  background: linear-gradient(to top, #0e2336, black);
+  background: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -214,7 +242,7 @@ body .Home .btn-box .btn {
 }
 body .Home .btn-box .btn:hover, body .Home .btn-box .btn:active {
   box-shadow: 0 0 5rem #00b7ff;
-  color: white;
+  color: #ffffff;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
 body .Home .home-rds {
@@ -244,7 +272,7 @@ body .Home .home-rds a i {
 }
 body .Home .home-rds a:hover {
   box-shadow: 0 0 5rem #00b7ff;
-  color: white;
+  color: #ffffff;
 }
 body .About {
   position: relative;
@@ -428,7 +456,7 @@ body .SKills .skill-container .card .Stitle {
   transition: all 0.6s ease-in-out;
 }
 body .SKills .skill-container .card .Stitle h5 {
-  color: white;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 1rem;
@@ -621,7 +649,7 @@ body .Projects .projects-container .owl-carousel-1 .item {
 }
 body .Projects .projects-container .owl-carousel-1 .card {
   margin: 2rem;
-  color: white;
+  color: #ffffff;
   background-image: url("../img/ProjectPortfolio.png");
   background-size: 31rem 43rem;
   background-repeat: no-repeat;
@@ -741,7 +769,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:hover, body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a:active {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
-  color: white;
+  color: #ffffff;
 }
 body .Projects .projects-container .owl-carousel-1 .card:hover, body .Projects .projects-container .owl-carousel-1 .card:active {
   box-shadow: 0 0 1rem 0.5rem #00b7ff;
@@ -799,7 +827,7 @@ body .Projects .projects-container .viewm #viewmp a {
 }
 body .Projects .projects-container .viewm #viewmp a:hover, body .Projects .projects-container .viewm #viewmp a:active {
   box-shadow: 0 0 3rem #00b7ff;
-  color: white;
+  color: #ffffff;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
 body .Contact {
@@ -843,17 +871,17 @@ body .Contact form .input-box .input-field input {
   height: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: white;
+  color: #ffffff;
   background: transparent;
   border-radius: 0.6rem;
   border: solid #00b7ff 2px;
   z-index: 2;
 }
 body .Contact form .input-box .input-field input::-moz-placeholder {
-  color: white;
+  color: #ffffff;
 }
 body .Contact form .input-box .input-field input::placeholder {
-  color: white;
+  color: #ffffff;
 }
 body .Contact form .input-box .input-field input:focus ~ .focus, body .Contact form .input-box .input-field input:valid ~ .focus {
   width: 100%;
@@ -879,7 +907,7 @@ body .Contact form .textarea-field textarea {
   height: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
-  color: white;
+  color: #ffffff;
   background: transparent;
   border-radius: 0.6rem;
   resize: none;
@@ -887,10 +915,10 @@ body .Contact form .textarea-field textarea {
   z-index: 2;
 }
 body .Contact form .textarea-field textarea::-moz-placeholder {
-  color: white;
+  color: #ffffff;
 }
 body .Contact form .textarea-field textarea::placeholder {
-  color: white;
+  color: #ffffff;
 }
 body .Contact form .textarea-field textarea:focus ~ .focus, body .Contact form .textarea-field textarea:valid ~ .focus {
   width: 100%;
@@ -929,11 +957,11 @@ body .Contact form .btn-box .btn {
 }
 body .Contact form .btn-box .btn:hover, body .Contact form .btn-box .btn:active {
   box-shadow: 0 0 2.5rem #00b7ff;
-  color: white;
+  color: #ffffff;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
 body .footer {
-  color: white;
+  color: #ffffff;
   background-color: #0e2336;
   display: flex;
   justify-content: space-between;
@@ -1014,9 +1042,6 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 115%;
   }
-  body .header #leng {
-    left: 13rem;
-  }
   body .About {
     padding-left: 2%;
     padding-right: 2%;
@@ -1032,24 +1057,15 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 65%;
   }
-  body .header #leng {
-    left: 12rem;
-  }
 }
 @media (max-width: 1400px) {
   html {
     font-size: 61%;
   }
-  body .header #leng {
-    left: 14rem;
-  }
 }
 @media (max-width: 1200px) {
   html {
     font-size: 46%;
-  }
-  body .header #leng {
-    left: 13rem;
   }
 }
 @media (max-width: 991px) {
@@ -1057,7 +1073,10 @@ body .footer .footer-iconTop a i {
     padding: 0 4%;
   }
   body .header #leng {
-    left: 6rem;
+    left: 34rem;
+  }
+  body .header #Btheme {
+    left: 27rem;
   }
   body .Home {
     height: 110rem;
@@ -1125,7 +1144,10 @@ body .footer .footer-iconTop a i {
     font-size: 50%;
   }
   body .header #leng {
-    left: 25rem;
+    left: 77rem;
+  }
+  body .header #Btheme {
+    left: 68rem;
   }
   body .header .navbar-toggler {
     display: block;
@@ -1173,13 +1195,16 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 42%;
   }
+  body .header #leng {
+    left: 50rem;
+  }
+  body .header #Btheme {
+    left: 42rem;
+  }
 }
 @media (max-width: 425px) {
   html {
     font-size: 40%;
-  }
-  body .header #leng {
-    left: 12rem;
   }
   body .Home {
     height: 118rem;
@@ -1225,7 +1250,10 @@ body .footer .footer-iconTop a i {
     font-size: 30%;
   }
   body .header #leng {
-    left: 12rem;
+    left: 60rem;
+  }
+  body .header #Btheme {
+    left: 51rem;
   }
   body .Home .home-content p {
     font-size: 2.8rem;
@@ -1246,7 +1274,10 @@ body .footer .footer-iconTop a i {
     font-size: 25%;
   }
   body .header #leng {
-    left: 10rem;
+    left: 62rem;
+  }
+  body .header #Btheme {
+    left: 5rem;
   }
   body .Home .home-content .btn-box {
     width: 45rem;
