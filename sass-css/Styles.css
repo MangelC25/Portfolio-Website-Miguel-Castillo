@@ -1260,6 +1260,9 @@ body .footer .footer-iconTop a i {
   body .Home .home-content p {
     font-size: 2.8rem;
   }
+  body .Home {
+    height: 120rem;
+  }
   body .About {
     padding-left: 4%;
     padding-right: 4%;
