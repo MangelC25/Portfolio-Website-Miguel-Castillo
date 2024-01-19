@@ -12,8 +12,8 @@ $bg-degradado: linear-gradient(to top, $bg-primary, rgb(0, 0, 0));
 $Animation1: Dtop 1.5s ease-in-out;
 
 $bg-navbar-light: #248eff;
-$bg-primary-light: #42a7ff; 
-$bg-secundary-light: #ffffff;
+$bg-primary-light: #69b9ff; 
+$bg-secundary-light: #51aeff;
 
 :root {
   --bg-navbar: #{$bg-navbar};
@@ -92,15 +92,15 @@ body {
 
     #Btheme {
       position: absolute;
-      left: 50rem;
+      left: 52rem;
       display: flex;
       align-items: center;
       justify-content: center;
       color: $text-color;
       background-color: transparent;
 
-      img{
-        width: 5rem;
+      i {
+        font-size: 3rem;
       }
     }
 
@@ -149,7 +149,7 @@ body {
 
   .Home {
     color: $text-color;
-    height: 68rem;
+    height: 78rem;
     background: $bg-degradado;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ body {
         box-shadow: 0 0 30px $main-color;
         background: radial-gradient(
           at center,
-          white,
+          rgb(255, 255, 255),
           rgb(0, 149, 255),
           rgb(0, 108, 184)
         );
@@ -206,14 +206,13 @@ body {
           width: 110%;
           height: 110%;
           border-radius: 50%;
-          border-top: 0.3rem solid $bg-secundary;
-          border-bottom: 0.3rem solid $bg-secundary;
-          border-right: 0.3rem solid $main-color;
+          border-right: 0.4rem solid $main-color;
           border-left: 0.3rem solid $main-color;
           animation: RotationAbout2 8s linear infinite;
         }
       }
     }
+    
     .home-content {
       width: 100%;
       max-width: 70rem;
@@ -291,7 +290,7 @@ body {
 
         &:hover,
         &:active {
-          box-shadow: 0 0 5rem $main-color;
+          box-shadow: 0 0 3rem $main-color;
           color: $text-color;
           background: linear-gradient(to bottom, $main-color, #009cd9);
         }
@@ -314,6 +313,7 @@ body {
         align-items: center;
         width: 4rem;
         height: 4rem;
+        color: $main-color;
         background: transparent;
         border: solid 0.2rem $main-color;
         border-radius: 50%;
@@ -334,7 +334,7 @@ body {
 
   .About {
     position: relative;
-    background: linear-gradient(to top, $bg-secundary, #0c1e2e);
+    background: linear-gradient(to top, $bg-secundary, rgb(12, 30, 46));
     position: relative;
     padding: 0 10%;
     text-align: center;
@@ -429,6 +429,10 @@ body {
               border-left: 0.3rem solid $main-color;
               animation: RotationAbout2 8s linear infinite;
             }
+          }
+
+          .text-container{
+            padding-top: 1rem;
           }
 
           hr {
@@ -1259,11 +1263,6 @@ body {
   }
 
   body {
-    .header {
-      #leng {
-        
-      }
-    }
 
     .About {
       padding-left: 2%;
@@ -1288,43 +1287,17 @@ body {
   html {
     font-size: 65%;
   }
-
-  body {
-    .header {
-      #leng {
-        
-      }
-    }
-
-    
-  }
 }
 
 @media (max-width: 1400px) {
   html {
     font-size: 61%;
   }
-
-  body {
-    .header {
-      #leng {
-        
-      }
-    }
-  }
 }
 
 @media (max-width: 1200px) {
   html {
     font-size: 46%;
-  }
-
-  body {
-    .header {
-      #leng {
-        
-      }
-    }
   }
 }
 
@@ -1334,11 +1307,11 @@ body {
       padding: 0 4%;
 
       #leng {
-        left: 34rem;
+        left: 33rem;
       }
 
       #Btheme{
-        left: 27rem;
+        left: 28rem;
       }
     }
 
@@ -1433,7 +1406,7 @@ body {
       }
 
       #Btheme{
-        left: 68rem;
+        left: 70rem;
       }
 
       .navbar-toggler {
@@ -1507,7 +1480,7 @@ body {
       }
 
       #Btheme{
-        left: 42rem;
+        left: 44rem;
       }
     }
   }
@@ -1517,13 +1490,6 @@ body {
   html {
     font-size: 40%;
   }
-
-  body {
-    .header {
-      #leng {
-        
-      }
-    }
 
     .Home {
       height: 118rem;
@@ -1582,7 +1548,7 @@ body {
       padding-bottom: 12rem;
   }
 }
-}
+
 
 @media (max-width: 375px) {
   html {
@@ -1596,7 +1562,7 @@ body {
       }
 
       #Btheme{
-        left: 51rem;
+        left: 53rem;
       }
     }
 
@@ -1640,7 +1606,7 @@ body {
       }
 
       #Btheme{
-        left: 5rem;
+        left: 55rem;
       }
     }
     

@@ -11,8 +11,8 @@
   --bg-degradado: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
   --Animation1: Dtop 1.5s ease-in-out;
   --bg-navbar-light: #248eff;
-  --bg-primary-light: #42a7ff;
-  --bg-secundary-light: #ffffff;
+  --bg-primary-light: #69b9ff;
+  --bg-secundary-light: #51aeff;
 }
 
 * {
@@ -73,15 +73,15 @@ body .header #leng span {
 }
 body .header #Btheme {
   position: absolute;
-  left: 50rem;
+  left: 52rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   background-color: transparent;
 }
-body .header #Btheme img {
-  width: 5rem;
+body .header #Btheme i {
+  font-size: 3rem;
 }
 body .header .navbar-toggler {
   background-color: transparent;
@@ -115,7 +115,7 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
 }
 body .Home {
   color: #ffffff;
-  height: 68rem;
+  height: 78rem;
   background: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
   display: flex;
   align-items: center;
@@ -134,7 +134,7 @@ body .Home .ImgF .Foto {
   height: 38rem;
   border-radius: 50%;
   box-shadow: 0 0 30px #00b7ff;
-  background: radial-gradient(at center, white, rgb(0, 149, 255), rgb(0, 108, 184));
+  background: radial-gradient(at center, rgb(255, 255, 255), rgb(0, 149, 255), rgb(0, 108, 184));
 }
 body .Home .ImgF .Foto img {
   box-shadow: 0 0 10px 5px #00b7ff;
@@ -165,9 +165,7 @@ body .Home .ImgF .Foto .circle-spin2 {
   width: 110%;
   height: 110%;
   border-radius: 50%;
-  border-top: 0.3rem solid #295c88;
-  border-bottom: 0.3rem solid #295c88;
-  border-right: 0.3rem solid #00b7ff;
+  border-right: 0.4rem solid #00b7ff;
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout2 8s linear infinite;
 }
@@ -241,7 +239,7 @@ body .Home .btn-box .btn {
   transition: box-shadow 0.3s ease;
 }
 body .Home .btn-box .btn:hover, body .Home .btn-box .btn:active {
-  box-shadow: 0 0 5rem #00b7ff;
+  box-shadow: 0 0 3rem #00b7ff;
   color: #ffffff;
   background: linear-gradient(to bottom, #00b7ff, #009cd9);
 }
@@ -261,6 +259,7 @@ body .Home .home-rds a {
   align-items: center;
   width: 4rem;
   height: 4rem;
+  color: #00b7ff;
   background: transparent;
   border: solid 0.2rem #00b7ff;
   border-radius: 50%;
@@ -276,7 +275,7 @@ body .Home .home-rds a:hover {
 }
 body .About {
   position: relative;
-  background: linear-gradient(to top, #295c88, #0c1e2e);
+  background: linear-gradient(to top, #295c88, rgb(12, 30, 46));
   position: relative;
   padding: 0 10%;
   text-align: center;
@@ -360,6 +359,9 @@ body .About .about-content #carouselExample .card .image-container .circle-spin2
   border-right: 0.3rem solid #00b7ff;
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout2 8s linear infinite;
+}
+body .About .about-content #carouselExample .card .text-container {
+  padding-top: 1rem;
 }
 body .About .about-content #carouselExample .card hr {
   border: none;
@@ -1073,10 +1075,10 @@ body .footer .footer-iconTop a i {
     padding: 0 4%;
   }
   body .header #leng {
-    left: 34rem;
+    left: 33rem;
   }
   body .header #Btheme {
-    left: 27rem;
+    left: 28rem;
   }
   body .Home {
     height: 110rem;
@@ -1147,7 +1149,7 @@ body .footer .footer-iconTop a i {
     left: 77rem;
   }
   body .header #Btheme {
-    left: 68rem;
+    left: 70rem;
   }
   body .header .navbar-toggler {
     display: block;
@@ -1199,49 +1201,49 @@ body .footer .footer-iconTop a i {
     left: 50rem;
   }
   body .header #Btheme {
-    left: 42rem;
+    left: 44rem;
   }
 }
 @media (max-width: 425px) {
   html {
     font-size: 40%;
   }
-  body .Home {
+  .Home {
     height: 118rem;
   }
-  body .Home .home-content h1 {
+  .Home .home-content h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body .Home .home-content p {
+  .Home .home-content p {
     font-size: 2rem;
   }
-  body .Home .home-content .btn-box {
+  .Home .home-content .btn-box {
     width: 45rem;
   }
-  body .Home .home-content .btn-box .btn {
+  .Home .home-content .btn-box .btn {
     width: 20rem;
     font-size: 2.25rem;
   }
-  body .Home .home-rds a {
+  .Home .home-rds a {
     width: 8rem;
     height: 8rem;
   }
-  body .Home .home-rds a i {
+  .Home .home-rds a i {
     font-size: 4rem;
   }
-  body .About {
+  .About {
     padding-left: 1.5%;
     padding-right: 1.5%;
   }
-  body .About .about-content #carouselExample .card {
+  .About .about-content #carouselExample .card {
     max-width: 100rem;
   }
-  body .About .about-content #carouselExample .card .card-text {
+  .About .about-content #carouselExample .card .card-text {
     font-size: 1.8rem;
   }
-  body .SKills {
+  .SKills {
     padding-bottom: 12rem;
   }
 }
@@ -1253,7 +1255,7 @@ body .footer .footer-iconTop a i {
     left: 60rem;
   }
   body .header #Btheme {
-    left: 51rem;
+    left: 53rem;
   }
   body .Home .home-content p {
     font-size: 2.8rem;
@@ -1277,7 +1279,7 @@ body .footer .footer-iconTop a i {
     left: 62rem;
   }
   body .header #Btheme {
-    left: 5rem;
+    left: 55rem;
   }
   body .Home .home-content .btn-box {
     width: 45rem;
