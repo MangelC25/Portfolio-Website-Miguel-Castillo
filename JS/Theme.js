@@ -167,12 +167,10 @@ function changethemeAbout(){
     let styles = window.getComputedStyle(About);
     const currentBackground = styles.background;
 
-
     const currentBgSecundary1 = hexToRgb(bgsecundarydark);
-    const currentBgSecundary2 = hexToRgb(bgsecundaryligth);
 
     const bgdegradadodark = `linear-gradient(to top, ${currentBgSecundary1}, rgb(12, 30, 46))`;
-    const bgdegradadolight = `linear-gradient(to top, ${currentBgSecundary2}, rgb(235, 246, 255))`;
+    const bgdegradadolight = `linear-gradient(to top, rgb(128, 128, 128), rgb(235, 246, 255))`;
     
 
     const textElements = About.querySelectorAll('h1, p, #A, .carousel-control-prev-icon, .carousel-control-next-icon');
@@ -183,7 +181,7 @@ function changethemeAbout(){
             element.style.color = bgprimarydark; 
         });
 
-    } else if (currentBackground.includes(currentBgSecundary2)){
+    } else if (currentBackground.includes("rgb(128, 128, 128)")){
         About.style.background = bgdegradadodark;
         textElements.forEach(element => {
             element.style.color = textcolor; 
