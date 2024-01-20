@@ -14,6 +14,7 @@ $Animation1: Dtop 1.5s ease-in-out;
 $bg-navbar-light: #248eff;
 $bg-primary-light: #69b9ff; 
 $bg-secundary-light: #51aeff;
+$before-background: rgb(0, 0, 0);
 
 :root {
   --bg-navbar: #{$bg-navbar};
@@ -27,6 +28,7 @@ $bg-secundary-light: #51aeff;
   --bg-navbar-light: #{$bg-navbar-light};
   --bg-primary-light: #{$bg-primary-light};
   --bg-secundary-light: #{$bg-secundary-light};
+  
 }
 
 * {
@@ -149,7 +151,7 @@ body {
 
   .Home {
     color: $text-color;
-    height: 78rem;
+    height: 80rem;
     background: $bg-degradado;
     display: flex;
     align-items: center;
@@ -333,6 +335,7 @@ body {
   }
 
   .About {
+    --before-background: #{$before-background};
     position: relative;
     background: linear-gradient(to top, $bg-secundary, rgb(12, 30, 46));
     position: relative;
@@ -459,18 +462,19 @@ body {
         left: 0;
         width: 0;
         height: 0;
-        border-left: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-        border-right: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+        border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+        border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
         border-top: 100px solid transparent;
       }
     }
   }
 
   .SKills {
+    --bg-before: #0e2336;
     position: relative;
     padding: 0 10%;
     padding-bottom: 1rem;
-    background: linear-gradient(to top, rgb(113, 113, 113), black);
+    background: linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0));
 
     #MY {
       text-align: center;
@@ -493,6 +497,7 @@ body {
       margin-bottom: 13rem;
       padding-bottom: 4rem;
       border: solid $main-color 2px;
+      background-color: rgba(14, 35, 54, 0.25);
       box-shadow: 0 0 5rem $main-color;
       text-align: center;
       justify-content: center;
@@ -746,8 +751,8 @@ body {
       left: 0;
       width: 0;
       height: 0;
-      border-left: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-      border-right: 50vw solid $bg-primary; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-left: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+      border-right: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
       border-top: 100px solid transparent;
     }
   }
@@ -917,6 +922,7 @@ body {
                   opacity: 0;
                   transition: opacity 1s ease-in-out;
                   transition-delay: 1s;
+                  color: $main-color;
 
                   i {
                     font-size: 2.5rem;
@@ -1037,6 +1043,7 @@ body {
         flex-wrap: wrap;
 
         .input-field {
+          background-color: rgba(14, 35, 54, 0.25);
           position: relative;
           width: 49%;
           margin: 0.8rem 0;
@@ -1085,12 +1092,12 @@ body {
 
         textarea {
           position: relative;
+          background-color: rgba(14, 35, 54, 0.25);
           width: 100%;
           height: 100%;
           padding: 1.5rem;
           font-size: 1.6rem;
           color: $text-color;
-          background: transparent;
           border-radius: 0.6rem;
           resize: none;
           border: solid $main-color 2px;
@@ -1492,7 +1499,7 @@ body {
   }
 
     .Home {
-      height: 118rem;
+      height: 116rem;
 
       .home-content {
         h1 {
@@ -1545,10 +1552,9 @@ body {
     }
 
     .SKills {
-      padding-bottom: 12rem;
+      padding-bottom: 15rem;
   }
 }
-
 
 @media (max-width: 375px) {
   html {
@@ -1594,6 +1600,10 @@ body {
         }
       }
     }
+
+    .SKills {
+      padding-bottom: 12rem;
+  }
   }
 }
 

@@ -11,9 +11,13 @@ const bgdegradado = getComputedStyle(document.documentElement).getPropertyValue(
 const bgnavligth = getComputedStyle(document.documentElement).getPropertyValue('--bg-navbar-light');
 const bgprimaryligth = getComputedStyle(document.documentElement).getPropertyValue('--bg-primary-light');
 const bgsecundaryligth = getComputedStyle(document.documentElement).getPropertyValue('--bg-secundary-light');
+
 const header = document.querySelector(".header");
 const Home = document.querySelector(".Home");
 const About = document.querySelector(".About");
+const SKills = document.querySelector(".SKills");
+const Projects = document.querySelector(".Projects");
+const Contact = document.querySelector(".Contact");
 const navitems = document.querySelectorAll(".header .navbar #navbar .navbar-nav .nav-item");
 
 let navLinks = document.querySelectorAll('.nav-link');
@@ -29,6 +33,9 @@ function changetheme() {
     changethemeheader();
     changethemeHome();
     changethemeAbout();
+    changethemeSKills();
+    changethemeProjects();
+    changethemeContact();
 };
 
 function changethemeheader(){
@@ -84,17 +91,16 @@ function changethemeheader(){
             });
         });
     }
-}
+};
 
 function changethemeHome(){ 
     
     const rds = document.querySelector('.home-rds');
 
     let styles = window.getComputedStyle(Home);
-    let style2 = window.getComputedStyle(rds);
 
     const currentBackground = styles.background; 
-    const currentBackground2 = style2.background;
+
     const currentBgPrimary1 = hexToRgb(bgprimarydark);
     const currentBgPrimary2 = hexToRgb(bgprimaryligth);
 
@@ -108,7 +114,7 @@ function changethemeHome(){
     if (currentBackground.includes(currentBgPrimary1)) {
         Home.style.background = bgdegradadolight;
         textElements.forEach(element => {
-            element.style.color = bgprimarydark; 
+        element.style.color = bgprimarydark; 
         });
         btn.forEach(item => {
             item.style.color = bgprimarydark; 
@@ -158,35 +164,157 @@ function changethemeHome(){
             });
         });
     }
-
-    console.log(currentBackground2);
-
-}
+};
 
 function changethemeAbout(){
     let styles = window.getComputedStyle(About);
+
     const currentBackground = styles.background;
 
     const currentBgSecundary1 = hexToRgb(bgsecundarydark);
 
     const bgdegradadodark = `linear-gradient(to top, ${currentBgSecundary1}, rgb(12, 30, 46))`;
-    const bgdegradadolight = `linear-gradient(to top, rgb(128, 128, 128), rgb(235, 246, 255))`;
-    
+    const bgdegradadolight = `linear-gradient(to top, rgb(180, 180, 180), rgb(235, 246, 255))`;
 
-    const textElements = About.querySelectorAll('h1, p, #A, .carousel-control-prev-icon, .carousel-control-next-icon');
+    const textElements = About.querySelectorAll('h1, p, #A');
+
+    const beforeStyle = About.querySelector('.about-content');
+    let stylesbefore = window.getComputedStyle(beforeStyle, "::before");
+    
 
     if (currentBackground.includes(currentBgSecundary1)) {
         About.style.background = bgdegradadolight;
         textElements.forEach(element => {
             element.style.color = bgprimarydark; 
         });
-
-    } else if (currentBackground.includes("rgb(128, 128, 128)")){
+        About.style.setProperty("--before-background","rgb(180, 180, 180)");
+    } else if (currentBackground.includes("rgb(180, 180, 180)")){
         About.style.background = bgdegradadodark;
         textElements.forEach(element => {
             element.style.color = textcolor; 
         });
+        About.style.setProperty("--before-background","rgb(0, 0, 0)");
     }
+};
+
+function changethemeSKills(){
+    let styles = window.getComputedStyle(SKills);
+    const currentBackground = styles.background;
+
+    const currentBgPrimary2 = hexToRgb(bgprimaryligth);
+
+    const bgdegradadodark = `linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0))`;
+    const bgdegradadolight = `linear-gradient(to top, rgb(182, 251, 182), rgb(255, 255, 255), rgb(180, 180, 180))`;
+    
+    const textElements = SKills.querySelectorAll('#My, h3, h5');
+
+
+    if (currentBackground.includes("rgb(113, 113, 113)")) {
+        SKills.style.background = bgdegradadolight;
+        textElements.forEach(element => {
+            element.style.color = bgprimarydark; 
+        });
+        SKills.style.setProperty("--bg-before",currentBgPrimary2);
+    } else if (currentBackground.includes("rgb(180, 180, 180)")){
+        SKills.style.background = bgdegradadodark;
+        textElements.forEach(element => {
+            element.style.color = textcolor; 
+        });
+        
+        SKills.style.setProperty("--bg-before",bgprimarydark);
+}
+};
+
+function changethemeProjects(){
+    let styles = window.getComputedStyle(Projects);
+
+    const currentBackground = styles.background;
+
+    const currentBgPrimary1 = hexToRgb(bgprimarydark);
+    const currentBgSecundary1 = hexToRgb(bgsecundarydark);
+    const currentBgPrimary2 = hexToRgb(bgprimaryligth);
+
+    const bgdegradadodark = `linear-gradient(to top, ${currentBgSecundary1}, ${currentBgPrimary1})`;
+    const bgdegradadolight = `linear-gradient(to top, rgb(240, 240, 240), ${currentBgPrimary2})`;
+
+    const textElements = Projects.querySelectorAll('#My, #VWM');
+
+    const btn = Projects.querySelector('#VWM');
+
+    if (currentBackground.includes(currentBgPrimary1)) {
+        Projects.style.background = bgdegradadolight;
+        textElements.forEach(element => {
+            element.style.color = bgprimarydark; 
+        });
+        btn.style.color = bgprimarydark; 
+        btn.addEventListener("mouseover", () => {
+            btn.style.color = textcolor;
+            });
+            btn.addEventListener("mouseout", () => {
+                btn.style.color = bgprimarydark
+            });
+    } else if(currentBackground.includes(currentBgPrimary2)){
+        Projects.style.background = bgdegradadodark;
+        textElements.forEach(element => {
+            element.style.color = textcolor; 
+        });
+        btn.style.color = maincolor; 
+        btn.addEventListener("mouseover", () => {
+            btn.style.color = textcolor;
+            });
+            btn.addEventListener("mouseout", () => {
+                btn.style.color = maincolor;
+            });
+
+    }
+}
+
+function changethemeContact(){
+    let styles = window.getComputedStyle(Contact);
+
+    const currentBackground = styles.background;
+
+    const currentBgPrimary1 = hexToRgb(bgprimarydark);
+    const currentBgSecundary1 = hexToRgb(bgsecundarydark);
+
+    const bgdegradadodark = `linear-gradient(to bottom, ${currentBgSecundary1}, ${currentBgPrimary1})`;
+    const bgdegradadolight = `linear-gradient(to bottom, rgb(240, 240, 240), rgb(150, 150, 150))`;
+
+    const textElements = Contact.querySelectorAll('#Ct, #bsubmit');
+
+    const btn = Contact.querySelectorAll('button');
+
+    
+    if (currentBackground.includes(currentBgPrimary1)) {
+        Contact.style.background = bgdegradadolight;
+        textElements.forEach(element => {
+            element.style.color = bgprimarydark; 
+        });
+        btn.forEach(item => {
+            item.style.color = bgprimarydark; 
+            item.addEventListener("mouseover", () => {
+                item.style.color = textcolor;
+            });
+            item.addEventListener("mouseout", () => {
+                item.style.color = bgprimarydark;
+            });
+        });
+    } else if(currentBackground.includes("rgb(180, 180, 180)")){
+        Contact.style.background = bgdegradadodark;
+        textElements.forEach(element => {
+            element.style.color = maincolor; 
+        });
+        btn.forEach(item => { 
+            item.style.color = maincolor; 
+            item.addEventListener("mouseover", () => {
+                item.style.color = textcolor;
+            });
+            item.addEventListener("mouseout", () => {
+                item.style.color = maincolor;
+            });
+        });
+    }
+
 }
 
 function rgbToHex(rgb) {

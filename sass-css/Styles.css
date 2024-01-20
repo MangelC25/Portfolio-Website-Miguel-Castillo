@@ -115,7 +115,7 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
 }
 body .Home {
   color: #ffffff;
-  height: 78rem;
+  height: 80rem;
   background: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
   display: flex;
   align-items: center;
@@ -274,6 +274,7 @@ body .Home .home-rds a:hover {
   color: #ffffff;
 }
 body .About {
+  --before-background: rgb(0, 0, 0);
   position: relative;
   background: linear-gradient(to top, #295c88, rgb(12, 30, 46));
   position: relative;
@@ -382,15 +383,16 @@ body .About .about-content::before {
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-  border-right: 50vw solid black; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-top: 100px solid transparent;
 }
 body .SKills {
+  --bg-before: #0e2336;
   position: relative;
   padding: 0 10%;
   padding-bottom: 1rem;
-  background: linear-gradient(to top, rgb(113, 113, 113), black);
+  background: linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0));
 }
 body .SKills #MY {
   text-align: center;
@@ -410,6 +412,7 @@ body .SKills .skill-container {
   margin-bottom: 13rem;
   padding-bottom: 4rem;
   border: solid #00b7ff 2px;
+  background-color: rgba(14, 35, 54, 0.25);
   box-shadow: 0 0 5rem #00b7ff;
   text-align: center;
   justify-content: center;
@@ -615,8 +618,8 @@ body .SKills::before {
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50vw solid #0e2336; /* Ancho del triángulo (mitad del ancho de la pantalla) */
-  border-right: 50vw solid #0e2336; /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-left: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+  border-right: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-top: 100px solid transparent;
 }
 body .Projects {
@@ -765,6 +768,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   opacity: 0;
   transition: opacity 1s ease-in-out;
   transition-delay: 1s;
+  color: #00b7ff;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces a i {
   font-size: 2.5rem;
@@ -863,6 +867,7 @@ body .Contact form .input-box {
   flex-wrap: wrap;
 }
 body .Contact form .input-box .input-field {
+  background-color: rgba(14, 35, 54, 0.25);
   position: relative;
   width: 49%;
   margin: 0.8rem 0;
@@ -905,12 +910,12 @@ body .Contact form .textarea-field {
 }
 body .Contact form .textarea-field textarea {
   position: relative;
+  background-color: rgba(14, 35, 54, 0.25);
   width: 100%;
   height: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
   color: #ffffff;
-  background: transparent;
   border-radius: 0.6rem;
   resize: none;
   border: solid #00b7ff 2px;
@@ -1209,7 +1214,7 @@ body .footer .footer-iconTop a i {
     font-size: 40%;
   }
   .Home {
-    height: 118rem;
+    height: 116rem;
   }
   .Home .home-content h1 {
     display: flex;
@@ -1244,7 +1249,7 @@ body .footer .footer-iconTop a i {
     font-size: 1.8rem;
   }
   .SKills {
-    padding-bottom: 12rem;
+    padding-bottom: 15rem;
   }
 }
 @media (max-width: 375px) {
@@ -1272,6 +1277,9 @@ body .footer .footer-iconTop a i {
   }
   body .About .about-content #carouselExample .card .card-text {
     font-size: 2.3rem;
+  }
+  body .SKills {
+    padding-bottom: 12rem;
   }
 }
 @media (max-width: 320px) {
