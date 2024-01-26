@@ -1,4 +1,11 @@
 {
+  "nav":{
+    "1":"Home",
+    "2":"About Me",
+    "3":"Skills",
+    "4":"Projects",
+    "5":"Contact"
+  },
   "profile": {
     "description": "Welcome to my digital corner! Here, creativity merges with the magic of code. Explore how I transform ideas into captivating visual experiences. Join me on this journey through the fascinating world of digital development!",
     "name": "Hi, I'm Miguel Castillo",

@@ -299,7 +299,7 @@ function changethemeContact(){
                 item.style.color = bgprimarydark;
             });
         });
-    } else if(currentBackground.includes("rgb(180, 180, 180)")){
+    } else if(currentBackground.includes("rgb(150, 150, 150)")){
         Contact.style.background = bgdegradadodark;
         textElements.forEach(element => {
             element.style.color = maincolor; 

@@ -1290,21 +1290,62 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
   html {
     font-size: 65%;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1401px) {
   html {
     font-size: 61%;
   }
+
+  body {
+    .header {
+      #leng {
+        left: 58rem;
+      }
+
+      #Btheme{
+        left: 52rem;
+      }
+    }
+
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1201px) {
   html {
     font-size: 46%;
+  }
+
+  body {
+    .header {
+      #leng {
+        left: 80rem;
+      }
+
+      #Btheme{
+        left: 73rem;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1025px) {
+  body {
+    .header {
+      #leng {
+        left: 58rem;
+      }
+
+      #Btheme{
+        left: 51rem;
+      }
+    }
+
   }
 }
 
@@ -1312,13 +1353,52 @@ body {
   body {
     .header {
       padding: 0 4%;
+      
+      .navbar-toggler {
+        display: block;
+        position: relative;
+      }
+
+      .navbar {
+        position: absolute;
+        top: 90%;
+        left: 0;
+
+        #navbar {
+          width: 100vw;
+          height: 100%;
+          background-color: #0c16217d;
+          backdrop-filter: blur(5px);
+          .navbar-nav {
+            padding: 5rem 4%;
+            .nav-item {
+              .nav-link {
+                transition: 0.3s;
+                transition: text-shadow 0.3s ease;
+
+                &:hover {
+                  color: $main-color;
+                  text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
+                    0 0 3rem $main-color;
+                }
+              }
+
+              .active {
+                color: $main-color;
+                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                  0 0 30px $main-color;
+              }
+            }
+          }
+        }
+      }
 
       #leng {
-        left: 33rem;
+        left: 85rem;
       }
 
       #Btheme{
-        left: 28rem;
+        left: 78rem;
       }
     }
 
@@ -1409,51 +1489,14 @@ body {
   body {
     .header {
       #leng {
-        left: 77rem;
+        left: 78rem;
       }
 
       #Btheme{
-        left: 70rem;
+        left: 72rem;
       }
 
-      .navbar-toggler {
-        display: block;
-        position: relative;
-      }
-
-      .navbar {
-        position: absolute;
-        top: 90%;
-        left: 0;
-
-        #navbar {
-          width: 100vw;
-          height: 100%;
-          background-color: #0c16217d;
-          backdrop-filter: blur(5px);
-          .navbar-nav {
-            padding: 5rem 4%;
-            .nav-item {
-              .nav-link {
-                transition: 0.3s;
-                transition: text-shadow 0.3s ease;
-
-                &:hover {
-                  color: $main-color;
-                  text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
-                    0 0 3rem $main-color;
-                }
-              }
-
-              .active {
-                color: $main-color;
-                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-                  0 0 30px $main-color;
-              }
-            }
-          }
-        }
-      }
+      
     }
 
     .About {
@@ -1475,7 +1518,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 577px) {
   html {
     font-size: 42%;
   }
@@ -1493,7 +1536,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   html {
     font-size: 40%;
   }
@@ -1616,11 +1659,11 @@ body {
   body {
     .header {
       #leng {
-        left: 62rem;
+        left: 64rem;
       }
 
       #Btheme{
-        left: 55rem;
+        left: 58rem;
       }
     }
     

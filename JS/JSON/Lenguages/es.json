@@ -1,4 +1,11 @@
 {
+  "nav":{
+    "1":"Inicio",
+    "2":"Sobre Mi",
+    "3":"Habilidades",
+    "4":"Proyectos",
+    "5":"Contacto"
+  },
   "profile": {
     "description": "¡Bienvenido a mi rincón digital! Aquí, la creatividad se fusiona con la magia del código. Explora cómo transformo ideas en experiencias visuales cautivadoras. ¡Acompáñame en este viaje a través del fascinante mundo del desarrollo digital!",
     "name": "Hola, Soy Miguel castillo",
