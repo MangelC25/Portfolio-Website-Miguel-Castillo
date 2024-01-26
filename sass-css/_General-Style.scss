@@ -1545,7 +1545,7 @@ body {
     font-size: 40%;
   }
 
-    .Home {
+  body{.Home {
       height: 116rem;
 
       .home-content {
@@ -1600,7 +1600,10 @@ body {
 
     .SKills {
       padding-bottom: 15rem;
-  }
+  }}
+
+  
+    
 }
 
 @media (max-width: 375px) {

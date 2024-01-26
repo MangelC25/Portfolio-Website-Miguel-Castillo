@@ -41,6 +41,7 @@ $(() => {
 
   $b.on('click', function() {
     cambiaridioma($(this).data('language'));
+    console.log($(this).data('language'));
     MediasQuerys();
   });
 
@@ -95,7 +96,6 @@ $(() => {
   async function MediasQuerys() {
 
     const WindowWith = $(window).width();
-    console.log(WindowWith);
     
     let idiomaactual;
 
@@ -119,6 +119,10 @@ $(() => {
         $Btheme.css({ left: '53rem' });
       }
     } else if (idiomaactual === 'es'){
+      if (window.matchMedia("(max-width: 2560px)").matches) {
+        $b.css({ left: '50rem'  });
+        $Btheme.css({ left: '44rem' });
+      } 
       if (window.matchMedia("(max-width: 1400px)").matches) {
         $b.css({ left: '50rem'  });
         $Btheme.css({ left: '44rem' });
@@ -133,10 +137,18 @@ $(() => {
         $b.css({ left: '85rem'  });
         $Btheme.css({ left: '78rem' });
       }  
+      if (window.matchMedia("(max-width: 760px)").matches) {
+        $b.css({ left: '85rem'  });
+        $Btheme.css({ left: '78rem' });
+      } 
       
       if (window.matchMedia("(max-width: 577px)").matches) {
         $b.css({ left: '50rem'  });
         $Btheme.css({ left: '44rem' });
+      }
+      if (window.matchMedia("(max-width: 375px)").matches) {
+        $b.css({ left: '60rem'  });
+        $Btheme.css({ left: '53rem' });
       }
       if (window.matchMedia("(max-width: 375px)").matches) {
         $b.css({ left: '60rem'  });

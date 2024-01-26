@@ -1237,42 +1237,42 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 40%;
   }
-  .Home {
+  body .Home {
     height: 116rem;
   }
-  .Home .home-content h1 {
+  body .Home .home-content h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .Home .home-content p {
+  body .Home .home-content p {
     font-size: 2rem;
   }
-  .Home .home-content .btn-box {
+  body .Home .home-content .btn-box {
     width: 45rem;
   }
-  .Home .home-content .btn-box .btn {
+  body .Home .home-content .btn-box .btn {
     width: 20rem;
     font-size: 2.25rem;
   }
-  .Home .home-rds a {
+  body .Home .home-rds a {
     width: 8rem;
     height: 8rem;
   }
-  .Home .home-rds a i {
+  body .Home .home-rds a i {
     font-size: 4rem;
   }
-  .About {
+  body .About {
     padding-left: 1.5%;
     padding-right: 1.5%;
   }
-  .About .about-content #carouselExample .card {
+  body .About .about-content #carouselExample .card {
     max-width: 100rem;
   }
-  .About .about-content #carouselExample .card .card-text {
+  body .About .about-content #carouselExample .card .card-text {
     font-size: 1.8rem;
   }
-  .SKills {
+  body .SKills {
     padding-bottom: 15rem;
   }
 }
