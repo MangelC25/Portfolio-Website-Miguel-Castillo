@@ -745,6 +745,10 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   background-color: #4e4e4e;
   border-radius: 0.5rem;
 }
+body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpjQuery {
+  background-color: #0768AC;
+  border-radius: 0.5rem;
+}
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
   display: flex;
   width: 100%;

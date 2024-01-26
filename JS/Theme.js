@@ -23,10 +23,8 @@ const navitems = document.querySelectorAll(".header .navbar #navbar .navbar-nav 
 let navLinks = document.querySelectorAll('.nav-link');
 
 
-
 Btheme.addEventListener("click",() =>{
     changetheme();
-    
 })
 
 function changetheme() {
