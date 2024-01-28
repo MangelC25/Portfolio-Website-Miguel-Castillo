@@ -13,7 +13,8 @@ $(() => {
       const texts = await requestjson.json();
 
       // Ocultar los elementos antes de cambiar el idioma
-      $('#Btheme, #leng, .navbar-nav a, .Home > *, .About > *, #MY, .skill-container > *, .Projects > *, .Contact > *').fadeOut('slow', async function() {
+      $('#Btheme, #leng, .navbar-nav a, .ImgF, .home-content, .btn-box, .home-rds, .heading, .about-content, #MY, .skill-container > *, .projects-container, #contact, #form').fadeOut('slow', async function() {
+        $(this).css('pointer-events', 'none'); 
         $cambiartexto.each(function() {
           const $this = $(this);
           const section = $this.data('section');
@@ -27,7 +28,9 @@ $(() => {
         });
 
         // Mostrar los elementos una vez que se hayan actualizado
-        $('#Btheme, #leng, .navbar-nav a, .Home > *, .About > *, #MY, .skill-container > *, .Projects > *, .Contact > *').fadeIn('slow');
+        $('#Btheme, #leng, .navbar-nav a, .ImgF, .home-content, .btn-box, .home-rds, .heading, .about-content, #MY, .skill-container > *, .projects-container, #contact, #form').fadeIn('slow', function() {
+          $(this).css('pointer-events', 'auto'); // Habilitar los elementos después de la transición
+      });
 
         // Llamar a cambioidioma() después de que se complete el desvanecimiento y la traducción
         await cambioidioma();
@@ -40,32 +43,39 @@ $(() => {
   };
 
   $b.on('click', function() {
-    cambiaridioma($(this).data('language'));
+    let newLanguage = $(this).data('language');
+
+    if (newLanguage === "en") {
+      newLanguage = "es";
+    } else if(newLanguage === "es"){
+      newLanguage = "en";
+    }
+    
+    cambiaridioma(newLanguage);
+    $(this).data('language', newLanguage);
     console.log($(this).data('language'));
-    MediasQuerys();
+    
   });
 
   async function cambioidioma() {
     let src;
     let texto;
-    let datalg;
     let textamimesixe;
     let hdelay;
     let icon1;
     let icon2;
+    let newLanguage = $b.data('language');
 
-    if ($lenguage.attr('src').includes('English')) {
+    if (newLanguage === 'es') {
       src = 'img/lenguage/Espanol.png';
       texto = 'ES';
-      datalg = 'en';
       textamimesixe = '52rem';
       hdelay = '2.08s';
       icon1 = `50rem`;
       icon2 = `44rem`;
-    } else if ($lenguage.attr('src').includes('Espanol')) {
+    } else if (newLanguage === 'en') {
       src = 'img/lenguage/English.png';
       texto = 'EN';
-      datalg = 'es';
       textamimesixe = '50rem';
       hdelay = '2s';
       icon1 = `58rem`;
@@ -76,7 +86,6 @@ $(() => {
       detail: {
         src,
         texto,
-        datalg,
         textamimesixe,
         hdelay,
         icon1,
@@ -86,7 +95,6 @@ $(() => {
 
     $lenguage.attr('src', evento.detail.src);
     $ACR.text(evento.detail.texto);
-    $b.data('language', evento.detail.datalg);
     $rold.css('width', evento.detail.textamimesixe);
     $h3animated.css('animation-delay', evento.detail.hdelay);
     $b.css({ left: evento.detail.icon1 });
@@ -94,16 +102,8 @@ $(() => {
   }
 
   async function MediasQuerys() {
-
-    const WindowWith = $(window).width();
-    
-    let idiomaactual;
-
-    if ($lenguage.attr('src').includes('English')) {
-      idiomaactual = "en";
-    } else if ($lenguage.attr('src').includes('Espanol')) {
-      idiomaactual = "es";
-    }
+     
+    let idiomaactual = $b.data('language');;
 
     if (idiomaactual === 'en') {
       if (window.matchMedia("(max-width: 991px)").matches) {

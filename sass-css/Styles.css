@@ -1274,7 +1274,6 @@ body .footer .footer-iconTop a i {
   }
   body .About {
     padding: 12rem 2rem;
-    background: linear-gradient(to top, rgb(41, 92, 136), #0e2336);
   }
   body .About .about-content #carouselExample .card {
     max-width: 100rem;
