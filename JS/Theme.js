@@ -1,5 +1,5 @@
-const Btheme = document.getElementById("Btheme");
 
+const Btheme = document.getElementById("Btheme");
 const bgnavdark = getComputedStyle(document.documentElement).getPropertyValue('--bg-navbar');
 const bgprimarydark = getComputedStyle(document.documentElement).getPropertyValue('--bg-primary');
 const bgsecundarydark = getComputedStyle(document.documentElement).getPropertyValue('--bg-secundary');
@@ -22,6 +22,11 @@ const navitems = document.querySelectorAll(".header .navbar #navbar .navbar-nav 
 
 let navLinks = document.querySelectorAll('.nav-link');
 
+let fondoVisibleH = 1;
+let fondoVisibleA = 1;
+let fondoVisibleS = 1;
+let fondoVisibleP = 1;
+let fondoVisibleC = 1;
 
 Btheme.addEventListener("click",() =>{
     changetheme();
@@ -42,10 +47,12 @@ function changethemeheader(){
     let Bthemeheader = header.getElementsByClassName("Btheme")[0];
 
     if (currentBgColor === bgnavdark) {
+        header.style.transition = "background-color 0.5s ease-in-out";
         header.style.backgroundColor = bgnavligth;
         Bthemeheader.querySelector("i").className = "bx bxs-sun";
         navitems.forEach(item => {
             item.addEventListener("mouseover", () => {
+                item.style.transition = "background-color 0.5s ease-in-out";
                 item.style.backgroundColor = "#ffffff";
                 item.style["border-radius"] = "5rem";
             });
@@ -66,6 +73,7 @@ function changethemeheader(){
         });
 
     } else if (currentBgColor === bgnavligth) {
+        header.style.transition = "background-color 0.5s ease-in-out";
         Bthemeheader.querySelector("i").className = "bx bxs-moon";
         header.style.backgroundColor = bgnavdark;
         navitems.forEach(item => {
@@ -93,24 +101,26 @@ function changethemeheader(){
 
 function changethemeHome(){ 
     
+    let fondoActual = document.getElementById(`fondoH${fondoVisibleH}`);
+    let fondoSiguiente = document.getElementById(`fondoH${3 - fondoVisibleH}`);
     const rds = document.querySelector('.home-rds');
 
-    let styles = window.getComputedStyle(Home);
+    let styles = window.getComputedStyle(fondoActual);
 
     const currentBackground = styles.background; 
-
-    const currentBgPrimary1 = hexToRgb(bgprimarydark);
-    const currentBgPrimary2 = hexToRgb(bgprimaryligth);
-
-    const bgdegradadolight = `linear-gradient(to top, rgb(255, 255, 255), ${currentBgPrimary2})`;
 
     const textElements = Home.querySelectorAll('h1, h2, p, a');
     const btn = Home.querySelectorAll('a');
 
     const linksbtm = rds.querySelectorAll('a');
     
-    if (currentBackground.includes(currentBgPrimary1)) {
-        Home.style.background = bgdegradadolight;
+    if (currentBackground.includes("rgb(14, 35, 54)")) {
+
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleH = 3 - fondoVisibleH;
+
         textElements.forEach(element => {
         element.style.color = bgprimarydark; 
         });
@@ -135,8 +145,13 @@ function changethemeHome(){
                 item.style.boxShadow = "none";
             });
         });
-    } else if (currentBackground.includes(currentBgPrimary2)){
-        Home.style.background = bgdegradado;
+    } else if (currentBackground.includes("rgb(105, 185, 255)")){
+
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleH = 3 - fondoVisibleH;
+
         textElements.forEach(element => {
             element.style.color = textcolor; 
         });
@@ -165,29 +180,30 @@ function changethemeHome(){
 };
 
 function changethemeAbout(){
-    let styles = window.getComputedStyle(About);
+    let fondoActual = document.getElementById(`fondoA${fondoVisibleA}`);
+    let fondoSiguiente = document.getElementById(`fondoA${3 - fondoVisibleA}`);
+
+    let styles = window.getComputedStyle(fondoActual);
 
     const currentBackground = styles.background;
 
-    const currentBgSecundary1 = hexToRgb(bgsecundarydark);
-
-    const bgdegradadodark = `linear-gradient(to top, ${currentBgSecundary1}, rgb(12, 30, 46))`;
-    const bgdegradadolight = `linear-gradient(to top, rgb(180, 180, 180), rgb(235, 246, 255))`;
-
     const textElements = About.querySelectorAll('h1, p, #A');
-
-    const beforeStyle = About.querySelector('.about-content');
-    let stylesbefore = window.getComputedStyle(beforeStyle, "::before");
     
 
-    if (currentBackground.includes(currentBgSecundary1)) {
-        About.style.background = bgdegradadolight;
+    if (currentBackground.includes("rgb(41, 92, 136)")) {
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleA = 3 - fondoVisibleA;
         textElements.forEach(element => {
             element.style.color = bgprimarydark; 
         });
         About.style.setProperty("--before-background","rgb(180, 180, 180)");
     } else if (currentBackground.includes("rgb(180, 180, 180)")){
-        About.style.background = bgdegradadodark;
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleA = 3 - fondoVisibleA;
         textElements.forEach(element => {
             element.style.color = textcolor; 
         });
@@ -196,25 +212,30 @@ function changethemeAbout(){
 };
 
 function changethemeSKills(){
-    let styles = window.getComputedStyle(SKills);
+    let fondoActual = document.getElementById(`fondoS${fondoVisibleS}`);
+    let fondoSiguiente = document.getElementById(`fondoS${3 - fondoVisibleS}`);
+
+    let styles = window.getComputedStyle(fondoActual);
+
     const currentBackground = styles.background;
-
-    const currentBgPrimary2 = hexToRgb(bgprimaryligth);
-
-    const bgdegradadodark = `linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0))`;
-    const bgdegradadolight = `linear-gradient(to top, rgb(182, 251, 182), rgb(255, 255, 255), rgb(180, 180, 180))`;
     
     const textElements = SKills.querySelectorAll('#My, h3, h5');
 
 
     if (currentBackground.includes("rgb(113, 113, 113)")) {
-        SKills.style.background = bgdegradadolight;
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleS = 3 - fondoVisibleS;
         textElements.forEach(element => {
             element.style.color = bgprimarydark; 
         });
-        SKills.style.setProperty("--bg-before",currentBgPrimary2);
-    } else if (currentBackground.includes("rgb(180, 180, 180)")){
-        SKills.style.background = bgdegradadodark;
+        SKills.style.setProperty("--bg-before","rgb(105, 185, 255)");
+    } else if (currentBackground.includes("rgb(182, 251, 182)")){
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleS = 3 - fondoVisibleS;
         textElements.forEach(element => {
             element.style.color = textcolor; 
         });
@@ -224,23 +245,22 @@ function changethemeSKills(){
 };
 
 function changethemeProjects(){
-    let styles = window.getComputedStyle(Projects);
+    let fondoActual = document.getElementById(`fondoP${fondoVisibleP}`);
+    let fondoSiguiente = document.getElementById(`fondoP${3 - fondoVisibleP}`);
+
+    let styles = window.getComputedStyle(fondoActual);
 
     const currentBackground = styles.background;
-
-    const currentBgPrimary1 = hexToRgb(bgprimarydark);
-    const currentBgSecundary1 = hexToRgb(bgsecundarydark);
-    const currentBgPrimary2 = hexToRgb(bgprimaryligth);
-
-    const bgdegradadodark = `linear-gradient(to top, ${currentBgSecundary1}, ${currentBgPrimary1})`;
-    const bgdegradadolight = `linear-gradient(to top, rgb(240, 240, 240), ${currentBgPrimary2})`;
 
     const textElements = Projects.querySelectorAll('#My, #VWM');
 
     const btn = Projects.querySelector('#VWM');
 
-    if (currentBackground.includes(currentBgPrimary1)) {
-        Projects.style.background = bgdegradadolight;
+    if (currentBackground.includes("rgb(14, 35, 54)")) {
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleP = 3 - fondoVisibleP;
         textElements.forEach(element => {
             element.style.color = bgprimarydark; 
         });
@@ -251,8 +271,11 @@ function changethemeProjects(){
             btn.addEventListener("mouseout", () => {
                 btn.style.color = bgprimarydark
             });
-    } else if(currentBackground.includes(currentBgPrimary2)){
-        Projects.style.background = bgdegradadodark;
+    } else if(currentBackground.includes("rgb(105, 185, 255)")){
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleP = 3 - fondoVisibleP;
         textElements.forEach(element => {
             element.style.color = textcolor; 
         });
@@ -263,28 +286,27 @@ function changethemeProjects(){
             btn.addEventListener("mouseout", () => {
                 btn.style.color = maincolor;
             });
-
     }
 }
 
 function changethemeContact(){
-    let styles = window.getComputedStyle(Contact);
+    let fondoActual = document.getElementById(`fondoC${fondoVisibleC}`);
+    let fondoSiguiente = document.getElementById(`fondoC${3 - fondoVisibleC}`);
+
+    let styles = window.getComputedStyle(fondoActual);
 
     const currentBackground = styles.background;
-
-    const currentBgPrimary1 = hexToRgb(bgprimarydark);
-    const currentBgSecundary1 = hexToRgb(bgsecundarydark);
-
-    const bgdegradadodark = `linear-gradient(to bottom, ${currentBgSecundary1}, ${currentBgPrimary1})`;
-    const bgdegradadolight = `linear-gradient(to bottom, rgb(240, 240, 240), rgb(150, 150, 150))`;
 
     const textElements = Contact.querySelectorAll('#Ct, #bsubmit');
 
     const btn = Contact.querySelectorAll('button');
 
     
-    if (currentBackground.includes(currentBgPrimary1)) {
-        Contact.style.background = bgdegradadolight;
+    if (currentBackground.includes("rgb(41, 92, 136)")) {
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleC = 3 - fondoVisibleC;
         textElements.forEach(element => {
             element.style.color = bgprimarydark; 
         });
@@ -298,7 +320,10 @@ function changethemeContact(){
             });
         });
     } else if(currentBackground.includes("rgb(150, 150, 150)")){
-        Contact.style.background = bgdegradadodark;
+        fondoActual.style.opacity = '0';
+        fondoSiguiente.style.opacity = '1';
+
+        fondoVisibleC = 3 - fondoVisibleC;
         textElements.forEach(element => {
             element.style.color = maincolor; 
         });

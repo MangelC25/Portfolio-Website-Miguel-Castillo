@@ -4,14 +4,14 @@
 /*Variables*/
 :root {
   --bg-navbar: #0c1621;
-  --bg-primary: #0e2336;
-  --bg-secundary: #295c88;
+  --bg-primary: rgb(14, 35, 54);
+  --bg-secundary: rgb(41, 92, 136);
   --text-color: #ffffff;
   --main-color: #00b7ff;
-  --bg-degradado: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
+  --bg-degradado: linear-gradient(to top, rgb(14, 35, 54), rgb(0, 0, 0));
   --Animation1: Dtop 1.5s ease-in-out;
   --bg-navbar-light: #248eff;
-  --bg-primary-light: #69b9ff;
+  --bg-primary-light: rgb(105, 185, 255);
   --bg-secundary-light: #51aeff;
 }
 
@@ -108,6 +108,7 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link {
 body .header .navbar #navbar .navbar-nav .nav-item .nav-link:hover {
   color: #00b7ff;
   text-shadow: 0 0 1rem #00b7ff, 0 0 2rem #00b7ff, 0 0 3rem #00b7ff;
+  transition: all 0.5s ease-in-out;
 }
 body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
   color: #00b7ff;
@@ -116,12 +117,29 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
 body .Home {
   color: #ffffff;
   height: 80rem;
-  background: linear-gradient(to top, #0e2336, rgb(0, 0, 0));
   display: flex;
   align-items: center;
   padding: 0 10%;
   gap: 5rem;
-  z-index: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+body .Home .FondoHome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+body .Home #fondoH1 {
+  background: linear-gradient(to top, rgb(14, 35, 54), rgb(0, 0, 0)); /* Degradado por defecto */
+  opacity: 1;
+}
+body .Home #fondoH2 {
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(105, 185, 255)); /* Nuevo degradado */
+  opacity: 0;
 }
 body .Home .ImgF {
   position: relative;
@@ -151,8 +169,8 @@ body .Home .ImgF .Foto .circle-spin {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-top: 0.3rem solid #295c88;
-  border-bottom: 0.3rem solid #295c88;
+  border-top: 0.3rem solid rgb(41, 92, 136);
+  border-bottom: 0.3rem solid rgb(41, 92, 136);
   border-right: 0.3rem solid #00b7ff;
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
@@ -189,7 +207,7 @@ body .Home .home-content .text-animate h3 {
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: #00b7ff 0.7px;
-  background-image: linear-gradient(#00b7ff, #295c88);
+  background-image: linear-gradient(#00b7ff, rgb(41, 92, 136));
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -276,10 +294,26 @@ body .Home .home-rds a:hover {
 body .About {
   --before-background: rgb(0, 0, 0);
   position: relative;
-  background: linear-gradient(to top, #295c88, rgb(12, 30, 46));
-  position: relative;
   padding: 0 10%;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+body .About .FondoAbout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+body .About #fondoA1 {
+  background: linear-gradient(to top, rgb(41, 92, 136), rgb(12, 30, 46)); /* Degradado por defecto */
+  opacity: 1;
+}
+body .About #fondoA2 {
+  background: linear-gradient(to top, rgb(180, 180, 180), rgb(235, 246, 255)); /* Nuevo degradado */
+  opacity: 0;
 }
 body .About .heading {
   font-family: "Kenia", sans-serif;
@@ -341,8 +375,8 @@ body .About .about-content #carouselExample .card .image-container .circle-spin 
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-top: 0.3rem solid #295c88;
-  border-bottom: 0.3rem solid #295c88;
+  border-top: 0.3rem solid rgb(41, 92, 136);
+  border-bottom: 0.3rem solid rgb(41, 92, 136);
   border-right: 0.3rem solid #00b7ff;
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout 8s linear infinite;
@@ -355,8 +389,8 @@ body .About .about-content #carouselExample .card .image-container .circle-spin2
   width: 110%;
   height: 110%;
   border-radius: 50%;
-  border-top: 0.3rem solid #295c88;
-  border-bottom: 0.3rem solid #295c88;
+  border-top: 0.3rem solid rgb(41, 92, 136);
+  border-bottom: 0.3rem solid rgb(41, 92, 136);
   border-right: 0.3rem solid #00b7ff;
   border-left: 0.3rem solid #00b7ff;
   animation: RotationAbout2 8s linear infinite;
@@ -386,13 +420,31 @@ body .About .about-content::before {
   border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-top: 100px solid transparent;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills {
   --bg-before: #0e2336;
   position: relative;
   padding: 0 10%;
   padding-bottom: 1rem;
-  background: linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0));
+  transition: all 0.5s ease-in-out;
+}
+body .SKills .FondoSkills {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+body .SKills #fondoS1 {
+  background: linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0)); /* Degradado por defecto */
+  opacity: 1;
+}
+body .SKills #fondoS2 {
+  background: linear-gradient(to top, rgb(182, 251, 182), rgb(255, 255, 255), rgb(180, 180, 180)); /* Nuevo degradado */
+  opacity: 0;
 }
 body .SKills #MY {
   text-align: center;
@@ -621,11 +673,28 @@ body .SKills::before {
   border-left: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-right: 50vw solid var(--bg-before); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-top: 100px solid transparent;
+  transition: all 0.5s ease-in-out;
 }
 body .Projects {
   position: relative;
-  background: linear-gradient(to top, #295c88, #0e2336);
   padding: 0 10%;
+}
+body .Projects .FondoProjects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+body .Projects #fondoP1 {
+  background: linear-gradient(to top, rgb(41, 92, 136), rgb(14, 35, 54)); /* Degradado por defecto */
+  opacity: 1;
+}
+body .Projects #fondoP2 {
+  background: linear-gradient(to top, rgb(240, 240, 240), rgb(105, 185, 255)); /* Nuevo degradado */
+  opacity: 0;
 }
 body .Projects #MY {
   text-align: center;
@@ -843,10 +912,26 @@ body .Projects .projects-container .viewm #viewmp a:hover, body .Projects .proje
 body .Contact {
   min-height: auto;
   position: relative;
-  background: linear-gradient(to bottom, #295c88, #0e2336);
   padding: 0 10%;
   padding-top: 10rem;
   padding-bottom: 3rem;
+}
+body .Contact .FondoContact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+body .Contact #fondoC1 {
+  background: linear-gradient(to bottom, rgb(41, 92, 136), rgb(14, 35, 54)); /* Degradado por defecto */
+  opacity: 1;
+}
+body .Contact #fondoC2 {
+  background: linear-gradient(to bottom, rgb(240, 240, 240), rgb(150, 150, 150)); /* Nuevo degradado */
+  opacity: 0;
 }
 body .Contact #contact {
   text-align: center;
@@ -903,7 +988,7 @@ body .Contact form .input-box .input-field .focus {
   left: 0;
   width: 0%;
   height: 100%;
-  background: #295c88;
+  background: rgb(41, 92, 136);
   z-index: 1;
   transition: 0.5s;
 }
@@ -940,7 +1025,7 @@ body .Contact form .textarea-field .focus {
   left: 0;
   width: 0%;
   height: 100%;
-  background: #295c88;
+  background: rgb(41, 92, 136);
   z-index: 1;
   transition: 0.5s;
 }
@@ -973,7 +1058,7 @@ body .Contact form .btn-box .btn:hover, body .Contact form .btn-box .btn:active 
 }
 body .footer {
   color: #ffffff;
-  background-color: #0e2336;
+  background-color: rgb(14, 35, 54);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1003,7 +1088,7 @@ body .footer .footer-iconTop a::before {
   left: 0;
   width: 0%;
   height: 100%;
-  background: #295c88;
+  background: rgb(41, 92, 136);
   transition: 0.5s;
   z-index: -1;
 }
@@ -1015,7 +1100,7 @@ body .footer .footer-iconTop a:hover i, body .footer .footer-iconTop a:active i 
 }
 body .footer .footer-iconTop a i {
   font-size: 2.4rem;
-  color: #0e2336;
+  color: rgb(14, 35, 54);
   transition: 0.5s;
 }
 
@@ -1189,7 +1274,7 @@ body .footer .footer-iconTop a i {
   }
   body .About {
     padding: 12rem 2rem;
-    background: linear-gradient(to top, #295c88, #0e2336);
+    background: linear-gradient(to top, rgb(41, 92, 136), #0e2336);
   }
   body .About .about-content #carouselExample .card {
     max-width: 100rem;
