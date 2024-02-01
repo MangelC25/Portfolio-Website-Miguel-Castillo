@@ -644,7 +644,7 @@ body {
                 cursor: pointer;
                 background-color: #e44d26;
                 box-shadow: 0 0 2rem 0.5rem #fd7b5a;
-                transition: box-shadow 0.5s;
+                transition: all 0.5s ease-in-out;
                 i {
                   color: white;
                 }
@@ -668,7 +668,7 @@ body {
                 cursor: pointer;
                 background-color: #2d92cd;
                 box-shadow: 0 0 2rem 0.5rem #3bb3f8;
-                transition: box-shadow 0.5s;
+                transition: all 0.5s ease-in-out;
                 i {
                   color: white;
                 }
@@ -692,7 +692,7 @@ body {
                 cursor: pointer;
                 background-color: #f0c02b;
                 box-shadow: 0 0 2rem 0.5rem #ffd042;
-                transition: box-shadow 0.5s;
+                transition: all 0.5s ease-in-out;
                 i {
                   color: white;
                 }
@@ -715,7 +715,7 @@ body {
                 cursor: pointer;
                 background-color: rgb(59, 204, 248);
                 box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
-                transition: box-shadow 0.5s;
+                transition: all 0.5s ease-in-out;
               }
 
               .Stitle {
@@ -735,7 +735,7 @@ body {
                 cursor: pointer;
                 background-color: white;
                 box-shadow: 0 0 2rem 0.5rem white;
-                transition: box-shadow 0.5s;
+                transition: all 0.5s ease-in-out;
               }
 
               .Stitle {
@@ -763,7 +763,7 @@ body {
               cursor: pointer;
               background-color: #702df5;
               box-shadow: 0 0 2rem 0.5rem #af8bf7;
-              transition: box-shadow 0.5s;
+              transition: all 0.5s ease-in-out;
               i {
                 color: white;
               }
@@ -791,7 +791,7 @@ body {
               cursor: pointer;
               background-color: #cd669a;
               box-shadow: 0 0 2rem 0.5rem #fa9aca;
-              transition: box-shadow 0.5s;
+              transition: all 0.5s ease-in-out;
               i {
                 color: white;
               }

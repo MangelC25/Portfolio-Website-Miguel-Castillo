@@ -539,7 +539,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon, body
   cursor: pointer;
   background-color: #e44d26;
   box-shadow: 0 0 2rem 0.5rem #fd7b5a;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #HTML:active .icon i {
   color: white;
@@ -558,7 +558,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon, body 
   cursor: pointer;
   background-color: #2d92cd;
   box-shadow: 0 0 2rem 0.5rem #3bb3f8;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #CSS:active .icon i {
   color: white;
@@ -577,7 +577,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon
   cursor: pointer;
   background-color: #f0c02b;
   box-shadow: 0 0 2rem 0.5rem #ffd042;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .icon i, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:active .icon i {
   color: white;
@@ -597,7 +597,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .icon, body .S
   cursor: pointer;
   background-color: rgb(59, 204, 248);
   box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active .Stitle {
   top: 100%;
@@ -614,7 +614,7 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .icon, body
   cursor: pointer;
   background-color: white;
   box-shadow: 0 0 2rem 0.5rem white;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:active .Stitle {
   top: 100%;
@@ -633,7 +633,7 @@ body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon, body .SKills .
   cursor: pointer;
   background-color: #702df5;
   box-shadow: 0 0 2rem 0.5rem #af8bf7;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon i, body .SKills .skill-container .frameworks #BOOTSTRAP:active .icon i {
   color: white;
@@ -655,7 +655,7 @@ body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon, body .SKills .skil
   cursor: pointer;
   background-color: #cd669a;
   box-shadow: 0 0 2rem 0.5rem #fa9aca;
-  transition: box-shadow 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 body .SKills .skill-container .PREPOCESSOR #SASS:hover .icon i, body .SKills .skill-container .PREPOCESSOR #SASS:active .icon i {
   color: white;
