@@ -300,6 +300,7 @@ body .About {
   position: relative;
   padding: 0 10%;
   width: 100%;
+  padding-bottom: 5rem;
   text-align: center;
   transition: all 0.5s ease-in-out;
 }
@@ -440,7 +441,7 @@ body .SKills {
   --bg-before: #0e2336;
   position: relative;
   padding: 0 10%;
-  padding-bottom: 1rem;
+  padding-bottom: 7rem;
   transition: all 0.5s ease-in-out;
 }
 body .SKills .FondoSkills {
@@ -1205,5 +1206,20 @@ body .footer .footer-iconTop a i {
   }
   body .Home .home-rds a i {
     font-size: 3.5rem;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 35.5%;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 31.5%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 26.5%;
   }
 }/*# sourceMappingURL=Styles.css.map */
