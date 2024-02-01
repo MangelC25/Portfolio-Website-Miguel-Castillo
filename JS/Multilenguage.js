@@ -67,14 +67,14 @@ $(() => {
     let newLanguage = $b.data('language');
 
     if (newLanguage === 'es') {
-      src = 'img/lenguage/Espanol.png';
+      src = 'img/lenguage/Espanol.webp';
       texto = 'ES';
       textamimesixe = '52rem';
       hdelay = '2.08s';
       icon1 = `50rem`;
       icon2 = `44rem`;
     } else if (newLanguage === 'en') {
-      src = 'img/lenguage/English.png';
+      src = 'img/lenguage/English.webp';
       texto = 'EN';
       textamimesixe = '50rem';
       hdelay = '2s';

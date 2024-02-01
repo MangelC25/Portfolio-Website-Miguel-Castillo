@@ -160,7 +160,7 @@ body .Home .ImgF .Foto img {
   width: 34rem;
   height: 34rem;
   transition: 0.5s;
-  background-color: rgb(14, 35, 54);
+  background: linear-gradient(to top, rgb(14, 35, 54), black);
 }
 body .Home .ImgF .Foto .circle-spin {
   position: absolute;

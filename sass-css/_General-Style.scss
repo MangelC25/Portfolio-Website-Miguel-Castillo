@@ -204,7 +204,7 @@ body {
           width: 34rem;
           height: 34rem;
           transition: 0.5s;
-          background-color: $bg-primary;
+          background: linear-gradient(to top, $bg-primary, black);
         }
 
         .circle-spin {
