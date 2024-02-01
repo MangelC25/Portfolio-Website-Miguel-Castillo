@@ -12,7 +12,7 @@ $bg-degradado: linear-gradient(to top, $bg-primary, rgb(0, 0, 0));
 $Animation1: Dtop 1.5s ease-in-out;
 
 $bg-navbar-light: #248eff;
-$bg-primary-light: rgb(105, 185, 255); 
+$bg-primary-light: rgb(105, 185, 255);
 $bg-secundary-light: #51aeff;
 $before-background: rgb(0, 0, 0);
 
@@ -28,7 +28,6 @@ $before-background: rgb(0, 0, 0);
   --bg-navbar-light: #{$bg-navbar-light};
   --bg-primary-light: #{$bg-primary-light};
   --bg-secundary-light: #{$bg-secundary-light};
-  
 }
 
 * {
@@ -44,28 +43,29 @@ $before-background: rgb(0, 0, 0);
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-section {
-  width: 100%;
-  color: $text-color;
-}
-
+  section {
+    width: 100%;
+    color: $text-color;
+  }
+  
 body {
+
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 9%;
+    padding-left: 8%;
+    padding-right: 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background-color: var(--bg-navbar);;
+    background-color: var(--bg-navbar);
 
     .logo {
       animation: $Animation1;
@@ -74,85 +74,86 @@ body {
       }
     }
 
-    #leng {
-      position: absolute;
-      left: 58rem;
+    #headernav {
       display: flex;
+      width: auto;
       align-items: center;
-      justify-content: center;
-      color: $text-color;
-      background-color: transparent;
+      gap: 4rem;
+      
+      #leng {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-color;
+        background-color: transparent;
 
-      img {
-        width: 4rem;
+        img {
+          width: 4rem;
+        }
+
+        span {
+          font-size: 2rem;
+        }
       }
 
-      span {
-        font-size: 2rem;
+      #Btheme {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-color;
+        background-color: transparent;
+
+        i {
+          font-size: 3rem;
+        }
       }
-    }
 
-    #Btheme {
-      position: absolute;
-      left: 52rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $text-color;
-      background-color: transparent;
-
-      i {
-        font-size: 3rem;
+      .navbar-toggler {
+        background-color: transparent;
+        display: none; 
       }
-    }
 
-    .navbar-toggler {
-      background-color: transparent;
-      display: none;
-    }
+      .navbar {
+        animation: $Animation1;
 
-    .navbar {
-      animation: $Animation1;
+        #navbar {
+          .navbar-nav {
+            gap: 3rem;
+            .nav-item {
+              padding: 0 0.5rem;
+              .nav-link {
+                display: flex;
+                text-decoration: none;
+                font-size: 2rem;
+                color: $text-color;
+                font-weight: 700;
+                transition: 0.3s;
+                transition: text-shadow 0.3s ease;
 
-      #navbar {
-        .navbar-nav {
-          gap: 3rem;
-          .nav-item {
-            padding: 0 0.5rem;
-            .nav-link {
-              display: flex;
-              text-decoration: none;
-              font-size: 2rem;
-              color: $text-color;
-              font-weight: 700;
-              transition: 0.3s;
-              transition: text-shadow 0.3s ease;
-
-              &:hover {
-                color: $main-color;
-                text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
-                  0 0 3rem $main-color;
+                &:hover {
+                  color: $main-color;
+                  text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
+                    0 0 3rem $main-color;
                   transition: all 0.5s ease-in-out;
-              }
+                }
 
-              .active {
-                color: $main-color;
-                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-                  0 0 30px $main-color;
-              
+                .active {
+                  color: $main-color;
+                  text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
+                    0 0 30px $main-color;
+                }
               }
             }
           }
         }
       }
     }
-
-    
   }
 
   .Home {
     color: $text-color;
     height: 80rem;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -160,11 +161,11 @@ body {
     position: relative;
     transition: all 0.5s ease-in-out;
 
-    .FondoHome{
+    .FondoHome {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100% ;
       height: 100%;
       transition: opacity 0.5s ease-in-out;
       z-index: -1;
@@ -173,10 +174,14 @@ body {
     #fondoH1 {
       background: $bg-degradado; /* Degradado por defecto */
       opacity: 1;
-  }
-    
+    }
+
     #fondoH2 {
-      background: linear-gradient(to top, rgb(255, 255, 255), $bg-primary-light); /* Nuevo degradado */
+      background: linear-gradient(
+        to top,
+        rgb(255, 255, 255),
+        $bg-primary-light
+      ); /* Nuevo degradado */
       opacity: 0;
     }
 
@@ -236,7 +241,7 @@ body {
         }
       }
     }
-    
+
     .home-content {
       width: 100%;
       max-width: 70rem;
@@ -292,7 +297,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 35rem;
+      width: 38rem;
       height: 5rem;
 
       .btn {
@@ -301,11 +306,11 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width: 15rem;
+        width: 18rem;
         height: 100%;
         border: solid 0.2rem $main-color;
         border-radius: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 700;
         letter-spacing: 0.1rem;
         color: $main-color;
@@ -360,10 +365,11 @@ body {
     --before-background: #{$before-background};
     position: relative;
     padding: 0 10%;
+    width: 100%;
     text-align: center;
     transition: all 0.5s ease-in-out;
 
-    .FondoAbout{
+    .FondoAbout {
       position: absolute;
       top: 0;
       left: 0;
@@ -374,12 +380,20 @@ body {
     }
 
     #fondoA1 {
-      background: linear-gradient(to top, $bg-secundary, rgb(12, 30, 46)); /* Degradado por defecto */
+      background: linear-gradient(
+        to top,
+        $bg-secundary,
+        rgb(12, 30, 46)
+      ); /* Degradado por defecto */
       opacity: 1;
-  }
-    
+    }
+
     #fondoA2 {
-      background: linear-gradient(to top, rgb(180, 180, 180), rgb(235, 246, 255)); /* Nuevo degradado */
+      background: linear-gradient(
+        to top,
+        rgb(180, 180, 180),
+        rgb(235, 246, 255)
+      ); /* Nuevo degradado */
       opacity: 0;
     }
 
@@ -397,8 +411,8 @@ body {
     }
 
     .about-content {
-      max-width: 100%;
-      max-height: 100%;
+      width: 100%;
+      height: 100%;
       margin-top: 1rem;
       padding-bottom: 4rem;
 
@@ -475,8 +489,12 @@ body {
             }
           }
 
-          .text-container{
+          .text-container {
             padding-top: 1rem;
+
+            p{
+              font-size: 2rem;
+            }
           }
 
           hr {
@@ -494,6 +512,14 @@ body {
             height: 4rem;
           }
         }
+
+        .carousel-control-prev{
+          left: -5rem;
+        }
+
+        .carousel-control-next {
+        right: -5rem;
+        }
       }
 
       &::before {
@@ -501,9 +527,9 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 0;
+        width: 100%;
         height: 0;
-        border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+        border-left:  50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
         border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
         border-top: 100px solid transparent;
         transition: all 0.5s ease-in-out;
@@ -518,7 +544,7 @@ body {
     padding-bottom: 1rem;
     transition: all 0.5s ease-in-out;
 
-    .FondoSkills{
+    .FondoSkills {
       position: absolute;
       top: 0;
       left: 0;
@@ -529,12 +555,21 @@ body {
     }
 
     #fondoS1 {
-      background: linear-gradient(to top, rgb(113, 113, 113), rgb(0, 0, 0)); /* Degradado por defecto */
+      background: linear-gradient(
+        to top,
+        rgb(113, 113, 113),
+        rgb(0, 0, 0)
+      ); /* Degradado por defecto */
       opacity: 1;
-  }
-    
+    }
+
     #fondoS2 {
-      background: linear-gradient(to top, rgb(182, 251, 182), rgb(255, 255, 255), rgb(180, 180, 180)); /* Nuevo degradado */
+      background: linear-gradient(
+        to top,
+        rgb(182, 251, 182),
+        rgb(255, 255, 255),
+        rgb(180, 180, 180)
+      ); /* Nuevo degradado */
       opacity: 0;
     }
 
@@ -824,7 +859,7 @@ body {
     position: relative;
     padding: 0 10%;
 
-    .FondoProjects{
+    .FondoProjects {
       position: absolute;
       top: 0;
       left: 0;
@@ -835,12 +870,20 @@ body {
     }
 
     #fondoP1 {
-      background: linear-gradient(to top, $bg-secundary, $bg-primary);/* Degradado por defecto */
+      background: linear-gradient(
+        to top,
+        $bg-secundary,
+        $bg-primary
+      ); /* Degradado por defecto */
       opacity: 1;
-  }
-    
+    }
+
     #fondoP2 {
-      background: linear-gradient(to top, rgb(240, 240, 240), $bg-primary-light); /* Nuevo degradado */
+      background: linear-gradient(
+        to top,
+        rgb(240, 240, 240),
+        $bg-primary-light
+      ); /* Nuevo degradado */
       opacity: 0;
     }
 
@@ -980,7 +1023,7 @@ body {
                   border-radius: 0.5rem;
                 }
                 #SpjQuery {
-                  background-color: #0768AC;
+                  background-color: #0768ac;
                   border-radius: 0.5rem;
                 }
               }
@@ -1063,8 +1106,10 @@ body {
       .viewm {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 2rem;
 
         #viewmp {
+          height: 5rem;
           a {
             border: solid 0.2rem $main-color;
             position: relative;
@@ -1102,7 +1147,7 @@ body {
     padding-top: 10rem;
     padding-bottom: 3rem;
 
-    .FondoContact{
+    .FondoContact {
       position: absolute;
       top: 0;
       left: 0;
@@ -1113,12 +1158,20 @@ body {
     }
 
     #fondoC1 {
-      background: linear-gradient(to bottom, $bg-secundary, $bg-primary);/* Degradado por defecto */
+      background: linear-gradient(
+        to bottom,
+        $bg-secundary,
+        $bg-primary
+      ); /* Degradado por defecto */
       opacity: 1;
-  }
-    
+    }
+
     #fondoC2 {
-      background: linear-gradient(to bottom, rgb(240, 240, 240), rgb(150, 150, 150)); /* Nuevo degradado */
+      background: linear-gradient(
+        to bottom,
+        rgb(240, 240, 240),
+        rgb(150, 150, 150)
+      ); /* Nuevo degradado */
       opacity: 0;
     }
 
@@ -1247,7 +1300,7 @@ body {
           height: 100%;
           border: solid 0.2rem $main-color;
           border-radius: 1rem;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           font-weight: 700;
           letter-spacing: 0.1rem;
           color: $main-color;
@@ -1369,476 +1422,88 @@ body {
   }
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 115%;
-  }
-
-  body {
-
-    .About {
-      padding-left: 2%;
-      padding-right: 2%;
-
-      .about-content {
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 2rem;
-            }
-          }
-        }
-      }
-    }
+    font-size: 62.5%;
   }
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1200px) {
   html {
-    font-size: 65%;
+    font-size: 54.5%;
   }
 }
 
-@media (max-width: 1401px) {
+@media (max-width: 992px) {
   html {
-    font-size: 61%;
-  }
-
-  body {
-    .header {
-      #leng {
-        left: 58rem;
-      }
-
-      #Btheme{
-        left: 52rem;
-      }
-    }
-
-  }
-}
-
-@media (max-width: 1201px) {
-  html {
-    font-size: 46%;
-  }
-
-  body {
-    .header {
-      #leng {
-        left: 80rem;
-      }
-
-      #Btheme{
-        left: 73rem;
-      }
-    }
-
-  }
-}
-
-@media (max-width: 1025px) {
-  body {
-    .header {
-      #leng {
-        left: 58rem;
-      }
-
-      #Btheme{
-        left: 51rem;
-      }
-    }
-
-  }
-}
-
-@media (max-width: 991px) {
-  body {
-    .header {
-      padding: 0 4%;
-      
-      .navbar-toggler {
-        display: block;
-        position: relative;
-      }
-
-      .navbar {
-        position: absolute;
-        top: 90%;
-        left: 0;
-
-        #navbar {
-          width: 100vw;
-          height: 100%;
-          background-color: #0c16217d;
-          backdrop-filter: blur(5px);
-          .navbar-nav {
-            padding: 5rem 4%;
-            .nav-item {
-              .nav-link {
-                transition: 0.3s;
-                transition: text-shadow 0.3s ease;
-
-                &:hover {
-                  color: $main-color;
-                  text-shadow: 0 0 1rem $main-color, 0 0 2rem $main-color,
-                    0 0 3rem $main-color;
-                }
-              }
-
-              .active {
-                color: $main-color;
-                text-shadow: 0 0 10px $main-color, 0 0 20px $main-color,
-                  0 0 30px $main-color;
-              }
-            }
-          }
-        }
-      }
-
-      #leng {
-        left: 85rem;
-      }
-
-      #Btheme{
-        left: 78rem;
-      }
-    }
-
-    .Home {
-      height: 110rem;
-      padding: 15rem 4%;
-      flex-direction: column-reverse;
-
-      .ImgF {
-        margin-top: 5rem;
-        .Foto {
-          width: 34rem;
-          height: 34rem;
-
-          img {
-            width: 30rem;
-            height: 30rem;
-          }
-        }
-      }
-
-      .home-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .text-animate {
-          display: flex;
-          justify-content: center;
-        }
-
-        p {
-          text-align: center;
-        }
-      }
-
-      .btn-box {
-        width: 45rem;
-        .btn {
-          width: 20rem;
-          font-size: 2.25rem;
-        }
-      }
-
-      .home-rds {
-        gap: 5rem;
-        bottom: -40%;
-        justify-content: center;
-        a {
-          width: 6rem;
-          height: 6rem;
-
-          i {
-            font-size: 4rem;
-          }
-        }
-      }
-    }
-
-    .About {
-      padding: 12rem 2rem;
-
-      .about-content {
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 2rem;
-            }
-          }
-        }
-      }
-    }
-
-    .footer {
-      padding: 0 4%;
-    }
+    font-size: 46.5%;
   }
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 43.5%;
   }
 
-  body {
-    .header {
-      #leng {
-        left: 78rem;
-      }
-
-      #Btheme{
-        left: 72rem;
-      }
-
-      
-    }
-
-    .About {
-      padding-left: 2%;
-      padding-right: 2%;
-
-      .about-content {
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 2rem;
-            }
-          }
+  body{
+    .header{
+      padding-right: 0;
+      #headernav {
+        .navbar-toggler {
+          display: block;
         }
       }
     }
   }
 }
 
-@media (max-width: 577px) {
+@media (max-width: 576px) {
   html {
-    font-size: 42%;
+    font-size: 46.5%;
   }
 
-  body {
-    .header {
-      #leng {
-        left: 50rem;
-      }
-
-      #Btheme{
-        left: 44rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 426px) {
-  html {
-    font-size: 40%;
-  }
-
-  body{.Home {
-      height: 116rem;
-
-      .home-content {
-        h1 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-        }
-
-        p {
-          font-size: 2rem;
-        }
-
-        .btn-box {
-          width: 45rem;
-          .btn {
-            width: 20rem;
-            font-size: 2.25rem;
-          }
-        }
-      }
-
-      .home-rds {
-        a {
-          width: 8rem;
-          height: 8rem;
-
-          i {
-            font-size: 4rem;
-          }
-        }
-      }
-    }
-
-    .About {
-      padding-left: 1.5%;
-      padding-right: 1.5%;
-
-      .about-content {
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 1.8rem;
-            }
-          }
-        }
-      }
-    }
-
-    .SKills {
-      padding-bottom: 15rem;
-  }}
-
-  
-    
-}
-
-@media (max-width: 375px) {
-  html {
-    font-size: 30%;
-  }
-
-  body {
-    .header {
-      #leng {
-        left: 60rem;
-      }
-
-      #Btheme{
-        left: 53rem;
-      }
-    }
-
-    .Home {
-      .home-content {
-        p {
-          font-size: 2.8rem;
-        }
-      }
-    }
-
+  body{
     .Home{
-      height: 120rem;
-    }
-
-    .About {
-      padding-left: 4%;
-      padding-right: 4%;
-
-      .about-content {
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 2.3rem;
-            }
-          }
-        }
-      }
-    }
-
-    .SKills {
-      padding-bottom: 12rem;
-  }
-  }
-}
-
-@media (max-width: 320px) {
-
-  html {
-    font-size: 25%;
-  }
-
-  body {
-    .header {
-      #leng {
-        left: 64rem;
-      }
-
-      #Btheme{
-        left: 58rem;
-      }
-    }
-    
-    .Home {
-      .home-content {
-
-        .btn-box {
-          width: 45rem;
-          .btn {
-            width: 22rem;
-            font-size: 2.4rem;
-          }
-        }
-      }
-
-      .home-rds {
-        a {
-          width: 10rem;
-          height: 10rem;
-
-          i {
-            font-size: 5rem;
-          }
-        }
-      }
-    }
-
-    .About {
-      padding-left: 6%;
-      padding-right: 6%;
-      .about-content {
-        .carousel-control-prev {
-          left: -5rem;
-        }
-        .carousel-control-next {
-          right: -5rem;
-        }
-
-        #carouselExample {
-          .card {
-            max-width: 100rem;
-
-            .card-text {
-              font-size: 2.5rem;
-            }
-          }
-        }
-      }
-    }
-
-    .Contact {
-      form {
-        .input-box {
-          .input-field {
-            width: 100%;
-          }
-        }
-      }
-    }
-
-    .footer {
       flex-direction: column-reverse;
+      height: 115rem;
+      justify-content: center;
+      align-items: center;
 
-      p {
-        padding: 2rem;
+      .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+          text-align: center;
+        }
+      }
+
+      .home-rds{
+        justify-content: center;
+        a{
+          width: 6rem;
+          height: 6rem;
+          i{
+            font-size: 3.5rem;
+          }
+        }
       }
     }
   }
 }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
 
 

@@ -28,7 +28,6 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -43,7 +42,8 @@ body .header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 9%;
+  padding-left: 8%;
+  padding-right: 4%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,47 +56,49 @@ body .header .logo {
 body .header .logo img {
   width: 20rem;
 }
-body .header #leng {
-  position: absolute;
-  left: 58rem;
+body .header #headernav {
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 4rem;
+}
+body .header #headernav #leng {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   background-color: transparent;
 }
-body .header #leng img {
+body .header #headernav #leng img {
   width: 4rem;
 }
-body .header #leng span {
+body .header #headernav #leng span {
   font-size: 2rem;
 }
-body .header #Btheme {
-  position: absolute;
-  left: 52rem;
+body .header #headernav #Btheme {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   background-color: transparent;
 }
-body .header #Btheme i {
+body .header #headernav #Btheme i {
   font-size: 3rem;
 }
-body .header .navbar-toggler {
+body .header #headernav .navbar-toggler {
   background-color: transparent;
   display: none;
 }
-body .header .navbar {
+body .header #headernav .navbar {
   animation: Dtop 1.5s ease-in-out;
 }
-body .header .navbar #navbar .navbar-nav {
+body .header #headernav .navbar #navbar .navbar-nav {
   gap: 3rem;
 }
-body .header .navbar #navbar .navbar-nav .nav-item {
+body .header #headernav .navbar #navbar .navbar-nav .nav-item {
   padding: 0 0.5rem;
 }
-body .header .navbar #navbar .navbar-nav .nav-item .nav-link {
+body .header #headernav .navbar #navbar .navbar-nav .nav-item .nav-link {
   display: flex;
   text-decoration: none;
   font-size: 2rem;
@@ -105,18 +107,19 @@ body .header .navbar #navbar .navbar-nav .nav-item .nav-link {
   transition: 0.3s;
   transition: text-shadow 0.3s ease;
 }
-body .header .navbar #navbar .navbar-nav .nav-item .nav-link:hover {
+body .header #headernav .navbar #navbar .navbar-nav .nav-item .nav-link:hover {
   color: #00b7ff;
   text-shadow: 0 0 1rem #00b7ff, 0 0 2rem #00b7ff, 0 0 3rem #00b7ff;
   transition: all 0.5s ease-in-out;
 }
-body .header .navbar #navbar .navbar-nav .nav-item .nav-link .active {
+body .header #headernav .navbar #navbar .navbar-nav .nav-item .nav-link .active {
   color: #00b7ff;
   text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
 }
 body .Home {
   color: #ffffff;
   height: 80rem;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0 10%;
@@ -237,7 +240,7 @@ body .Home .btn-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 35rem;
+  width: 38rem;
   height: 5rem;
 }
 body .Home .btn-box .btn {
@@ -246,11 +249,11 @@ body .Home .btn-box .btn {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: 18rem;
   height: 100%;
   border: solid 0.2rem #00b7ff;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #00b7ff;
@@ -296,6 +299,7 @@ body .About {
   --before-background: rgb(0, 0, 0);
   position: relative;
   padding: 0 10%;
+  width: 100%;
   text-align: center;
   transition: all 0.5s ease-in-out;
 }
@@ -327,8 +331,8 @@ body .About .heading #M {
   color: #00b7ff;
 }
 body .About .about-content {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   margin-top: 1rem;
   padding-bottom: 4rem;
 }
@@ -399,6 +403,9 @@ body .About .about-content #carouselExample .card .image-container .circle-spin2
 body .About .about-content #carouselExample .card .text-container {
   padding-top: 1rem;
 }
+body .About .about-content #carouselExample .card .text-container p {
+  font-size: 2rem;
+}
 body .About .about-content #carouselExample .card hr {
   border: none;
   border-bottom: solid 2px #00b7ff;
@@ -411,12 +418,18 @@ body .About .about-content #carouselExample .carousel-control-next .carousel-con
   width: 4rem;
   height: 4rem;
 }
+body .About .about-content #carouselExample .carousel-control-prev {
+  left: -5rem;
+}
+body .About .about-content #carouselExample .carousel-control-next {
+  right: -5rem;
+}
 body .About .about-content::before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 0;
+  width: 100%;
   height: 0;
   border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
   border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
@@ -816,7 +829,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
   border-radius: 0.5rem;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans #SpjQuery {
-  background-color: #0768AC;
+  background-color: #0768ac;
   border-radius: 0.5rem;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Enlaces {
@@ -886,6 +899,10 @@ body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-with
 body .Projects .projects-container .viewm {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+body .Projects .projects-container .viewm #viewmp {
+  height: 5rem;
 }
 body .Projects .projects-container .viewm #viewmp a {
   border: solid 0.2rem #00b7ff;
@@ -1045,7 +1062,7 @@ body .Contact form .btn-box .btn {
   height: 100%;
   border: solid 0.2rem #00b7ff;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #00b7ff;
@@ -1135,135 +1152,51 @@ body .footer .footer-iconTop a i {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
-@media (max-width: 2560px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 115%;
-  }
-  body .About {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 2rem;
+    font-size: 62.5%;
   }
 }
-@media (max-width: 1441px) {
+@media (max-width: 1200px) {
   html {
-    font-size: 65%;
+    font-size: 54.5%;
   }
 }
-@media (max-width: 1401px) {
+@media (max-width: 992px) {
   html {
-    font-size: 61%;
-  }
-  body .header #leng {
-    left: 58rem;
-  }
-  body .header #Btheme {
-    left: 52rem;
+    font-size: 46.5%;
   }
 }
-@media (max-width: 1201px) {
+@media (max-width: 768px) {
   html {
-    font-size: 46%;
+    font-size: 43.5%;
   }
-  body .header #leng {
-    left: 80rem;
-  }
-  body .header #Btheme {
-    left: 73rem;
-  }
-}
-@media (max-width: 1025px) {
-  body .header #leng {
-    left: 58rem;
-  }
-  body .header #Btheme {
-    left: 51rem;
-  }
-}
-@media (max-width: 991px) {
   body .header {
-    padding: 0 4%;
+    padding-right: 0;
   }
-  body .header .navbar-toggler {
+  body .header #headernav .navbar-toggler {
     display: block;
-    position: relative;
   }
-  body .header .navbar {
-    position: absolute;
-    top: 90%;
-    left: 0;
-  }
-  body .header .navbar #navbar {
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(12, 22, 33, 0.4901960784);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-  body .header .navbar #navbar .navbar-nav {
-    padding: 5rem 4%;
-  }
-  body .header .navbar #navbar .navbar-nav .nav-item .nav-link {
-    transition: 0.3s;
-    transition: text-shadow 0.3s ease;
-  }
-  body .header .navbar #navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #00b7ff;
-    text-shadow: 0 0 1rem #00b7ff, 0 0 2rem #00b7ff, 0 0 3rem #00b7ff;
-  }
-  body .header .navbar #navbar .navbar-nav .nav-item .active {
-    color: #00b7ff;
-    text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff;
-  }
-  body .header #leng {
-    left: 85rem;
-  }
-  body .header #Btheme {
-    left: 78rem;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 46.5%;
   }
   body .Home {
-    height: 110rem;
-    padding: 15rem 4%;
     flex-direction: column-reverse;
-  }
-  body .Home .ImgF {
-    margin-top: 5rem;
-  }
-  body .Home .ImgF .Foto {
-    width: 34rem;
-    height: 34rem;
-  }
-  body .Home .ImgF .Foto img {
-    width: 30rem;
-    height: 30rem;
+    height: 115rem;
+    justify-content: center;
+    align-items: center;
   }
   body .Home .home-content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body .Home .home-content .text-animate {
-    display: flex;
-    justify-content: center;
-  }
   body .Home .home-content p {
     text-align: center;
   }
-  body .Home .btn-box {
-    width: 45rem;
-  }
-  body .Home .btn-box .btn {
-    width: 20rem;
-    font-size: 2.25rem;
-  }
   body .Home .home-rds {
-    gap: 5rem;
-    bottom: -40%;
     justify-content: center;
   }
   body .Home .home-rds a {
@@ -1271,173 +1204,6 @@ body .footer .footer-iconTop a i {
     height: 6rem;
   }
   body .Home .home-rds a i {
-    font-size: 4rem;
-  }
-  body .About {
-    padding: 12rem 2rem;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 2rem;
-  }
-  body .footer {
-    padding: 0 4%;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-  body .header #leng {
-    left: 78rem;
-  }
-  body .header #Btheme {
-    left: 72rem;
-  }
-  body .About {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 577px) {
-  html {
-    font-size: 42%;
-  }
-  body .header #leng {
-    left: 50rem;
-  }
-  body .header #Btheme {
-    left: 44rem;
-  }
-}
-@media (max-width: 426px) {
-  html {
-    font-size: 40%;
-  }
-  body .Home {
-    height: 116rem;
-  }
-  body .Home .home-content h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .Home .home-content p {
-    font-size: 2rem;
-  }
-  body .Home .home-content .btn-box {
-    width: 45rem;
-  }
-  body .Home .home-content .btn-box .btn {
-    width: 20rem;
-    font-size: 2.25rem;
-  }
-  body .Home .home-rds a {
-    width: 8rem;
-    height: 8rem;
-  }
-  body .Home .home-rds a i {
-    font-size: 4rem;
-  }
-  body .About {
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 1.8rem;
-  }
-  body .SKills {
-    padding-bottom: 15rem;
-  }
-}
-@media (max-width: 375px) {
-  html {
-    font-size: 30%;
-  }
-  body .header #leng {
-    left: 60rem;
-  }
-  body .header #Btheme {
-    left: 53rem;
-  }
-  body .Home .home-content p {
-    font-size: 2.8rem;
-  }
-  body .Home {
-    height: 120rem;
-  }
-  body .About {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 2.3rem;
-  }
-  body .SKills {
-    padding-bottom: 12rem;
-  }
-}
-@media (max-width: 320px) {
-  html {
-    font-size: 25%;
-  }
-  body .header #leng {
-    left: 64rem;
-  }
-  body .header #Btheme {
-    left: 58rem;
-  }
-  body .Home .home-content .btn-box {
-    width: 45rem;
-  }
-  body .Home .home-content .btn-box .btn {
-    width: 22rem;
-    font-size: 2.4rem;
-  }
-  body .Home .home-rds a {
-    width: 10rem;
-    height: 10rem;
-  }
-  body .Home .home-rds a i {
-    font-size: 5rem;
-  }
-  body .About {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
-  body .About .about-content .carousel-control-prev {
-    left: -5rem;
-  }
-  body .About .about-content .carousel-control-next {
-    right: -5rem;
-  }
-  body .About .about-content #carouselExample .card {
-    max-width: 100rem;
-  }
-  body .About .about-content #carouselExample .card .card-text {
-    font-size: 2.5rem;
-  }
-  body .Contact form .input-box .input-field {
-    width: 100%;
-  }
-  body .footer {
-    flex-direction: column-reverse;
-  }
-  body .footer p {
-    padding: 2rem;
+    font-size: 3.5rem;
   }
 }/*# sourceMappingURL=Styles.css.map */

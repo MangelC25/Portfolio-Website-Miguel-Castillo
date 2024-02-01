@@ -34,7 +34,6 @@ $(() => {
 
         // Llamar a cambioidioma() después de que se complete el desvanecimiento y la traducción
         await cambioidioma();
-        MediasQuerys();
       });
 
     } catch (error) {
@@ -74,7 +73,7 @@ $(() => {
       icon1 = `50rem`;
       icon2 = `44rem`;
     } else if (newLanguage === 'en') {
-      src = 'img/lenguage/English.webp';
+      src = './img/lenguage/English_1.webp';
       texto = 'EN';
       textamimesixe = '50rem';
       hdelay = '2s';
@@ -99,63 +98,6 @@ $(() => {
     $h3animated.css('animation-delay', evento.detail.hdelay);
     $b.css({ left: evento.detail.icon1 });
     $Btheme.css({ left: evento.detail.icon2 });
-  }
-
-  async function MediasQuerys() {
-     
-    let idiomaactual = $b.data('language');;
-
-    if (idiomaactual === 'en') {
-      if (window.matchMedia("(max-width: 991px)").matches) {
-        $b.css({ left: '85rem'  });
-        $Btheme.css({ left: '78rem' });
-      }  
-      if (window.matchMedia("(max-width: 577px)").matches) {
-        $b.css({ left: '50rem'  });
-        $Btheme.css({ left: '44rem' });
-      }
-      if (window.matchMedia("(max-width: 375px)").matches) {
-        $b.css({ left: '60rem'  });
-        $Btheme.css({ left: '53rem' });
-      }
-    } else if (idiomaactual === 'es'){
-      if (window.matchMedia("(max-width: 2560px)").matches) {
-        $b.css({ left: '50rem'  });
-        $Btheme.css({ left: '44rem' });
-      } 
-      if (window.matchMedia("(max-width: 1400px)").matches) {
-        $b.css({ left: '50rem'  });
-        $Btheme.css({ left: '44rem' });
-      } 
-
-      if (window.matchMedia("(max-width: 1024px)").matches) {
-        $b.css({ left: '50rem'  });
-        $Btheme.css({ left: '44rem' });
-      } 
-
-      if (window.matchMedia("(max-width: 991px)").matches) {
-        $b.css({ left: '85rem'  });
-        $Btheme.css({ left: '78rem' });
-      }  
-      if (window.matchMedia("(max-width: 760px)").matches) {
-        $b.css({ left: '85rem'  });
-        $Btheme.css({ left: '78rem' });
-      } 
-      
-      if (window.matchMedia("(max-width: 577px)").matches) {
-        $b.css({ left: '50rem'  });
-        $Btheme.css({ left: '44rem' });
-      }
-      if (window.matchMedia("(max-width: 375px)").matches) {
-        $b.css({ left: '60rem'  });
-        $Btheme.css({ left: '53rem' });
-      }
-      if (window.matchMedia("(max-width: 375px)").matches) {
-        $b.css({ left: '60rem'  });
-        $Btheme.css({ left: '53rem' });
-      }
-    }
-    
   }
 });
 
