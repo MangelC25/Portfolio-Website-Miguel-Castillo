@@ -1153,6 +1153,11 @@ body .footer .footer-iconTop a i {
     transform: translate(-50%, -50%) rotate(-360deg);
   }
 }
+@media (max-width: 1920px) {
+  html {
+    font-size: 90.5%;
+  }
+}
 @media (max-width: 1400px) {
   html {
     font-size: 62.5%;
@@ -1215,7 +1220,7 @@ body .footer .footer-iconTop a i {
 }
 @media (max-width: 375px) {
   html {
-    font-size: 30.5%;
+    font-size: 29.5%;
   }
 }
 @media (max-width: 320px) {
