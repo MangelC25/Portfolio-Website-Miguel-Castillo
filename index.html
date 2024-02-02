@@ -26,10 +26,10 @@
       <img src="./img/logo.webp" alt="logo" />
     </a>
     <div id = "headernav">
-          <button type="button" id="Btheme" class="Btheme">
+          <button type="button" id="Btheme" class="Btheme" aria-label="Theme page">
       <i class='bx bxs-moon'></i>
     </button>
-    <button type="button" id="leng" data-language="en">
+    <button type="button" id="leng" data-language="en" aria-label="Tlenguage page">
       <img src="img/lenguage/English_1.webp" alt="lenguage" id="lenguage">
       <span id="ACR">EN</span>
     </button>
@@ -222,11 +222,11 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="carousel control prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="carousel control next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -484,6 +484,7 @@
   $(document).ready(function () {
     $('.owl-carousel-2').owlCarousel({
       dots: true,
+      label: true,
       animateOut: 'fadeOut',
       autoplay: true,
       autoplayTimeout: 5000,
