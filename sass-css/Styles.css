@@ -600,20 +600,20 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #JAVASCRIPT:hover .Stit
   top: 100%;
   opacity: 1;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C {
+body .SKills .skill-container .lenguages .owl-carousel-2 #Cm {
   height: 15rem;
   filter: grayscale(50%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active {
+body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:hover, body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:active {
   filter: grayscale(0%);
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active .icon {
+body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:hover .icon, body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:active .icon {
   cursor: pointer;
   background-color: rgb(59, 204, 248);
   box-shadow: 0 0 2rem 0.5rem rgb(59, 204, 248);
   transition: all 0.5s ease-in-out;
 }
-body .SKills .skill-container .lenguages .owl-carousel-2 #C:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #C:active .Stitle {
+body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:hover .Stitle, body .SKills .skill-container .lenguages .owl-carousel-2 #Cm:active .Stitle {
   top: 100%;
   opacity: 1;
 }
