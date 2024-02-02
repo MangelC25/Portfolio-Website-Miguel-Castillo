@@ -507,6 +507,11 @@
       }
     });
   });
+
+  var dots = $('.owl-dot');
+    dots.each(function(index) {
+        $(this).attr('aria-label', 'Slide ' + (index + 1));
+    });
 </script>
 
 </html>
