@@ -1470,13 +1470,12 @@ body {
 
         .navbar {
           position: absolute;
-          padding: 0 4%;
           left: 0;
-          top: 100%;
+          top: 90%;
 
           #navbar {
             width: 100vw;
-            padding: 3rem 0;
+            padding: 3rem 3rem;
             background-color: #0c16217d;
             backdrop-filter: blur(5px);
           }
