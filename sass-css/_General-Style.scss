@@ -47,18 +47,18 @@ html {
   overflow-x: hidden;
 }
 
-  section {
-    width: 100%;
-    color: $text-color;
-  }
-  
-body {
+section {
+  width: 100%;
+  color: $text-color;
+}
 
+body {
   .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 2rem 0;
     padding-left: 8%;
     padding-right: 4%;
     display: flex;
@@ -68,9 +68,13 @@ body {
     background-color: var(--bg-navbar);
 
     .logo {
-      animation: $Animation1;
+      width: 12rem;
+      overflow: hidden;
+
       img {
-        width: 20rem;
+        width: 100%;
+        height: auto;
+        display: block;
       }
     }
 
@@ -79,16 +83,19 @@ body {
       width: auto;
       align-items: center;
       gap: 4rem;
-      
+
       #leng {
         display: flex;
         align-items: center;
         justify-content: center;
         color: $text-color;
+        width: 4rem;
         background-color: transparent;
 
         img {
-          width: 4rem;
+          width: 100%;
+          height: auto;
+          display: block;
         }
 
         span {
@@ -110,7 +117,7 @@ body {
 
       .navbar-toggler {
         background-color: transparent;
-        display: none; 
+        display: none;
       }
 
       .navbar {
@@ -165,7 +172,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100% ;
+      width: 100%;
       height: 100%;
       transition: opacity 0.5s ease-in-out;
       z-index: -1;
@@ -493,7 +500,7 @@ body {
           .text-container {
             padding-top: 1rem;
 
-            p{
+            p {
               font-size: 2rem;
             }
           }
@@ -514,12 +521,12 @@ body {
           }
         }
 
-        .carousel-control-prev{
+        .carousel-control-prev {
           left: -5rem;
         }
 
         .carousel-control-next {
-        right: -5rem;
+          right: -5rem;
         }
       }
 
@@ -530,7 +537,7 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        border-left:  50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
+        border-left: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
         border-right: 50vw solid var(--before-background); /* Ancho del triángulo (mitad del ancho de la pantalla) */
         border-top: 100px solid transparent;
         transition: all 0.5s ease-in-out;
@@ -1453,9 +1460,8 @@ body {
     font-size: 43.5%;
   }
 
-  body{
-    .header{
-
+  body {
+    .header {
       #headernav {
         .navbar-toggler {
           display: block;
@@ -1473,8 +1479,8 @@ body {
             padding: 3rem 0;
             background-color: #0c16217d;
             backdrop-filter: blur(5px);
+          }
         }
-      }
       }
     }
   }
@@ -1485,29 +1491,29 @@ body {
     font-size: 46.5%;
   }
 
-  body{
-    .Home{
+  body {
+    .Home {
       flex-direction: column-reverse;
       height: 115rem;
       justify-content: center;
       align-items: center;
 
-      .home-content{
+      .home-content {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        p{
+        p {
           text-align: center;
         }
       }
 
-      .home-rds{
+      .home-rds {
         justify-content: center;
-        a{
+        a {
           width: 6rem;
           height: 6rem;
-          i{
+          i {
             font-size: 3.5rem;
           }
         }
@@ -1533,19 +1539,3 @@ body {
     font-size: 26.5%;
   }
 }
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-

@@ -42,6 +42,7 @@ body .header {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 2rem 0;
   padding-left: 8%;
   padding-right: 4%;
   display: flex;
@@ -51,10 +52,13 @@ body .header {
   background-color: var(--bg-navbar);
 }
 body .header .logo {
-  animation: Dtop 1.5s ease-in-out;
+  width: 12rem;
+  overflow: hidden;
 }
 body .header .logo img {
-  width: 20rem;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 body .header #headernav {
   display: flex;
@@ -67,10 +71,13 @@ body .header #headernav #leng {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  width: 4rem;
   background-color: transparent;
 }
 body .header #headernav #leng img {
-  width: 4rem;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 body .header #headernav #leng span {
   font-size: 2rem;
