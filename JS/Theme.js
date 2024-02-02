@@ -325,7 +325,7 @@ function changethemeContact(){
 
         fondoVisibleC = 3 - fondoVisibleC;
         textElements.forEach(element => {
-            element.style.color = maincolor; 
+            element.style.color = textcolor; 
         });
         btn.forEach(item => { 
             item.style.color = maincolor; 
