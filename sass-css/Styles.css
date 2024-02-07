@@ -52,7 +52,7 @@ body .header {
   background-color: var(--bg-navbar);
 }
 body .header .logo {
-  width: 12rem;
+  width: 13rem;
   overflow: hidden;
 }
 body .header .logo img {
