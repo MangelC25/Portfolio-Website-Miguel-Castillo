@@ -1503,7 +1503,7 @@ body {
   body {
     .Home {
       flex-direction: column-reverse;
-      height: 115rem;
+      height: 120rem;
       justify-content: center;
       align-items: center;
 
@@ -1511,6 +1511,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         p {
           text-align: center;
@@ -1534,6 +1535,13 @@ body {
 @media (max-width: 425px) {
   html {
     font-size: 35%;
+  }
+
+  body {
+    .Home {
+      height: 120rem;
+      padding-bottom: 5rem;
+    }
   }
 }
 
