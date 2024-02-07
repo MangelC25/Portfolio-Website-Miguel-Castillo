@@ -164,7 +164,7 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    gap: 5rem;
+    gap: 10rem;
     position: relative;
     transition: all 0.5s ease-in-out;
 
@@ -1433,32 +1433,41 @@ body {
 
 @media (max-width: 1920px) {
   html {
-    font-size: 90.5%;
+    font-size: 80%;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   html {
-    font-size: 62.5%;
+    font-size: 60.5%;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1367px) {
   html {
-    font-size: 54.5%;
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media (max-width: 1025px) {
+  html {
+    font-size: 50%;
   }
 }
 
 @media (max-width: 992px) {
   html {
-    font-size: 46.5%;
+    font-size: 42%;
   }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 43.5%;
-  }
 
   body {
     .header {
@@ -1487,7 +1496,7 @@ body {
 
 @media (max-width: 576px) {
   html {
-    font-size: 46.5%;
+    font-size: 47%;
   }
 
   body {
@@ -1523,13 +1532,13 @@ body {
 
 @media (max-width: 425px) {
   html {
-    font-size: 33.5%;
+    font-size: 35%;
   }
 }
 
 @media (max-width: 375px) {
   html {
-    font-size: 29.5%;
+    font-size: 34%;
   }
 }
 
