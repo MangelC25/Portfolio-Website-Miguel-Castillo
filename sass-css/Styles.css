@@ -908,9 +908,9 @@ body .Projects .projects-container .owl-carousel-1 #card1 {
   background-size: 31rem 46rem;
 }
 body .Projects .projects-container .owl-carousel-1 #card2 {
-  background-color: gray;
+  background-color: #12364A;
   background-image: url("../img/SMARTCALC.webp");
-  background-size: 38rem 20rem;
+  background-size: 35rem 18rem;
 }
 body .Projects .projects-container .viewm {
   display: flex;
