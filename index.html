@@ -363,12 +363,12 @@
 
         <div class="owl-carousel owl-carousel-1 owl-loaded owl-drag">
           <div class="item">
-            <div class="card">
+            <div class="card" id="card1">
               <div class="card-container">
                 <div class="card-body">
 
                   <h1 class="card-title">Portfolio Web Personal</h1>
-                  <p class="card-text" data-section="Projects" data-value="description">Explore my portfolio website, a showcase of creativity and technical skills.
+                  <p class="card-text" data-section="Projects" data-value="description1">Explore my portfolio website, a showcase of creativity and technical skills.
                     Designed
                     with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes
                     JavaScript for interactive features.</p>
@@ -390,6 +390,29 @@
               </div>
             </div>
           </div>
+          <div class="item">
+            <div class="card" id="card2">
+              <div class="card-container">
+                <div class="card-body">
+
+                  <h1 class="card-title">SmartCacl</h1>
+                  <p class="card-text" data-section="Projects" data-value="description2">Experience SmartCalc: Your savvy online calculation companion! Developed withwith HTML, CSS, SCSS, and JavaScript, this project blends creativity and technical finesse for an awe-inspiring experience. Crunch numbers and convert units effortlessly with SmartCalc!</p>
+                  <div id="Spans">
+                    <span id="SpHTML"><i class='bx bxl-html5'></i>HTML</span>
+                    <span id="SpCSS"><i class='bx bxl-css3'></i>CSS</span>
+                    <span id="SpSASS"><i class='bx bxl-sass'></i>SASS</span>
+                    <span id="SpJavascript"><i class='bx bxl-javascript'></i>JavaScript</span>
+                  </div>
+                  <div id="Enlaces">
+                    <a href="https://smart-calc-alpha.vercel.app/" class="bx-Link"><i class='bx bx-link'></i></a>
+                    <a href="https://github.com/MangelC25/SmartCalc.git" class="bx-Git"
+                      target="_blank"><i class='bx bxl-github' ></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
 
 
         </div>
@@ -464,6 +487,9 @@
       loop: false,
       mouseDrag: true,
       touchDrag: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
@@ -473,7 +499,7 @@
         }
         ,
         1000: {
-          items: 1,
+          items: 2,
         }
       }
     });

@@ -746,8 +746,6 @@ body .Projects .projects-container .owl-carousel-1 .item {
 body .Projects .projects-container .owl-carousel-1 .card {
   margin: 2rem;
   color: #ffffff;
-  background-image: url("../img/ProjectPortfolio.webp");
-  background-size: 31rem 46rem;
   background-repeat: no-repeat;
   background-position: center;
   padding: 16rem 0 0;
@@ -904,6 +902,15 @@ body .Projects .projects-container .owl-carousel-1 .card:hover .card-container .
 body .Projects .projects-container .owl-carousel-1 .card:hover .card:focus-within .card-container .card-body #Enlaces a, body .Projects .projects-container .owl-carousel-1 .card:active .card-container .card-body #Enlaces a,
 body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-within .card-container .card-body #Enlaces a {
   opacity: 1;
+}
+body .Projects .projects-container .owl-carousel-1 #card1 {
+  background-image: url("../img/ProjectPortfolio.webp");
+  background-size: 31rem 46rem;
+}
+body .Projects .projects-container .owl-carousel-1 #card2 {
+  background-color: gray;
+  background-image: url("../img/SMARTCALC.webp");
+  background-size: 38rem 20rem;
 }
 body .Projects .projects-container .viewm {
   display: flex;

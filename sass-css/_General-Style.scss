@@ -928,8 +928,6 @@ body {
         .card {
           margin: 2rem;
           color: $text-color;
-          background-image: url("../img/ProjectPortfolio.webp");
-          background-size: 31rem 46rem;
           background-repeat: no-repeat;
           background-position: center;
           padding: 16rem 0 0;
@@ -1110,6 +1108,17 @@ body {
               }
             }
           }
+        }
+
+        #card1{
+          background-image: url("../img/ProjectPortfolio.webp");
+          background-size: 31rem 46rem;
+        }
+
+        #card2{
+          background-color: gray;
+          background-image: url("../img/SMARTCALC.webp");
+          background-size: 38rem 20rem;
         }
       }
 

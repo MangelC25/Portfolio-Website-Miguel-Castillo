@@ -34,7 +34,8 @@
   "Projects": {
     "My": "Mis",
     "Project": "Proyectos",
-    "description": "Explora mi sitio web de portafolio, una muestra de creatividad y habilidades técnicas. Diseñado con HTML, CSS, Bootstrap y SASS, este proyecto destaca por su atractivo moderno. Utiliza JavaScript para funciones interactivas.",
+    "description1": "Explora mi sitio web de portafolio, una muestra de creatividad y habilidades técnicas. Diseñado con HTML, CSS, Bootstrap y SASS, este proyecto destaca por su atractivo moderno. Utiliza JavaScript para funciones interactivas.",
+    "description2": "¡Descubre SmartCalc, tu compañero inteligente de cálculos en línea! Desarrollado con HTML, CSS, SCSS y JavaScript, este proyecto combina creatividad y habilidades técnicas para ofrecerte una experiencia sorprendente. ¡Haz tus cálculos y conversiones de manera rápida y sencilla con SmartCalc!",
     "vmore" : "Ver mas Proyectos" 
   },
   "Contact":{

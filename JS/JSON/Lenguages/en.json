@@ -34,7 +34,8 @@
   "Projects": {
     "My": "My",
     "Project": "Projects",
-    "description": "Explore my portfolio website, a showcase of creativity and technical skills. Designed with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes JavaScript for interactive features.",
+    "description1": "Explore my portfolio website, a showcase of creativity and technical skills. Designed with HTML, CSS, Bootstrap, and SASS, this project stands out for its modern appeal. Utilizes JavaScript for interactive features.",
+    "description2": "Experience SmartCalc: Your savvy online calculation companion! Developed with with HTML, CSS, SCSS, and JavaScript, this project blends creativity and technical finesse for an awe-inspiring experience. Crunch numbers and convert units effortlessly with SmartCalc!",
     "vmore" : "View More Projects"
   },
   "Contact":{
