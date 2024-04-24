@@ -751,8 +751,8 @@ body .Projects .projects-container .owl-carousel-1 .card {
   padding: 16rem 0 0;
   border: none;
   width: 100%;
-  height: 46rem;
-  max-width: 60ch;
+  height: 47rem;
+  max-width: 62ch;
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -905,12 +905,16 @@ body .Projects .projects-container .owl-carousel-1 .card:active .card:focus-with
 }
 body .Projects .projects-container .owl-carousel-1 #card1 {
   background-image: url("../img/ProjectPortfolio.webp");
-  background-size: 31rem 46rem;
+  background-size: 34rem 47rem;
 }
 body .Projects .projects-container .owl-carousel-1 #card2 {
-  background-color: #12364A;
+  background-color: #12364a;
   background-image: url("../img/SMARTCALC.webp");
-  background-size: 35rem 18rem;
+  background-size: 34rem 18rem;
+}
+body .Projects .projects-container .owl-carousel-1 #card3 {
+  background-image: url("../img/CardSlideResposive.png");
+  background-size: 32rem 47rem;
 }
 body .Projects .projects-container .viewm {
   display: flex;
@@ -1253,6 +1257,9 @@ body .footer .footer-iconTop a i {
   body .Home {
     height: 120rem;
     padding-bottom: 5rem;
+  }
+  body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-text {
+    font-size: 1.35rem;
   }
 }
 @media (max-width: 375px) {
