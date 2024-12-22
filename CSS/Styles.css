@@ -789,7 +789,7 @@ body .Projects .projects-container .owl-carousel-1 .card .card-container .card-b
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body .card-text {
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   text-align: justify;
 }
 body .Projects .projects-container .owl-carousel-1 .card .card-container .card-body #Spans {
@@ -915,6 +915,10 @@ body .Projects .projects-container .owl-carousel-1 #card2 {
 body .Projects .projects-container .owl-carousel-1 #card3 {
   background-image: url("../img/CardSlideResposive.png");
   background-size: 32rem 47rem;
+}
+body .Projects .projects-container .owl-carousel-1 #card4 {
+  background-image: url("../img/AquaDesings.webp");
+  background-size: 33.5rem 47rem;
 }
 body .Projects .projects-container .viewm {
   display: flex;
