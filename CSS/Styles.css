@@ -644,8 +644,10 @@ body .SKills .skill-container .lenguages .owl-carousel-2 #JAVA:hover .Stitle, bo
 body .SKills .skill-container .frameworks {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   margin-bottom: 4rem;
+  gap: 2.5rem;
 }
 body .SKills .skill-container .frameworks #BOOTSTRAP i {
   color: white;
@@ -660,6 +662,22 @@ body .SKills .skill-container .frameworks #BOOTSTRAP:hover .icon i, body .SKills
   color: white;
 }
 body .SKills .skill-container .frameworks #BOOTSTRAP:hover .Stitle, body .SKills .skill-container .frameworks #BOOTSTRAP:active .Stitle {
+  top: 100%;
+  opacity: 1;
+}
+body .SKills .skill-container .frameworks #REACT i {
+  color: #81E0FF;
+}
+body .SKills .skill-container .frameworks #REACT:hover .icon, body .SKills .skill-container .frameworks #REACT:active .icon {
+  cursor: pointer;
+  background-color: #4bb7ff;
+  box-shadow: 0 0 2rem 0.5rem #8ad0ff;
+  transition: all 0.5s ease-in-out;
+}
+body .SKills .skill-container .frameworks #REACT:hover .icon i, body .SKills .skill-container .frameworks #REACT:active .icon i {
+  color: white;
+}
+body .SKills .skill-container .frameworks #REACT:hover .Stitle, body .SKills .skill-container .frameworks #REACT:active .Stitle {
   top: 100%;
   opacity: 1;
 }
@@ -1015,9 +1033,6 @@ body .Contact form .input-box .input-field input {
   border: solid #00b7ff 2px;
   z-index: 2;
 }
-body .Contact form .input-box .input-field input::-moz-placeholder {
-  color: #ffffff;
-}
 body .Contact form .input-box .input-field input::placeholder {
   color: #ffffff;
 }
@@ -1051,9 +1066,6 @@ body .Contact form .textarea-field textarea {
   resize: none;
   border: solid #00b7ff 2px;
   z-index: 2;
-}
-body .Contact form .textarea-field textarea::-moz-placeholder {
-  color: #ffffff;
 }
 body .Contact form .textarea-field textarea::placeholder {
   color: #ffffff;
@@ -1220,8 +1232,7 @@ body .footer .footer-iconTop a i {
     width: 100vw;
     padding: 3rem 3rem;
     background-color: rgba(12, 22, 33, 0.4901960784);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
 @media (max-width: 576px) {
@@ -1275,4 +1286,6 @@ body .footer .footer-iconTop a i {
   html {
     font-size: 29%;
   }
-}/*# sourceMappingURL=Styles.css.map */
+}
+
+/*# sourceMappingURL=Styles.css.map */

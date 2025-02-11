@@ -793,8 +793,10 @@ body {
       .frameworks {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
         margin-bottom: 4rem;
+        gap: 2.5rem;
 
         #BOOTSTRAP {
           i {
@@ -806,6 +808,29 @@ body {
               cursor: pointer;
               background-color: #702df5;
               box-shadow: 0 0 2rem 0.5rem #af8bf7;
+              transition: all 0.5s ease-in-out;
+              i {
+                color: white;
+              }
+            }
+
+            .Stitle {
+              top: 100%;
+              opacity: 1;
+            }
+          }
+        }
+
+        #REACT {
+          i {
+            color: #81E0FF;
+          }
+          &:hover,
+          &:active {
+            .icon {
+              cursor: pointer;
+              background-color: #4bb7ff;
+              box-shadow: 0 0 2rem 0.5rem #8ad0ff;
               transition: all 0.5s ease-in-out;
               i {
                 color: white;
